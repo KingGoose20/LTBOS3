@@ -6,13 +6,10 @@ function header(location) {
         <div class="Whole" id="Whole">
         <div class="w-container">
         <a href="replacerindex.html" class="heading w--current" style="padding:8px;">
-            <h1 class="title animate-character"><img src="" style="" class="headingImage"><span class="heading-hide">   Lunch Time Basketballers</span><span class="inverseheading-hide">   TLTBO</span></h1>
+            <h1 class="title animate-character"><img src="" style="" class="headingImage"><span class="heading-hide">   Lunch Time Basketballers</span><span class="inverseheading-hide">   LTBO</span></h1>
         </a>
         <nav class="navbar heading-links w-nav-menu">
             <ul class="nav-menu">
-            <li class="nav-item">
-                <a href="replacerDocumentsAndIco/TheFinals.html" class="navigation-link w-nav-link theFinals">The Finals</a>
-            </li>
             <li class="nav-item">
                 <a href="replacerDocumentsAndIco/Ladder.html" class="navigation-link w-nav-link">Ladder</a>
             </li>
@@ -95,7 +92,7 @@ function header(location) {
 
 
 
-    switch (document.title.slice(0,-8)) {
+    switch (document.title.slice(0,-7)) {
         case "Ladder" :
             template.innerHTML = template.innerHTML.replace('w-nav-link">Ladder</a>', 'w-nav-link w--current">Ladder</a>')
             break;
@@ -116,6 +113,21 @@ function header(location) {
         case "Contact" :
             template.innerHTML = template.innerHTML.replace('>Contact Us', 'class="w-nav-link w--current">Contact Us')
             template.innerHTML = template.innerHTML.replace('class="navigation-link w-nav-link">Contact Us</a>', 'class="navigation-link w-nav-link w--current">Contact Us</a>')
+            template.innerHTML = template.innerHTML.replace('<span class="navigation-link w-nav-link">More</span>', '<span class="navigation-link w-nav-link w--current">More</span>')
+            break;
+        case "Loose Gooses" :
+            template.innerHTML = template.innerHTML.replace('>Loose Gooses Home', 'class="w-nav-link w--current">Loose Gooses Home')
+            template.innerHTML = template.innerHTML.replace('class="navigation-link w-nav-link">Loose Gooses Home</a>', 'class="navigation-link w-nav-link w--current">Loose Gooses Home</a>')
+            template.innerHTML = template.innerHTML.replace('<span class="navigation-link w-nav-link">More</span>', '<span class="navigation-link w-nav-link w--current">More</span>')
+            break;
+        case "Wet Willies" :
+            template.innerHTML = template.innerHTML.replace('>Wet Willies Home', 'class="w-nav-link w--current">Wet Willies Home')
+            template.innerHTML = template.innerHTML.replace('class="navigation-link w-nav-link">Wet Willies Home</a>', 'class="navigation-link w-nav-link w--current">Wet Willies Home</a>')
+            template.innerHTML = template.innerHTML.replace('<span class="navigation-link w-nav-link">More</span>', '<span class="navigation-link w-nav-link w--current">More</span>')
+            break;
+        case "5 Musketeers" :
+            template.innerHTML = template.innerHTML.replace('>5 Musketeers Home', 'class="w-nav-link w--current">5 Musketeers Home')
+            template.innerHTML = template.innerHTML.replace('class="navigation-link w-nav-link">5 Musketeers Home</a>', 'class="navigation-link w-nav-link w--current">5 Musketeers Home</a>')
             template.innerHTML = template.innerHTML.replace('<span class="navigation-link w-nav-link">More</span>', '<span class="navigation-link w-nav-link w--current">More</span>')
             break;
         case "App" :

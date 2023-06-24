@@ -15,7 +15,7 @@
 
   <link href="https://images.emojiterra.com/google/noto-emoji/v2.034/512px/1f3c0.png" rel="shortcut icon">
   <meta charset="utf-8" />
-  <title>Contact | TLTBO</title>
+  <title>Contact | LTBO</title>
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <link href="../CSS/MainSS.css" rel="stylesheet" type="text/css" />
   <script src="../js/Webfont.js" type="text/javascript">
@@ -120,8 +120,8 @@
       <p>Important Note: If you are looking to upload a quote to the LTBO Instagram, you must provide a) your quote, and
         b) A very small background behind the topic. <a
           href="https://www.instagram.com/p/CsgsMWerSov/?utm_source=ig_web_button_share_sheet&igshid=MzRlODBiNWFlZA=="
-          target="_blank">Click here if you do not understand.</a> If you wish for your quote to be anonymous, please type
-          ANONYMOUS in full caps during your quote.</p>
+          target="_blank">Click here for an example if you do not understand.</a> If you wish for your quote to be anonymous, please type
+          ANONYMOUS in full caps during your quote. The author of the quote will not be revealed.</p>
       <br><br>
       <div class="button fade-inHeading" style="width: 60%; cursor: pointer;" onclick="SendEmail()"><i>Send Email</i>
       </div>
@@ -142,7 +142,7 @@
 
       if (Name != "" && Category != "" && Subject != "" && Body != "") {
         EmailSubject = Subject + " (" + Category + ")"
-        EmailBody = "Dear TLTBO,%0D%0A%0D%0A" + Body + "%0D%0A%0D%0A" + "From " + Name
+        EmailBody = "Dear LTBO,%0D%0A%0D%0A" + Body + "%0D%0A%0D%0A" + "From " + Name
         window.open('mailto:011445@asas.qld.edu.au?subject=' + EmailSubject + "&body=" + EmailBody);
       } else {
         alert("You have left a field blank. Please fill it in.")

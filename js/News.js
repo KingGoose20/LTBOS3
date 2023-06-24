@@ -12,7 +12,7 @@ NewsTemplate = {
 
 Preseason = {
     "ArticleName": ["Explaining the Term 2 Draft and Tournament", "Preseason Summary by Rudy Hoschke!"],
-    "ArticleDescription": ["TLTBO CEO and GM Angus Walker breaks down how the second season of LTB will work, covering the draft, changes to the website, and changes to the game.", "EX-GM Rudy Hoschke has provided us with a detailed analysis on the results of the preseason, and what to expect from each team during the Term 2 Tournament."],
+    "ArticleDescription": ["LTBO CEO and GM Angus Walker breaks down how the second season of LTB will work, covering the draft, changes to the website, and changes to the game.", "EX-GM Rudy Hoschke has provided us with a detailed analysis on the results of the preseason, and what to expect from each team during the Term 2 Tournament."],
     "ArticleDate": ["15/04", "20/04"],
     "ImageA": ["Logo.png", "Logo.png"],
     "ImageB": ["", "WW_Final.png"],
@@ -48,7 +48,7 @@ Week2 = {
 
 Week3 = {
     "ArticleName": ["State of the Website", "What is wrong with the Wet Willies?", "The WW and LG Beef | AI Analyst", "All Lunch Team | Week 3 Day 1", "All Lunch Team | Week 3 Day 2", "All Lunch Team | Week 3 Day 3"],
-    "ArticleDescription": ["TLTBO CEO Angus Walker breaks down the changes that have occurred to the website over the term.<br><br><br>", "Basketball mind Clarrie Jones breaks down the struggles of the Wet Willies, what they should've done, and how they can improve in the future.", "Our official LTBO AI Analyst is back and better than ever! It has analysed the beef that is currently going on between the Wet Willies and the Loose Gooses, and provided a good explanation and viewpoint.", "Clarrie Jones has announced his All-Lunch top 5 offensive and defensive players from the first day of the third week!", "Clarrie Jones of the Loose Gooses has announced the All-Lunch top 5 offensive and defensive players from the second day of the third week.", "The top dog Clarrie Jones has announced the third All Teams from the third week!"],
+    "ArticleDescription": ["LTBO CEO Angus Walker breaks down the changes that have occurred to the website over the term.<br><br><br>", "Basketball mind Clarrie Jones breaks down the struggles of the Wet Willies, what they should've done, and how they can improve in the future.", "Our official LTBO AI Analyst is back and better than ever! It has analysed the beef that is currently going on between the Wet Willies and the Loose Gooses, and provided a good explanation and viewpoint.", "Clarrie Jones has announced his All-Lunch top 5 offensive and defensive players from the first day of the third week!", "Clarrie Jones of the Loose Gooses has announced the All-Lunch top 5 offensive and defensive players from the second day of the third week.", "The top dog Clarrie Jones has announced the third All Teams from the third week!"],
     "ArticleDate": ["8/05", "8/05", "9/05", "8/05", "9/05", "10/05"],
     "ImageA": ["Logo.png", "LG_Final.png", "Logo.png", "Logo.png", "Logo.png", "Logo.png"],
     "ImageB": ["LG_Final.png", "Logo.png", "", "LG_Final.png", "LG_Final.png", "LG_Final.png"],
@@ -59,8 +59,8 @@ Week3 = {
 }
 
 Week4 = {
-    "ArticleName":["The TLTBO All Teams | Week 4 Day 1","What is wrong with the Wet Willies? Part 2!","Crunching Numbers | Term 2","The TLTBO All Teams | Week 4 Day 2"],
-    "ArticleDescription":["Loose Gooses guard Clarrie Jones has released the All-Teams from the first day of Week 4, headlined by the Wet Willies Big 3.","Dumbass Samuel McConaghy proves his ability to 'poke the bear', talking shit to the Wet Willies once again.","TLTBO CEO Angus Walker is back with the first 'Crunching Numbers' from the second season of lunchtime basketball.<br><br><br>","Loose Gooses guard Clarrie Jones has released the All-Teams from the first day of Week 4, dominated by the 5 Musketeers with the return of the Alexander Galt"],
+    "ArticleName":["The LTBO All Teams | Week 4 Day 1","What is wrong with the Wet Willies? Part 2!","Crunching Numbers | Term 2","The LTBO All Teams | Week 4 Day 2"],
+    "ArticleDescription":["Loose Gooses guard Clarrie Jones has released the All-Teams from the first day of Week 4, headlined by the Wet Willies Big 3.","Dumbass Samuel McConaghy proves his ability to 'poke the bear', talking shit to the Wet Willies once again.","LTBO CEO Angus Walker is back with the first 'Crunching Numbers' from the second season of lunchtime basketball.<br><br><br>","Loose Gooses guard Clarrie Jones has released the All-Teams from the first day of Week 4, dominated by the 5 Musketeers with the return of the Alexander Galt"],
     "ArticleDate":["15/05","15/05","16/05","16/05"],
     "ImageA":["Logo.png","Logo.png","Logo.png","Logo.png"],
     "ImageB":["LG_Final.png","WW_Final.png","","LG_Final.png"],
@@ -71,8 +71,8 @@ Week4 = {
 }
 
 Week5 = {
-    "ArticleName":["The TLTBO All Teams | Week 5 Day 2","The TLTBO All Teams | Week 5 Day 3"],
-    "ArticleDescription":["Clarrie Jones is back with his TLTBO All Teams, with a Loose Gooses dominated list, after their outstanding performance.<br><br>","Clarrie Jones has announced the LTBO All Teams from the last day of the regular season, which has a rare exclusion of any Wet Willies players."],
+    "ArticleName":["The LTBO All Teams | Week 5 Day 2","The LTBO All Teams | Week 5 Day 3"],
+    "ArticleDescription":["Clarrie Jones is back with his LTBO All Teams, with a Loose Gooses dominated list, after their outstanding performance.<br><br>","Clarrie Jones has announced the LTBO All Teams from the last day of the regular season, which has a rare exclusion of any Wet Willies players."],
     "ArticleDate":["23/05","24/05"],
     "ImageA":["Logo.png","Logo.png"],
     "ImageB":["LG_Final.png","LG_Final.png"],
@@ -83,8 +83,8 @@ Week5 = {
 }
 
 Finals = {
-    "ArticleName":["All-Second Teams Announced!","Rudy Hoschke wins TLTBO Scoring Champ!","The TLTBO All-Teams!","The TLTBO All Teams | Finals Day 1"],
-    "ArticleDescription":["The TLTBO All-Second Teams have been announced! Congratulations to the seven players who made the list.","Wet Willies star Rudy Hoschke wins the Season 2 TLTBO Scoring Title!<br><br>","The TLTBO All-Team is out now! Click here to check out the 6 incredible players who made the squad. Congratulations to each player!","After the recent announcement of the all-season teams, Clarrie Jones is back with the day-by-day teams from the first day of Finals Week."],
+    "ArticleName":["All-Second Teams Announced!","Rudy Hoschke wins LTBO Scoring Champ!","The LTBO All-Teams!","The LTBO All Teams | Finals Day 1"],
+    "ArticleDescription":["The LTBO All-Second Teams have been announced! Congratulations to the seven players who made the list.","Wet Willies star Rudy Hoschke wins the Season 2 LTBO Scoring Title!<br><br>","The LTBO All-Team is out now! Click here to check out the 6 incredible players who made the squad. Congratulations to each player!","After the recent announcement of the all-season teams, Clarrie Jones is back with the day-by-day teams from the first day of Finals Week."],
     "ArticleDate":["26/05","29/05","29/05","29/05"],
     "ImageA":["Logo.png","Logo.png","Logo.png","Finals_Logo.png"],
     "ImageB":["","WW_Final.png","","LG_Final.png"],

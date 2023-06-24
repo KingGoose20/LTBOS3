@@ -17,7 +17,7 @@
 
     <link href="https://images.emojiterra.com/google/noto-emoji/v2.034/512px/1f3c0.png" rel="shortcut icon">
     <meta charset="utf-8" />
-    <title>5 Musketeers | TLTBO</title>
+    <title>5 Musketeers | LTBO</title>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="../../CSS/MainSS.css" rel="stylesheet" type="text/css" />
     <script src="../../js/Webfont.js" type="text/javascript">
@@ -34,12 +34,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
     <style>
+        table {
+            position: relative;
+            border-collapse: separate;
+        }
+
         td {
             font-size: 30px;
             text-align: center;
             padding: 20px;
         }
 
+
+        .againstTeams td {
+            border: 0.5px solid rgb(150, 150, 150)
+        }
+        
         .imageBackground {
             background: repeating-linear-gradient(45deg,
                     #47aeb5,
@@ -69,13 +79,13 @@
         }
 
         .dayByDay td {
-            border: 1px solid black;
+            border: 0.5px solid black;
             color: rgb(210, 210, 210);
         }
 
         .dayByDay th {
             background-color: #004045;
-            border: 1px solid black;
+            border: 0.5px solid black;
             color: rgb(210, 210, 210);
         }
 
@@ -112,7 +122,8 @@
                     <br><br>
                     <p
                         style="font-family: 'Playfair Display', serif; letter-spacing: 0.3em; font-size: 40px; line-height: 50px">
-                        <i>With Nick, we're technically the 6 Musketeers.</i></p>
+                        <i>With Nick, we're technically the 6 Musketeers.</i>
+                    </p>
                     <br><br><br><br>
                     <h2 class="section-heading centered" style="text-align: left; font-size: 7vw; line-height: 9vw;">
                         Players</h2>
@@ -299,7 +310,7 @@
                     <h2 class="section-heading centered" style="text-align: left; font-size: 7vw; line-height: 9vw;">
                         Records against other teams</h2>
                     <div class="overflowElement">
-                        <table style="width: 100%; border:2px solid rgb(150,150,150);">
+                        <table style="width: 100%; border:2px solid rgb(150,150,150);" class="againstTeams">
                             <col style="width: 40%">
                             <col style="width: 15%">
                             <col style="width: 15%">
@@ -337,7 +348,8 @@
                             <tr style="border:2px solid rgb(150,150,150);">
                                 <td>
                                     <h2 class="section-heading centered" style="font-size: 80px; line-height: 130px">
-                                        <span class="teamsSize">Wet Willies</span></h2>
+                                        <span class="teamsSize">Wet Willies</span>
+                                    </h2>
                                 </td>
                                 <td>
                                     <h1 class="title h1class" id="BWins">20</h1>

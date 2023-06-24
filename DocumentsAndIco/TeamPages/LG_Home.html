@@ -17,7 +17,7 @@
 
     <link href="https://images.emojiterra.com/google/noto-emoji/v2.034/512px/1f3c0.png" rel="shortcut icon">
     <meta charset="utf-8" />
-    <title>Loose Gooses | TLTBO</title>
+    <title>Loose Gooses | LTBO</title>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="../../CSS/MainSS.css" rel="stylesheet" type="text/css" />
     <script src="../../js/Webfont.js" type="text/javascript">
@@ -34,10 +34,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
     <style>
+        table {
+            position: relative;
+            border-collapse: separate;
+        }
+
         td {
             font-size: 30px;
             text-align: center;
             padding: 20px;
+            
+        }
+
+        .againstTeams td {
+            border: 0.5px solid rgb(150, 150, 150)
         }
 
         .imageBackground {
@@ -65,22 +75,26 @@
         }
 
         .dayByDay td {
-            border: 1px solid black;
+            border: 0.5px solid black;
             color: rgb(210, 210, 210);
         }
 
-        .dayByDay th {
-            background-color: #d74268;
-            border: 1px solid black;
-            color: rgb(210, 210, 210);
-        }
 
         .h1class {
             color: #d74268;
         }
 
+        table,
         th {
             border: 0.5px solid rgb(0, 0, 0);
+            position: sticky;
+            top: 0;
+        }
+
+        th {
+            border: 0.5px solid rgb(0, 0, 0);
+            background-color: #d74268;
+            color: rgb(210, 210, 210);
             position: sticky;
             top: 0;
         }
@@ -103,6 +117,10 @@
         <div class="w-container">
             <div class="LearnMore">
                 <div class="section-title-group">
+                    <br><br><br><br>
+                    <h1 style="font-family: Brush King; letter-spacing: 0.7em; color: rgb(229, 197, 18); font-size: 3vw; line-height: 3vw;"
+                        class="">Reigning Champions</h1>
+                    <br><br><br><br><br><br><br>
                     <h2 class="section-heading centered">Home of the Loose Gooses</h2>
                     <p>Here, you can find the stats, players, history, and more of the LTBO team the Loose Gooses.</p>
                     <br><br>
@@ -301,7 +319,7 @@
                     <h2 class="section-heading centered" style="text-align: left; font-size: 7vw; line-height: 9vw;">
                         Records against other teams</h2>
                     <div class="overflowElement">
-                        <table style="width: 100%; border:2px solid rgb(150,150,150);">
+                        <table style="width: 100%; border:2px solid rgb(150,150,150);" class="againstTeams">
                             <col style="width: 40%">
                             <col style="width: 15%">
                             <col style="width: 15%">

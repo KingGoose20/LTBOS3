@@ -10,7 +10,7 @@ mainArray = {
   "TPG": [0, 0, 0, 0, 0.35, 0, 0.59, 0, 0.2, 0.06, 0.2, 0, 0.21, 0, 0.06, 0,],
   "TT": [0, 0, 0, 0, 6, 0, 10, 0, 3, 1, 3, 0, 3, 0, 1, 0],
   "NBAMODENUMBER": [12.83],
-  "AccoladesOne": ["", "", "Ex-GM", "TLTBO Manager", "TLTBO Manager", "MVP Runner Up T1", "TLTBO Manager", "MVP T1", "TLTBO Manager", "Perimeter T1", "The Biggest Bird", "MIP T1", "TLTBO CEO", "Teammate T1", "", ""],
+  "AccoladesOne": ["", "", "Ex-GM", "LTBO Manager", "LTBO Manager", "MVP Runner Up T1", "LTBO Manager", "MVP T1", "LTBO Manager", "Perimeter T1", "The Biggest Bird", "MIP T1", "LTBO CEO", "Teammate T1", "", ""],
   "AccoladesTwo": ["", "", "All-Defence Team T1", "Ex-GM", "Playmaker T1", "All-Offence Team T1", "Champion T1", "All-Offence Team T1", "GM", "Champion T1", "Champion T1", "", "GM", "Champion T1", "", ""],
   "AccoladesThree": ["", "", "Champion T1", "All-Offence Team T1", "Thirdman T1", "", "Finals MVP", "All-Defence Team T1", "All-Offence Team T1", "", "", "", "All-Offence Team T1", "", "", ""],
   "AccoladesFour": ["", "", "", "All-Defence Team T1", "GM", "", "", "", "All-Defence Team T", "", "", "", "All-Defence Team T1", "", "", ""],

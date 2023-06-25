@@ -123,10 +123,15 @@ function RunMain() {
         clone.getElementById("midranges").innerHTML = String(day.Midrange[number])
         clone.getElementById("threes").innerHTML = String(day.ThreePointers[number])
       } else {
-        clone.getElementById("points").innerHTML = String((day.Points[number]*nbamode).toFixed(0))
-        clone.getElementById("finishes").innerHTML = String((day.Finishes[number]*nbamode).toFixed(0))
-        clone.getElementById("midranges").innerHTML = String((day.Midrange[number]*nbamode).toFixed(0))
-        clone.getElementById("threes").innerHTML = String((day.ThreePointers[number]*nbamode*0.8).toFixed(0))
+        if(nbamode != 1) {
+          extra = Math.random()/2 + 0.75
+        } else {
+          extra = 1
+        }
+        clone.getElementById("points").innerHTML = String((day.Points[number]*nbamode*extra).toFixed(0))
+        clone.getElementById("finishes").innerHTML = String((day.Finishes[number]*nbamode*extra).toFixed(0))
+        clone.getElementById("midranges").innerHTML = String((day.Midrange[number]*nbamode*extra).toFixed(0))
+        clone.getElementById("threes").innerHTML = String((day.ThreePointers[number]*nbamode*0.8*extra).toFixed(0))
       }
       table.appendChild(clone)
     }
@@ -152,10 +157,8 @@ for (i = 0; i < Players.length; i++) {
 
 function NBAMODE() {
   if (nbamode == 1) {
-    console.log("rana")
     nbamode = mainArray.NBAMODENUMBER[0]
   } else {
-    console.log("ranb")
     nbamode = 1
   }
 

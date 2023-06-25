@@ -25,12 +25,12 @@ function header(location) {
             <div class="dropdown nav-item dropdownHide">
                 <span class="navigation-link w-nav-link">More</span>
                 <div class="dropdown-content">
-                    <a href="replacerDocumentsAndIco/Rules.html">Rules, FAQ, Calendar</a>
-                    <a href="replacerDocumentsAndIco/Contact.html">Contact Us</a>
-                    <a href="replacerDocumentsAndIco/TeamPages/LG_Home.html">Loose Gooses Home</a>
-                    <a href="replacerDocumentsAndIco/TeamPages/WW_Home.html">Wet Willies Home</a>
-                    <a href="replacerDocumentsAndIco/TeamPages/5M_Home.html">5 Musketeers Home</a>
-                    <a href="replacerDocumentsAndIco/InstagramHighlights.html">Instagram</a>
+                    <a href="replacerDocumentsAndIco/Rules.html" class="dropDown-link">Rules, FAQ, Calendar</a>
+                    <a href="replacerDocumentsAndIco/Contact.html" class="dropDown-link">Contact Us</a>
+                    <a href="replacerDocumentsAndIco/TeamPages/LG_Home.html" class="dropDown-link">Loose Gooses Home</a>
+                    <a href="replacerDocumentsAndIco/TeamPages/WW_Home.html" class="dropDown-link">Wet Willies Home</a>
+                    <a href="replacerDocumentsAndIco/TeamPages/5M_Home.html" class="dropDown-link">5 Musketeers Home</a>
+                    <a href="replacerDocumentsAndIco/InstagramHighlights.html" class="dropDown-link">Instagram</a>
                 </div>
             </div>
             <li class="nav-item dropdownShow">
@@ -106,28 +106,34 @@ function header(location) {
             template.innerHTML = template.innerHTML.replace('w-nav-link">Stats</a>', 'w-nav-link w--current">Stats</a>')
             break;
         case "Rules" :
-            template.innerHTML = template.innerHTML.replace('>Rules, FAQ, Calendar', 'class="w-nav-link w--current">Rules, FAQ, Calendar')
+            template.innerHTML = template.innerHTML.replace('">Rules, FAQ, Calendar', ' w-nav-link w--current">Rules, FAQ, Calendar')
             template.innerHTML = template.innerHTML.replace('class="navigation-link w-nav-link">Rules, FAQ, Calendar</a>', 'class="navigation-link w-nav-link w--current">Rules, FAQ, Calendar</a>')
             template.innerHTML = template.innerHTML.replace('<span class="navigation-link w-nav-link">More</span>', '<span class="navigation-link w-nav-link w--current">More</span>')
             break;
         case "Contact" :
-            template.innerHTML = template.innerHTML.replace('>Contact Us', 'class="w-nav-link w--current">Contact Us')
+            template.innerHTML = template.innerHTML.replace('">Contact Us', ' w-nav-link w--current">Contact Us')
             template.innerHTML = template.innerHTML.replace('class="navigation-link w-nav-link">Contact Us</a>', 'class="navigation-link w-nav-link w--current">Contact Us</a>')
             template.innerHTML = template.innerHTML.replace('<span class="navigation-link w-nav-link">More</span>', '<span class="navigation-link w-nav-link w--current">More</span>')
             break;
         case "Loose Gooses" :
-            template.innerHTML = template.innerHTML.replace('>Loose Gooses Home', 'class="w-nav-link w--current">Loose Gooses Home')
+            console.log("yes")
+            template.innerHTML = template.innerHTML.replace('">Loose Gooses Home', ' w-nav-link w--current">Loose Gooses Home')
             template.innerHTML = template.innerHTML.replace('class="navigation-link w-nav-link">Loose Gooses Home</a>', 'class="navigation-link w-nav-link w--current">Loose Gooses Home</a>')
             template.innerHTML = template.innerHTML.replace('<span class="navigation-link w-nav-link">More</span>', '<span class="navigation-link w-nav-link w--current">More</span>')
             break;
         case "Wet Willies" :
-            template.innerHTML = template.innerHTML.replace('>Wet Willies Home', 'class="w-nav-link w--current">Wet Willies Home')
+            template.innerHTML = template.innerHTML.replace('">Wet Willies Home', ' w-nav-link w--current">Wet Willies Home')
             template.innerHTML = template.innerHTML.replace('class="navigation-link w-nav-link">Wet Willies Home</a>', 'class="navigation-link w-nav-link w--current">Wet Willies Home</a>')
             template.innerHTML = template.innerHTML.replace('<span class="navigation-link w-nav-link">More</span>', '<span class="navigation-link w-nav-link w--current">More</span>')
             break;
         case "5 Musketeers" :
-            template.innerHTML = template.innerHTML.replace('>5 Musketeers Home', 'class="w-nav-link w--current">5 Musketeers Home')
+            template.innerHTML = template.innerHTML.replace('">5 Musketeers Home', ' w-nav-link w--current">5 Musketeers Home')
             template.innerHTML = template.innerHTML.replace('class="navigation-link w-nav-link">5 Musketeers Home</a>', 'class="navigation-link w-nav-link w--current">5 Musketeers Home</a>')
+            template.innerHTML = template.innerHTML.replace('<span class="navigation-link w-nav-link">More</span>', '<span class="navigation-link w-nav-link w--current">More</span>')
+            break;
+        case "Instagram Highlights" :
+            template.innerHTML = template.innerHTML.replace('">Instagram', ' w-nav-link w--current">Instagram')
+            template.innerHTML = template.innerHTML.replace('class="navigation-link w-nav-link">Instagram</a>', 'class="navigation-link w-nav-link w--current">Instagram</a>')
             template.innerHTML = template.innerHTML.replace('<span class="navigation-link w-nav-link">More</span>', '<span class="navigation-link w-nav-link w--current">More</span>')
             break;
         case "App" :
@@ -214,8 +220,8 @@ function footer(location) {
         x = `
         accent">
         <div>
-            <a href="../Admin/AdminHome.html" class="button fade-inHeading" style="width: 45%">Click here to go to admin!</a>
-            <a href="../Admin/StatTracker.html" class="button fade-inHeading" style="width: 45%">Click here to go to score tracking app</a>
+            <a href="../Admin/AdminHome.html" class="button fade-inHeading statButton">Click here to go to admin!</a>
+            <a href="../Admin/StatTracker.html" class="button fade-inHeading statButton">Click here to go to score tracking app</a>
         </div>
         `;
         

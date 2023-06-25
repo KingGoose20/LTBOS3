@@ -2367,19 +2367,25 @@ p {
 }
 
 .navigation-link {
-  -webkit-transition: all 250ms ease-in-out;
-  transition: all 250ms ease-in-out;
+  -webkit-transition: all 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
   color: #676770;
   font-family: 'Bebas Neue', cursive;
   font-size: 25px;
 }
 
 .navigation-link:hover {
-  font-size: 180%;
+  font-size: 200%;
+  color: #8b00dc;
 }
 
-.navigation-link:hover {
+.dropDown-link {
+  transition: all 250ms ease-in-out;
+}
+
+.dropDown-link:hover {
   color: #8b00dc;
+  font-size: 110%;
 }
 
 -bar {
@@ -2635,7 +2641,7 @@ p {
 }
 
 .footer-link:hover {
-  color: #d2a6ffd6;
+  color: #dbb6ffd6;
 }
 
 .footer-link.with-icon {

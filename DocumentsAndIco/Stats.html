@@ -139,7 +139,16 @@
 
     @media screen and (max-width: 600px) {
       .teamImage {
-        top: 50px;
+        top: 0px;
+        width: 60%;
+        float: initial;
+        height: auto;
+      }
+
+      .playerImage {
+        width: 80%;
+        float: initial;
+        position: block;
       }
 
       h3 {
@@ -153,13 +162,17 @@
       }
 
       .features {
-        font-size: 3em;
+        font-size: 5vw;
+        text-align: center;
+        margin-left: 0;
       }
     }
 
     @media screen and (max-width: 800px) {
       .features {
-        font-size: 1em
+        font-size: 6.5vw;
+        text-align: center;
+        margin-left: 0;
       }
     }
 
@@ -226,10 +239,37 @@
       }
     }
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 1030px) {
       .average {
-        visibility: hidden;
+        font-size: 5vw;
+        text-align: center;
+        width: 100%;
+        padding-bottom: 20px;
       }
+    }
+
+    .statButton {
+      width: 45%;
+    }
+
+    @media screen and (max-width: 1050px) {
+      .statButton {
+        width: 90%;
+        margin: 10px;
+      }
+    }
+
+    .mainStats {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 800px) {
+      .mainStats {
+        padding-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      
     }
   </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -321,18 +361,18 @@
             <h3 class="features average" style="text-align: center;">Key: <strong>Average - Total</strong></h3>
           </tr>
           <tr>
-            <div class="w-col w-col-5 normalNews" style="float: left; height: 10%; margin-bottom: 30px; ">
+            <div class="w-col w-col-5 normalNews mainStats" style="float: left;">
               <h3 class="features">Points: <strong id="points">20</strong></h3><br><br>
             </div>
-            <div class="w-col w-col-5 normalNews" style="float: right; height: 10%; margin-bottom: 30px; ">
+            <div class="w-col w-col-5 normalNews mainStats" style="float: right;">
               <h3 class="features">Finishes: <strong id="finishes">20</strong></h3>
             </div>
           </tr>
           <tr>
-            <div class="w-col w-col-5 normalNews" style="float: left; height: 10%; margin-bottom: 30px; ">
+            <div class="w-col w-col-5 normalNews mainStats" style="float: left; ">
               <h3 class="features">Midranges: <strong id="midranges">20</strong></h3>
             </div>
-            <div class="w-col w-col-5 normalNews" style="float: right; height: 10%; margin-bottom: 30px; ">
+            <div class="w-col w-col-5 normalNews mainStats" style="float: right;">
               <h3 class="features">3-Pointers: <strong id="threepointers">20</strong></h3>
             </div>
           </tr>

@@ -2959,7 +2959,7 @@ html {
 @media screen and (max-width: 850px) {
   .nav-menu {
     overflow-y: scroll;
-    max-height: 85vh;
+    max-height: 93vh;
   }
 }
 

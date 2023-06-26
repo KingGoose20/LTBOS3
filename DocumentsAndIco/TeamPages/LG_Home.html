@@ -86,7 +86,6 @@
 
         table,
         th {
-            border: 0.5px solid rgb(0, 0, 0);
             position: sticky;
             top: 0;
         }
@@ -124,7 +123,7 @@
                     <h2 class="section-heading centered">Home of the Loose Gooses</h2>
                     <p>Here, you can find the stats, players, history, and more of the LTBO team the Loose Gooses.</p>
                     <br><br>
-                    <p style="font-family: 'Playfair Display', serif; letter-spacing: 0.4em; font-size: 40px;"><i>Honk
+                    <p style="font-family: 'Playfair Display', serif; letter-spacing: 0.4em; font-size: 3em; line-height: 1.2em;"><i>Honk
                             honk honk, honk honk.</i></p>
                     <br><br><br><br>
                     <h2 class="section-heading centered" style="text-align: left; font-size: 7vw; line-height: 9vw;">
@@ -342,8 +341,7 @@
                             <tr style="border:2px solid rgb(150,150,150);">
                                 <td>
                                     <h2 class="section-heading centered" style="font-size: 80px;"><span
-                                            class="teamsSize">Wet
-                                            Willies</span></h2>
+                                            class="teamsSize" id="teamAbig"></span></h2>
                                 </td>
                                 <td>
                                     <h1 class="title h1class" id="AWins">20</h1>
@@ -358,8 +356,7 @@
                             <tr style="border:2px solid rgb(150,150,150);">
                                 <td>
                                     <h2 class="section-heading centered" style="font-size: 80px; line-height: 130px">
-                                        <span class="teamsSize">5
-                                            Musketeers</span>
+                                        <span class="teamsSize" id="teamBbig"></span>
                                     </h2>
                                 </td>
                                 <td>
@@ -377,7 +374,7 @@
                     <br><br><br><br><br><br><br><br><br><br><br>
                     <h2 class="section-heading centered" style="text-align: left; font-size: 7vw; line-height: 9vw;">
                         Day-By-Day</h2>
-                    <div style="overflow-y: scroll; overflow-x: scroll; max-height: 200px;">
+                    <div style="overflow-y: scroll; overflow-x: scroll; max-height: 300px;">
                         <table class="dayByDay" style="width: 100%; text-align: center;" id="dayByDay">
                             <col style="width: 10%">
                             <col style="width: 9%">
@@ -390,8 +387,8 @@
                                 <th>Wins</th>
                                 <th>Losses</th>
                                 <th>Points</th>
-                                <th>Best against WW</th>
-                                <th>Best against 5M</th>
+                                <th>Best against <span id="teamAsmall"></span></th>
+                                <th>Best against <span id="teamBsmall"></span></th>
                             </tr>
                         </table>
                     </div>

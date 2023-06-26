@@ -172,6 +172,10 @@
       font-size: 1.6em;
     }
 
+    #historyMain {
+      display: inline;
+    }
+
     .accolades.right {
       border-left: 2px solid rgb(210,210,210);
       padding-left: 40px;
@@ -238,6 +242,10 @@
         width: 100%;
         padding-bottom: 20px;
       }
+
+      #historyMain {
+        display: block;
+      }
     }
 
 
@@ -258,8 +266,14 @@
         margin-bottom: 10px;
       }
 
-      .normalNews.accolades {
+      .normalNews {
         margin-bottom: 0px;
+        margin-top: 40px;
+      }
+
+      .normalNews.accolades, .normalNews.mainStats {
+        margin-bottom: 0px;
+        margin-top: 0px;
       }
     }
 
@@ -289,6 +303,14 @@
 
       h3 {
         font-size: 15px;
+      }
+
+      .accolades h3 {
+        font-size: 1.25em;
+      }
+
+      .accolades {
+        padding-bottom: 10px;
       }
     }
   </style>
@@ -441,13 +463,13 @@
         <br><br><br>
         <h3 class="features" style="position: relative; top: 30px; margin-left: 10px; display: inline;"><em>History:
           </em>
-          <p style="display: inline;"><strong id="history"></strong></p>
+          <p id="historyMain"><strong id="history"></strong></p>
         </h3>
       </div>
     </div>
     <div id="pastDetails">
       <br><br><br><br><br><br>
-      <h3 style="font-size: 30px">Past Results</h3><br>
+      <h3 class="features" style="float: initial; text-align: center;"><em>Past Results</em></h3><br>
       <div style="overflow-y: scroll; max-height: 200px;">
         <table class="dayByDay" style="width: 100%; text-align: center;" id="dayByDay">
           <tr style="height: 50px;">

@@ -1,8 +1,9 @@
 LooseGooses = {
+    "TeamsNames": ["Wet Willies", "5 Musketeers", "WW", "5M"],
     "VariablesPlayers": ["Player1", "Player2", "Player3", "Player4", "Player5", "Player6"],
     "VariablesText": ["TPlayer1", "TPlayer2", "TPlayer3", "TPlayer4", "TPlayer5", "TPlayer6"],
     "Players": ["Angus Walker", "William Kim", "Clarrie Jones", "Christopher Tomkinson", "Mitch Yue", "Sam James"],
-    "Images": ["../../Images/Players/Angus.jpg", "../../Images/Players/Kimmy.jpeg", "../../Images/Players/Clarrie.jpeg", "../../Images/Players/Christopher.jpeg", "../../Images/Players/Mitch.jpeg", "../../Images/Players/SamJ.jpg"],
+    "Images": ["../../Images/Players/Angus.png", "../../Images/Players/Kimmy.png", "../../Images/Players/Clarrie.png", "../../Images/Players/Christopher.png", "../../Images/Players/Mitch.jpeg", "../../Images/Players/SamJ.jpg"],
     "PartA":[92,93],
     "PartB":[34,"Angus Walker",20,"Angus Walker",17,"William Kim",10,"Clarrie Jones"],
     "PartC":[7,2.7,2.6,0.8,5.4,5.5],
@@ -16,10 +17,11 @@ LooseGooses = {
 }
 
 WetWillies = {
+    "TeamsNames": ["Loose Gooses", "5 Musketeers", "LG", "5M"],
     "VariablesPlayers": ["Player1", "Player2", "Player3", "Player4", "Player5"],
     "VariablesText": ["TPlayer1", "TPlayer2", "TPlayer3", "TPlayer4", "TPlayer5"],
     "Players": ["Michael Iffland", "Rudy Hoschke", "Lukas Johnston", "Conor Farrington", "Will Weekes"],
-    "Images": ["../../Images/Players/Michael.jpeg", "../../Images/Players/Rudy.jpeg", "../../Images/Players/Lukas.jpeg", "../../Images/Players/Conor.jpeg", "../../Images/Players/Willie.jpeg"],
+    "Images": ["../../Images/Players/Michael.png", "../../Images/Players/Rudy.png", "../../Images/Players/Lukas.jpeg", "../../Images/Players/Conor.png", "../../Images/Players/Willie.png"],
     "PartA":[89,95],
     "PartB":[45,"Rudy Hoschke",42,"Rudy Hoschke",13,"Michael Iffland",1,"Michael Iffland"],
     "PartC":[6.3,4.1,1.5,0.35,5.2,5.6],
@@ -33,10 +35,11 @@ WetWillies = {
 }
 
 Musketeers = {
+    "TeamsNames": ["Loose Gooses", "Wet Willies", "LG", "WW"],
     "VariablesPlayers": ["Player1", "Player2", "Player3", "Player4", "Player5"],
     "VariablesText": ["TPlayer1", "TPlayer2", "TPlayer3", "TPlayer4", "TPlayer5"],
     "Players": ["Samuel McConaghy", "Alexander Galt", "Nicholas Szogi", "Ryan Pattemore", "Jasper Collier"],
-    "Images": ["../../Images/Players/SamM.jpeg", "../../Images/Players/Alex.jpeg", "../../Images/Players/Nicholas.jpeg", "../../Images/Players/Ryan.jpeg", "../../Images/Players/Jasper.jpeg"],
+    "Images": ["../../Images/Players/SamM.png", "../../Images/Players/Alex.png", "../../Images/Players/Nicholas.jpeg", "../../Images/Players/Ryan.png", "../../Images/Players/Jasper.png"],
     "PartA":[97,90],
     "PartB":[44,"Samuel McConaghy",43,"Alexander Galt",25,"Samuel McConaghy",3,"N/A"],
     "PartC":[7.1,3.6,2.5,0.4,5.7,5.3],
@@ -79,6 +82,10 @@ function RunMain(variable) {
     document.getElementById("BWins").innerHTML = variable.PartD[3]
     document.getElementById("BLoss").innerHTML = variable.PartD[4]
     document.getElementById("BPercent").innerHTML = variable.PartD[5] + "%"
+    document.getElementById("teamAsmall").innerHTML = variable.TeamsNames[2]
+    document.getElementById("teamBsmall").innerHTML = variable.TeamsNames[3]
+    document.getElementById("teamAbig").innerHTML = variable.TeamsNames[0]
+    document.getElementById("teamBbig").innerHTML = variable.TeamsNames[1]
 
 
     table = document.getElementById("dayByDay")

@@ -20,7 +20,6 @@ let mainArea = document.getElementById("mainArea")
 mainArea.style.display = "none"
 let pastDetails = document.getElementById("pastDetails")
 pastDetails.style.display = "none"
-let nbamode = 1
 
 
   let selectDiv = document.getElementById('changer');
@@ -79,10 +78,10 @@ RunMain()
   });
 
 function RunMain() {
-    points.innerHTML = String((mainArray.PPG[number]*nbamode).toFixed(1)) + "-" + String((mainArray.TP[number]*nbamode).toFixed(0))
-    finishes.innerHTML = String((mainArray.FPG[number]*nbamode).toFixed(1)) + "-" + String((mainArray.TF[number]*nbamode).toFixed(0))
-    midranges.innerHTML = String((mainArray.MPG[number]*nbamode).toFixed(1)) + "-" + String((mainArray.TM[number]*nbamode).toFixed(0))
-    threepointers.innerHTML = String((mainArray.TPG[number]*nbamode).toFixed(1)) + "-" + String((mainArray.TT[number]*nbamode).toFixed(0))
+    points.innerHTML = String(mainArray.PPG[number]) + "-" + String(mainArray.TP[number])
+    finishes.innerHTML = String(mainArray.FPG[number]) + "-" + String(mainArray.TF[number])
+    midranges.innerHTML = String(mainArray.MPG[number]) + "-" + String(mainArray.TM[number])
+    threepointers.innerHTML = String(mainArray.TPG[number]) + "-" + String(mainArray.TT[number])
 
     accolade1.innerHTML = mainArray.AccoladesOne[number]
     accolade2.innerHTML = mainArray.AccoladesTwo[number]
@@ -123,15 +122,10 @@ function RunMain() {
         clone.getElementById("midranges").innerHTML = String(day.Midrange[number])
         clone.getElementById("threes").innerHTML = String(day.ThreePointers[number])
       } else {
-        if(nbamode != 1) {
-          extra = Math.random()/2 + 0.75
-        } else {
-          extra = 1
-        }
-        clone.getElementById("points").innerHTML = String((day.Points[number]*nbamode*extra).toFixed(0))
-        clone.getElementById("finishes").innerHTML = String((day.Finishes[number]*nbamode*extra).toFixed(0))
-        clone.getElementById("midranges").innerHTML = String((day.Midrange[number]*nbamode*extra).toFixed(0))
-        clone.getElementById("threes").innerHTML = String((day.ThreePointers[number]*nbamode*0.8*extra).toFixed(0))
+        clone.getElementById("points").innerHTML = String(day.Points[number])
+        clone.getElementById("finishes").innerHTML = String(day.Finishes[number])
+        clone.getElementById("midranges").innerHTML = String(day.Midrange[number])
+        clone.getElementById("threes").innerHTML = String(day.ThreePointers[number])
       }
       table.appendChild(clone)
     }
@@ -152,15 +146,4 @@ for (i = 0; i < Players.length; i++) {
     window.location.href = '#main';
     RunMain()
   }
-}
-
-
-function NBAMODE() {
-  if (nbamode == 1) {
-    nbamode = mainArray.NBAMODENUMBER[0]
-  } else {
-    nbamode = 1
-  }
-
-  RunMain()
 }

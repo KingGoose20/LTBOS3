@@ -31,6 +31,7 @@
   <style>
     td {
       padding-bottom: 30px;
+      width: 20%
     }
 
     option {
@@ -50,6 +51,31 @@
     textarea {
       font-size: 15px;
     }
+
+    .left {
+      width: 30%
+    }
+
+    .right {
+      width: 70%
+    }
+
+    @media screen and (max-width: 1100px) {
+      .left, .right {
+        width: 100%;
+        display: block;
+      }
+
+      .right {
+        margin-bottom: 30px;
+      }
+
+      .left {
+        padding-bottom: 10px;
+
+      }
+    }
+    
   </style>
 
 </head>
@@ -74,21 +100,20 @@
       <form>
         <table style="width: 100%;" class="menu">
           <tr>
-            <td>
-              <h1 class="title" style="color: white; width: 30vw">Enter your Name: </h1>
+            <td class="left">
+              <h1 class="title" style="color: white;">Enter your Name: </h1>
             </td>
-            <td>
-              <input type="text" style="width: 60vw; height: 40px" id="name"></input>
+            <td class="right">
+              <input type="text" style="width: 60vw;" id="name"></input>
             </td>
           </tr>
           <tr>
-            <td>
-              <h1 class="title" style="color: white; width: 30vw">Category of Enquiry: </h1>
+            <td class="left">
+              <h1 class="title" style="color: white;">Category of Enquiry: </h1>
             </td>
-            <td>
-              <select style="width: 40%; color:black;" class="menu" id="category">
-                <option disabled selected>Topic</option>
-                <option value="zero">General Enquiry</option>
+            <td class="right">
+              <select style="width: 60%; color:black;" class="menu" id="category">
+                <option selected value="zero">General Enquiry</option>
                 <option value="one">Complaint :(</option>
                 <option value="two">Compliment :)</option>
                 <option value="three">Website Bug</option>
@@ -100,19 +125,19 @@
             </td>
           </tr>
           <tr>
-            <td>
-              <h1 class="title" style="color: white; width: 30vw">Subject of Enquiry: </h1>
+            <td class="left">
+              <h1 class="title" style="color: white;">Subject of Enquiry: </h1>
             </td>
-            <td>
-              <input type="text" style="width: 60vw; height: 40px" id="subject"></input>
+            <td class="right">
+              <input type="text" style="width: 100%; height: 40px" id="subject"></input>
             </td>
           </tr>
           <tr>
-            <td>
-              <h1 class="title" style="color: white; width: 30vw">Body of Enquiry: </h1>
+            <td class="left">
+              <h1 class="title" style="color: white;">Body of Enquiry: </h1>
             </td>
-            <td>
-              <textarea type="text" style="width: 60vw; height: 130px" id="body"></textarea>
+            <td class="right">
+              <textarea type="text" style="width: 100%; height: 130px" id="body"></textarea>
             </td>
           </tr>
         </table>

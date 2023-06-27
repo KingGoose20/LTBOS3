@@ -1,5 +1,6 @@
 LooseGooses = {
     "TeamsNames": ["Wet Willies", "5 Musketeers", "WW", "5M"],
+    "Quote": ["Honk honk honk, honk honk"],
     "VariablesPlayers": ["Player1", "Player2", "Player3", "Player4", "Player5", "Player6"],
     "VariablesText": ["TPlayer1", "TPlayer2", "TPlayer3", "TPlayer4", "TPlayer5", "TPlayer6"],
     "Players": ["Angus Walker", "William Kim", "Clarrie Jones", "Christopher Tomkinson", "Mitch Yue", "Sam James"],
@@ -18,6 +19,7 @@ LooseGooses = {
 
 WetWillies = {
     "TeamsNames": ["Loose Gooses", "5 Musketeers", "LG", "5M"],
+    "Quote": ["Fuck Clarrie Jones, we like to eat little white boys."],
     "VariablesPlayers": ["Player1", "Player2", "Player3", "Player4", "Player5"],
     "VariablesText": ["TPlayer1", "TPlayer2", "TPlayer3", "TPlayer4", "TPlayer5"],
     "Players": ["Michael Iffland", "Rudy Hoschke", "Lukas Johnston", "Conor Farrington", "Will Weekes"],
@@ -36,6 +38,7 @@ WetWillies = {
 
 Musketeers = {
     "TeamsNames": ["Loose Gooses", "Wet Willies", "LG", "WW"],
+    "Quote": ["With Nick, we're the 6 Musketeers"],
     "VariablesPlayers": ["Player1", "Player2", "Player3", "Player4", "Player5"],
     "VariablesText": ["TPlayer1", "TPlayer2", "TPlayer3", "TPlayer4", "TPlayer5"],
     "Players": ["Samuel McConaghy", "Alexander Galt", "Nicholas Szogi", "Ryan Pattemore", "Jasper Collier"],
@@ -86,6 +89,7 @@ function RunMain(variable) {
     document.getElementById("teamBsmall").innerHTML = variable.TeamsNames[3]
     document.getElementById("teamAbig").innerHTML = variable.TeamsNames[0]
     document.getElementById("teamBbig").innerHTML = variable.TeamsNames[1]
+    document.getElementById("quoteLocation").innerHTML = variable.Quote[0]
 
 
     table = document.getElementById("dayByDay")

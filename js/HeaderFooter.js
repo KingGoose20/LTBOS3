@@ -27,9 +27,9 @@ function header(location) {
                 <div class="dropdown-content">
                     <a href="replacerDocumentsAndIco/Rules.html" class="dropDown-link">Rules, FAQ, Calendar</a>
                     <a href="replacerDocumentsAndIco/Contact.html" class="dropDown-link">Contact Us</a>
-                    <a href="replacerDocumentsAndIco/TeamPages/LG_Home.html" class="dropDown-link">Loose Gooses Home</a>
-                    <a href="replacerDocumentsAndIco/TeamPages/WW_Home.html" class="dropDown-link">Wet Willies Home</a>
-                    <a href="replacerDocumentsAndIco/TeamPages/5M_Home.html" class="dropDown-link">5 Musketeers Home</a>
+                    <a href="replacerDocumentsAndIco/TeamHome.html?Team=LG" class="dropDown-link">Loose Gooses Home</a>
+                    <a href="replacerDocumentsAndIco/TeamHome.html?Team=WW" class="dropDown-link">Wet Willies Home</a>
+                    <a href="replacerDocumentsAndIco/TeamHome.html?Team=5M" class="dropDown-link">5 Musketeers Home</a>
                     <a href="replacerDocumentsAndIco/InstagramHighlights.html" class="dropDown-link">Instagram</a>
                 </div>
             </div>
@@ -40,13 +40,13 @@ function header(location) {
                 <a href="replacerDocumentsAndIco/Contact.html" class="navigation-link w-nav-link">Contact Us</a>
             </li>
             <li class="nav-item dropdownShow">
-                <a href="replacerDocumentsAndIco/TeamPages/LG_Home.html" class="navigation-link w-nav-link">Loose Gooses Home</a>
+                <a href="replacerDocumentsAndIco/TeamHome.html?Team=LG" class="navigation-link w-nav-link">Loose Gooses Home</a>
             </li>
             <li class="nav-item dropdownShow">
-                <a href="replacerDocumentsAndIco/TeamPages/WW_Home.html" class="navigation-link w-nav-link">Wet Willies Home</a>
+                <a href="replacerDocumentsAndIco/TeamHome.html?Team=WW" class="navigation-link w-nav-link">Wet Willies Home</a>
             </li>
             <li class="nav-item dropdownShow">
-                <a href="replacerDocumentsAndIco/TeamPages/5M_Home.html" class="navigation-link w-nav-link">5 Musketeers Home</a>
+                <a href="replacerDocumentsAndIco/TeamHome.html?Team=5M" class="navigation-link w-nav-link">5 Musketeers Home</a>
             </li>
             <li class="nav-item dropdownShow">
                 <a href="replacerDocumentsAndIco/InstagramHighlights.html" class="navigation-link w-nav-link">Instagram</a>
@@ -72,20 +72,25 @@ function header(location) {
         template.innerHTML = template.innerHTML.replace(/replacer/g, "../")
     }
 
-    if (location == "LG") {
-        template.innerHTML = template.innerHTML.replace(/replacer/g, "../../");
+    currentLocation = window.location
+    myKeyValues = currentLocation.search
+    urlParams = new URLSearchParams(myKeyValues)
+    SelectedTeam = urlParams.get("Team")
+
+    if (SelectedTeam == "LG") {
+        template.innerHTML = template.innerHTML.replace(/replacer/g, "../");
         template.innerHTML = template.innerHTML.replace('Images/Logo.png" style="width:0.75em"', 'Images/LG_Final.png" style="width: 1.5em"')
         template.innerHTML = template.innerHTML.replace('animate-character', 'animate-characterLG')
     }
 
-    if (location == "5M") {
-        template.innerHTML = template.innerHTML.replace(/replacer/g, "../../");
+    if (SelectedTeam == "5M") {
+        template.innerHTML = template.innerHTML.replace(/replacer/g, "../");
         template.innerHTML = template.innerHTML.replace('Images/Logo.png" style="width:0.75em"', 'Images/5M_Final.png" style="width: 1.5em"')
         template.innerHTML = template.innerHTML.replace('animate-character', 'animate-character5M')
     }
 
-    if (location == "WW") {
-        template.innerHTML = template.innerHTML.replace(/replacer/g, "../../");
+    if (SelectedTeam == "WW") {
+        template.innerHTML = template.innerHTML.replace(/replacer/g, "../");
         template.innerHTML = template.innerHTML.replace('Images/Logo.png" style="width:0.75em"', 'Images/WW_Final.png" style="width: 0.75em"')
         template.innerHTML = template.innerHTML.replace('animate-character', 'animate-characterWW')
     }
@@ -195,20 +200,26 @@ function footer(location) {
         </div>
     `;
 
-    if (location == "LG") {
+
+    currentLocation = window.location
+    myKeyValues = currentLocation.search
+    urlParams = new URLSearchParams(myKeyValues)
+    SelectedTeam = urlParams.get("Team")
+
+    if (SelectedTeam == "LG") {
         template.innerHTML = template.innerHTML.replace('<a href="replacerImages/Cool Sam.jpg"><img src="replacerImages/Logo.png" style="height: 20%; width:20%;"></a>', '<a href="replacerImages/Cool Sam.jpg"><img src="replacerImages/Logo.png" style="height: 20%; width:20%;"></a><img src="replacerImages/LG_Final.png" style="height: 30%; width:30%; margin-left: 60px;">')
     }
-    if (location == "WW") {
+    if (SelectedTeam == "WW") {
         template.innerHTML = template.innerHTML.replace('<a href="replacerImages/Cool Sam.jpg"><img src="replacerImages/Logo.png" style="height: 20%; width:20%;"></a>', '<a href="replacerImages/Cool Sam.jpg"><img src="replacerImages/Logo.png" style="height: 20%; width:20%;"></a><img src="replacerImages/WW_Final.png" style="height: 24%; width:24%; margin-left: 60px;">')
     }
-    if (location == "5M") {
+    if (SelectedTeam == "5M") {
         template.innerHTML = template.innerHTML.replace('<a href="replacerImages/Cool Sam.jpg"><img src="replacerImages/Logo.png" style="height: 20%; width:20%;"></a>', '<a href="replacerImages/Cool Sam.jpg"><img src="replacerImages/Logo.png" style="height: 20%; width:20%;"></a><img src="replacerImages/5M_Final.png" style="height: 30%; width:30%; margin-left: 60px;">')
     }
 
     if (location == "finals") {
         template.innerHTML = template.innerHTML.replace('<a href="replacerImages/Cool Sam.jpg"><img src="replacerImages/Logo.png" style="height: 20%; width:20%;"></a>', '<a href="replacerImages/Cool Sam.jpg"><img src="replacerImages/Logo.png" style="height: 20%; width:20%;"></a><img src="replacerImages/Finals_Logo.png" style="height: 25%; width:25%; margin-left: 60px;">')
     }
-    if (location == "news" || location == "LG" || location == "WW" || location == "5M") {
+    if (location == "news") {
         template.innerHTML = template.innerHTML.replace(/replacer/g, "../../");
     } else if (location == "index") {
         template.innerHTML = template.innerHTML.replace(/replacer/g, "")

@@ -1,10 +1,11 @@
 LooseGooses = {
-    "TeamsNames": ["Wet Willies", "5 Musketeers", "WW", "5M"],
+    "TeamsNames": ["Wet Willies", "5 Musketeers", "WW", "5M", "Loose Gooses"],
     "Quote": ["Honk honk honk, honk honk"],
+    "Colours" : ["#d74268", "#f5b153", "#d48619", "#d74268"],
     "VariablesPlayers": ["Player1", "Player2", "Player3", "Player4", "Player5", "Player6"],
     "VariablesText": ["TPlayer1", "TPlayer2", "TPlayer3", "TPlayer4", "TPlayer5", "TPlayer6"],
     "Players": ["Angus Walker", "William Kim", "Clarrie Jones", "Christopher Tomkinson", "Mitch Yue", "Sam James"],
-    "Images": ["../../Images/Players/Angus.png", "../../Images/Players/Kimmy.png", "../../Images/Players/Clarrie.png", "../../Images/Players/Christopher.png", "../../Images/Players/Mitch.jpeg", "../../Images/Players/SamJ.jpg"],
+    "Images": ["../Images/Players/Angus.png", "../Images/Players/Kimmy.png", "../Images/Players/Clarrie.png", "../Images/Players/Christopher.png", "../Images/Players/Mitch.jpeg", "../Images/Players/SamJ.jpg"],
     "PartA":[92,93],
     "PartB":[34,"Angus Walker",20,"Angus Walker",17,"William Kim",10,"Clarrie Jones"],
     "PartC":[7,2.7,2.6,0.8,5.4,5.5],
@@ -18,12 +19,13 @@ LooseGooses = {
 }
 
 WetWillies = {
-    "TeamsNames": ["Loose Gooses", "5 Musketeers", "LG", "5M"],
+    "TeamsNames": ["Loose Gooses", "5 Musketeers", "LG", "5M", "Wet Willies"],
     "Quote": ["Fuck Clarrie Jones, we like to eat little white boys."],
+    "Colours" : ["#e45e0b", "#8c3600", "#8c3600", "#ff690c"],
     "VariablesPlayers": ["Player1", "Player2", "Player3", "Player4", "Player5"],
     "VariablesText": ["TPlayer1", "TPlayer2", "TPlayer3", "TPlayer4", "TPlayer5"],
     "Players": ["Michael Iffland", "Rudy Hoschke", "Lukas Johnston", "Conor Farrington", "Will Weekes"],
-    "Images": ["../../Images/Players/Michael.png", "../../Images/Players/Rudy.png", "../../Images/Players/Lukas.jpeg", "../../Images/Players/Conor.png", "../../Images/Players/Willie.png"],
+    "Images": ["../Images/Players/Michael.png", "../Images/Players/Rudy.png", "../Images/Players/Lukas.jpeg", "../Images/Players/Conor.png", "../Images/Players/Willie.png"],
     "PartA":[89,95],
     "PartB":[45,"Rudy Hoschke",42,"Rudy Hoschke",13,"Michael Iffland",1,"Michael Iffland"],
     "PartC":[6.3,4.1,1.5,0.35,5.2,5.6],
@@ -37,12 +39,13 @@ WetWillies = {
 }
 
 Musketeers = {
-    "TeamsNames": ["Loose Gooses", "Wet Willies", "LG", "WW"],
+    "TeamsNames": ["Loose Gooses", "Wet Willies", "LG", "WW", "5 Musketeers"],
     "Quote": ["With Nick, we're the 6 Musketeers"],
+    "Colours" : ["#004045", "#004045", "#47aeb5", "#47aeb5"],
     "VariablesPlayers": ["Player1", "Player2", "Player3", "Player4", "Player5"],
     "VariablesText": ["TPlayer1", "TPlayer2", "TPlayer3", "TPlayer4", "TPlayer5"],
     "Players": ["Samuel McConaghy", "Alexander Galt", "Nicholas Szogi", "Ryan Pattemore", "Jasper Collier"],
-    "Images": ["../../Images/Players/SamM.png", "../../Images/Players/Alex.png", "../../Images/Players/Nicholas.jpeg", "../../Images/Players/Ryan.png", "../../Images/Players/Jasper.png"],
+    "Images": ["../Images/Players/SamM.png", "../Images/Players/Alex.png", "../Images/Players/Nicholas.jpeg", "../Images/Players/Ryan.png", "../Images/Players/Jasper.png"],
     "PartA":[97,90],
     "PartB":[44,"Samuel McConaghy",43,"Alexander Galt",25,"Samuel McConaghy",3,"N/A"],
     "PartC":[7.1,3.6,2.5,0.4,5.7,5.3],
@@ -55,12 +58,36 @@ Musketeers = {
     "TB":["Samuel McConaghy","Jasper Collier, Nicholas Szogi","Samuel McConaghy","Alexander Galt, Nicholas Szogi","Samuel McConaghy","Samuel McConaghy","Samuel McConaghy","Samuel McConaghy","Samuel McConaghy","Jasper Collier, Nicholas Szogi","Samuel McConaghy","Alexander Galt","Samuel McConaghy, Ryan Pattemore","N/A","Nicholas Szogi","Alexander Galt","Samuel McConaghy"]
 }
 
+currentLocation = window.location
+myKeyValues = currentLocation.search
+urlParams = new URLSearchParams(myKeyValues)
+SelectedTeam = urlParams.get("Team")
+variable = []
 
+if (SelectedTeam == "LG") {
+    variable = LooseGooses
+}
 
-function RunMain(variable) {
+if (SelectedTeam == "WW") {
+    variable = WetWillies
+}
+
+if (SelectedTeam == "5M") {
+    variable = Musketeers
+}
+
+function RunMain() {
     for (i = 0; i < variable.VariablesPlayers.length; i++) {
-        document.getElementById(variable.VariablesPlayers[i]).src = variable.Images[i]
-        document.getElementById(variable.VariablesText[i]).innerHTML = variable.Players[i]
+        rowOne = document.getElementById("playersRow1")
+        width = 100/variable.VariablesPlayers.length
+        rowOne.innerHTML = rowOne.innerHTML + "<td style='width: " + width + "%'><img src='" + variable.Images[i] + "'/></td>"
+        rowTwo = document.getElementById("playersRow2")
+        if (i == 0) {
+            rowTwo.innerHTML = rowTwo.innerHTML + "<td style='width: " + width + "%'><h3 class='section-heading centered' style='font-size: 1em;'>GM - " + variable.Players[i] + "</h3></td>"
+        } else {
+            rowTwo.innerHTML = rowTwo.innerHTML + "<td style='width: " + width + "%'><h3 class='section-heading centered' style='font-size: 1em;'>" + variable.Players[i] + "</h3></td>"
+        }
+        
     }
     document.getElementById("tWins").innerHTML = variable.PartA[0]
     document.getElementById("tLoss").innerHTML = variable.PartA[1]
@@ -90,6 +117,23 @@ function RunMain(variable) {
     document.getElementById("teamAbig").innerHTML = variable.TeamsNames[0]
     document.getElementById("teamBbig").innerHTML = variable.TeamsNames[1]
     document.getElementById("quoteLocation").innerHTML = variable.Quote[0]
+
+    document.title = variable.TeamsNames[4] + " | LTBO"
+    document.getElementById("name2").innerHTML = variable.TeamsNames[4]
+    document.getElementById("name3").innerHTML = variable.TeamsNames[4]
+    document.getElementById("name4").innerHTML = variable.TeamsNames[4]
+    document.getElementById("name5").innerHTML = variable.TeamsNames[4]
+
+    document.querySelector(':root').style.setProperty('--colour-a', variable.Colours[0]);
+    document.querySelector(':root').style.setProperty('--colour-b', variable.Colours[1]);
+    document.querySelector(':root').style.setProperty('--colour-c', variable.Colours[2]);
+    document.querySelector(':root').style.setProperty('--colour-d', variable.Colours[3]);
+    console.log(document.querySelector(':root').style)
+    console.log(variable.Colours[0])
+
+    if(variable == LooseGooses) {
+        document.getElementById("champions").style.display = "block"
+    }
 
 
     table = document.getElementById("dayByDay")

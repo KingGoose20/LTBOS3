@@ -20,7 +20,7 @@ LooseGooses = {
 
 WetWillies = {
     "TeamsNames": ["Loose Gooses", "5 Musketeers", "LG", "5M", "Wet Willies"],
-    "Quote": ["Fuck Clarrie Jones, we like to eat little white boys."],
+    "Quote": ["Screw Clarrie Jones, we like to eat little white boys."],
     "Colours" : ["#e45e0b", "#8c3600", "#8c3600", "#ff690c"],
     "VariablesPlayers": ["Player1", "Player2", "Player3", "Player4", "Player5"],
     "VariablesText": ["TPlayer1", "TPlayer2", "TPlayer3", "TPlayer4", "TPlayer5"],

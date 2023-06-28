@@ -80,15 +80,23 @@ function RunMain() {
     for (i = 0; i < variable.VariablesPlayers.length; i++) {
         rowOne = document.getElementById("playersRow1")
         width = 100/variable.VariablesPlayers.length
-        rowOne.innerHTML = rowOne.innerHTML + "<td style='width: " + width + "%'><img src='" + variable.Images[i] + "'/></td>"
+        rowOne.innerHTML = rowOne.innerHTML + "<td style='width: " + width + "%; cursor: pointer;'><img src='" + variable.Images[i] + "' class='playerImages'/></td>"
         rowTwo = document.getElementById("playersRow2")
         if (i == 0) {
-            rowTwo.innerHTML = rowTwo.innerHTML + "<td style='width: " + width + "%'><h3 class='section-heading centered' style='font-size: 1em;'>GM - " + variable.Players[i] + "</h3></td>"
+            rowTwo.innerHTML = rowTwo.innerHTML + "<td style='width: " + width + "%; cursor: pointer;'><h3 class=' section-heading centered' id='playersText'>GM - " + variable.Players[i] + "</h3></td>"
         } else {
-            rowTwo.innerHTML = rowTwo.innerHTML + "<td style='width: " + width + "%'><h3 class='section-heading centered' style='font-size: 1em;'>" + variable.Players[i] + "</h3></td>"
+            rowTwo.innerHTML = rowTwo.innerHTML + "<td style='width: " + width + "%; cursor: pointer;'><h3 class=' section-heading centered' id='playersText'>" + variable.Players[i] + "</h3></td>"
         }
         
     }
+
+    for (i = 0; i < document.getElementById("playersRow1").children.length; i++) {
+        rowOne.children[i].onclick = function() {openStats(this)};
+        rowOne.children[i].id = i
+        rowTwo.children[i].onclick = function() {openStats(this)};
+        rowTwo.children[i].id = i
+    }
+    console.log()
     document.getElementById("tWins").innerHTML = variable.PartA[0]
     document.getElementById("tLoss").innerHTML = variable.PartA[1]
     document.getElementById("tPercent").innerHTML = (Math.round(variable.PartA[0] / (variable.PartA[1] + variable.PartA[0]) * 1000)) / 10 + "%"
@@ -129,7 +137,6 @@ function RunMain() {
     document.querySelector(':root').style.setProperty('--colour-c', variable.Colours[2]);
     document.querySelector(':root').style.setProperty('--colour-d', variable.Colours[3]);
     console.log(document.querySelector(':root').style)
-    console.log(variable.Colours[0])
 
     if(variable == LooseGooses) {
         document.getElementById("champions").style.display = "block"
@@ -149,3 +156,15 @@ function RunMain() {
         table.appendChild(clone)
     }
 }
+
+function openStats(item) {
+    if (variable == LooseGooses) {
+        ourHref = 'Stats.html?Player=' + LooseGooses.Players[item.id]
+    } else if (variable == WetWillies) {
+        ourHref = 'Stats.html?Player=' + WetWillies.Players[item.id]
+    } else {
+        ourHref = 'Stats.html?Player=' + Musketeers.Players[item.id]
+    }
+
+    window.location.href = ourHref
+  }

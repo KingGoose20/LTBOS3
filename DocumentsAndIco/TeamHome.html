@@ -120,8 +120,7 @@
         #playersTable {
             table-layout: fixed;
         }
-
-        @media screen and (max-width: 1400px) {
+        @media screen and (max-width: 1300px) {
             #playersTable {
                 overflow-x: scroll;
             }
@@ -158,6 +157,36 @@
                 font-size: 1em; 
                 line-height: 1em
             }
+        }
+
+        .playerImages {
+            width: 15vw
+        }
+
+        #playersText {
+            font-size: 1em;
+        }
+
+        @media screen and (max-width: 1300px) {
+            .playerImages {
+                width: 10vw
+            }
+        }
+
+        @media screen and (max-width: 1000px) {
+            #playersText {
+                font-size: 0.7em;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            .playerImages {
+                width: 20vw
+            }
+        }
+
+        #playersRow2 > td {
+            padding: 5px
         }
     </style>
 </head>
@@ -350,7 +379,7 @@
                             <tr>
                                 <td>
                                     <h2 class="section-heading centered" style="line-height: 70px;"><span
-                                            class="h2Small">Team</span></h2>
+                                            class="h2Small" style="font-size: 1em">Team</span></h2>
                                 </td>
                                 <td>
                                     <h2 class="section-heading centered"><span class="h2Small">Wins</span></h2>

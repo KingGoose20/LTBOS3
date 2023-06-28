@@ -11,6 +11,9 @@ function header(location) {
         <nav class="navbar heading-links w-nav-menu">
             <ul class="nav-menu">
             <li class="nav-item">
+                <a href="replacerDocumentsAndIco/Draft.html" class="navigation-link w-nav-link" style="color: darkred">Draft</a>
+            </li>
+            <li class="nav-item">
                 <a href="replacerDocumentsAndIco/Ladder.html" class="navigation-link w-nav-link">Ladder</a>
             </li>
             <li class="nav-item">

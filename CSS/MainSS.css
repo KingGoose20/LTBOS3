@@ -2857,7 +2857,7 @@ html.w-mod-js *[data-ix="scale-on-scroll"] {
   background-color: rgb(240, 240, 240);
   z-index: 2;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   transition: top 0.3s;
   top: 0
 }

@@ -1,7 +1,8 @@
 Joe = ["../Images/Players/Alex.png", 3, 2, 5, 7, "Child", "lebym"]
 Angus = ["../Images/Players/Angus.png", 2, 1, 3, 4, "Champion", "Angus Walker"]
+Chris = ["../Images/Players/Christopher.png", 1, 2, 43, 41, "MVP", "Christopher Tomkinson"]
 
-function prepare(variable, team) {
+function prepare(variable, team, number) {
     document.getElementById("playerImage").src = variable[0]
     document.getElementById("points").innerHTML = variable[1]
     document.getElementById("finishes").innerHTML = variable[2]
@@ -9,10 +10,18 @@ function prepare(variable, team) {
     document.getElementById("threes").innerHTML = variable[4]
     document.getElementById("accomplishment").innerHTML = variable[5]
     document.getElementById("name").innerHTML = variable[6]
+    document.getElementById("teamName").innerHTML = team
+    document.getElementById("number").innerHTML = number
 
     if (team == "Loose Gooses") {
-        document.getElementById("teamImage").src = "../Images/LG_Final.png"
-        document.getElementById("playerImage").style.border = "5px solid rgb(195, 45, 83);"
+        document.getElementById("teamImage").src = "../Images/LG_Final.png";
+        document.getElementById("playerImage").style.border = "5px solid rgb(195, 45, 83)";
+    } else if (team == "Wet Willies") {
+        document.getElementById("teamImage").src = "../Images/WW_Final.png";
+        document.getElementById("playerImage").style.border = "5px solid rgb(136,54,3)";
+    } else if (team == "5 Musketeers") {
+        document.getElementById("teamImage").src = "../Images/5M_Final.png";
+        document.getElementById("playerImage").style.border = "5px solid rgb(71,174,181)";
     }
 }
 
@@ -62,7 +71,6 @@ function showPlayer() {
 }
 
 prepare(Joe, "abcd")
-setTimeout(() => { showPlayer() }, 0);
 
 
 

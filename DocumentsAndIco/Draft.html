@@ -151,8 +151,9 @@
       width: 55vw;
       min-width: 325px;
       height: 87vh;
-      background-color: #ffffff;
+      background-color: rgb(230, 230, 230);
       font-size: 15pt;
+      font-weight: 300;
     }
 
     @media screen and (max-width: 500px) {
@@ -205,12 +206,15 @@
           style="color: red; font-size: 1.1em; text-decoration: underline; float: right;">Close</a>
         <br><br>
         <img src="../Images/Logo.png" style="height: 20vh" id="teamImage">
-        <h3 style="margin-top: 20px;">With the first pick in the Term 3 LTBO Draft, the Loose Gooses select</h3>
+        <h3 style="margin-top: 20px;">With the <span id="number"></span> pick in the Term 3 LTBO Draft, the <span
+            id="teamName"></span> select</h3>
         <h1 class="title" id="name"></h1>
         <br>
         <div>
           <div style="float: left; width: 40%">
-            <img src="../Images/Players/Logo.png" style="width: 85%" id="playerImage"></div>
+            <img src="../Images/Players/Logo.png" style="border: 5px solid rgb(133, 55, 173); width: 85%"
+              id="playerImage">
+          </div>
           <div style="float: right; width: 60%">
             <h3 style="color: black;">Last Term's Averages:</h3>
             <h3>Points: <span style="color: darkorchid" id="points"></span></h3>
@@ -261,7 +265,7 @@
               </thead>
               <tr style="height: 75px">
                 <td>
-                  <p>1st</p>
+                  <p style="font-size: 1.3em">1st</p>
                 </td>
                 <td><img ../Images/WW_Final.png" style="max-width:100%; max-height: 75px;"></td>
                 <td>
@@ -270,7 +274,7 @@
               </tr>
               <tr style="height: 75px">
                 <td>
-                  <p>2nd</p>
+                  <p style="font-size: 1.3em">2nd</p>
                 </td>
                 <td><img ../Images/5M_Final.png" style="max-width:100%; max-height: 75px;"></td>
                 <td>
@@ -279,7 +283,7 @@
               </tr>
               <tr style="height: 75px">
                 <td>
-                  <p>3rd</p>
+                  <p style="font-size: 1.3em">3rd</p>
                 </td>
                 <td><img ../Images/LG_Final.png" style="max-width:100%; max-height: 75px;"></td>
                 <td>
@@ -288,7 +292,7 @@
               </tr>
               <tr style="height: 75px">
                 <td>
-                  <p>4th</p>
+                  <p style="font-size: 1.3em">4th</p>
                 </td>
                 <td><img ../Images/LG_Final.png" style="max-width:100%; max-height: 75px;"></td>
                 <td>
@@ -297,7 +301,7 @@
               </tr>
               <tr style="height: 75px">
                 <td>
-                  <p>5th</p>
+                  <p style="font-size: 1.3em">5th</p>
                 </td>
                 <td><img ../Images/5M_Final.png" style="max-width:100%; max-height: 75px;"></td>
                 <td>
@@ -306,7 +310,7 @@
               </tr>
               <tr style="height: 75px">
                 <td>
-                  <p>6th</p>
+                  <p style="font-size: 1.3em">6th</p>
                 </td>
                 <td><img ../Images/WW_Final.png" style="max-width:100%; max-height: 75px;"></td>
                 <td>
@@ -315,7 +319,7 @@
               </tr>
               <tr style="height: 75px">
                 <td>
-                  <p>7th</p>
+                  <p style="font-size: 1.3em">7th</p>
                 </td>
                 <td><img ../Images/WW_Final.png" style="max-width:100%; max-height: 75px;"></td>
                 <td>
@@ -324,7 +328,7 @@
               </tr>
               <tr style="height: 75px">
                 <td>
-                  <p>8th</p>
+                  <p style="font-size: 1.3em">8th</p>
                 </td>
                 <td><img ../Images/5M_Final.png" style="max-width:100%; max-height: 75px;"></td>
                 <td>
@@ -333,20 +337,11 @@
               </tr>
               <tr style="height: 75px">
                 <td>
-                  <p>9th</p>
+                  <p style="font-size: 1.3em">9th</p>
                 </td>
                 <td><img ../Images/LG_Final.png" style="max-width:100%; max-height: 75px;"></td>
                 <td>
                   <p id="countDown8"></p>
-                </td>
-              </tr>
-              <tr style="height: 75px">
-                <td>
-                  <p>10th</p>
-                </td>
-                <td><img ../Images/LG_Final.png" style="max-width:100%; max-height: 75px;"></td>
-                <td>
-                  <p id="countDown9"></p>
                 </td>
               </tr>
             </table>
@@ -394,15 +389,17 @@
       </script>
       <script>
         /* Set the date we're counting down to */
-        var countDownDate = [new Date("June 30, 2023 19:25:40").getTime(), new Date("July 11, 2023 15:27:30"), new Date("July 11, 2023 11:34:00").getTime(),
+        var countDownDate = [new Date("July 11, 2023 11:30:00").getTime(), new Date("July 11, 2023 11:31:30"), new Date("July 11, 2023 11:34:00").getTime(),
         new Date("July 11, 2023 11:35:30").getTime(), new Date("July 11, 2023 11:37:00"), new Date("July 11, 2023 11:38:30").getTime(),
-        new Date("July 11, 2023 11:40:00").getTime(), new Date("July 11, 2023 11:41:30"), new Date("July 11, 2023 11:43:00").getTime(), new Date("July 11, 2023 11:44:30").getTime()];
+        new Date("July 11, 2023 11:40:00").getTime(), new Date("July 11, 2023 11:41:30"), new Date("July 11, 2023 11:43:00").getTime()];
 
-        detailsToUse = [Angus]
+        detailsToUse = [Angus, Chris]
+        teamsToUse = ["Loose Gooses", "Wet Willies"]
+        numbersToUse = ["First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth", "Nineth"]
 
         allID = ["countDown", "countDown1", "countDown2",
           "countDown3", "countDown4", "countDown5",
-          "countDown6", "countDown7", "countDown8", "countDown9"];
+          "countDown6", "countDown7", "countDown8"];
 
 
         allAnswers = ["Lukas Johnston", "Nicholas Szogi", "Clarrie Jones",
@@ -482,7 +479,7 @@
             glowOn = true
             selectedNumber += 1
             rainConfetti()
-            setTimeout(() => { prepare(detailsToUse[selectedNumber-1], "Loose Gooses") }, 1000);
+            setTimeout(() => { prepare(detailsToUse[selectedNumber - 1], teamsToUse[selectedNumber - 1], numbersToUse[selectedNumber - 1]) }, 1000);
             setTimeout(() => { showPlayer() }, 3000);
             if (selectedNumber == 10) {
               clearInterval(x);

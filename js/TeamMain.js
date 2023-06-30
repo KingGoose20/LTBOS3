@@ -1,61 +1,61 @@
 LooseGooses = {
     "TeamsNames": ["Wet Willies", "5 Musketeers", "WW", "5M", "Loose Gooses"],
     "Quote": ["Honk honk honk, honk honk"],
-    "Colours" : ["#d74268", "#f5b153", "#d48619", "#d74268"],
+    "Colours": ["#d74268", "#f5b153", "#d48619", "#d74268"],
     "VariablesPlayers": ["Player1", "Player2", "Player3", "Player4", "Player5", "Player6"],
     "VariablesText": ["TPlayer1", "TPlayer2", "TPlayer3", "TPlayer4", "TPlayer5", "TPlayer6"],
     "Players": ["Angus Walker", "William Kim", "Clarrie Jones", "Christopher Tomkinson", "Mitch Yue", "Sam James"],
     "Images": ["../Images/Players/Angus.png", "../Images/Players/Kimmy.png", "../Images/Players/Clarrie.png", "../Images/Players/Christopher.png", "../Images/Players/Mitch.jpeg", "../Images/Players/SamJ.jpg"],
-    "PartA":[0,0],
-    "PartB":[0,"N/A",0,"N/A",0,"N/A",0,"N/A"],
-    "PartC":[0,0,0,0,0,0],    
-    "PartD":[0,0,0,0,0,0],      
-    "Date":[],
-    "Wins":[],
-    "Losses":[],
-    "Points":[],
-    "TA":[],
-    "TB":[]
+    "PartA": [0, 0],
+    "PartB": [0, "N/A", 0, "N/A", 0, "N/A", 0, "N/A"],
+    "PartC": [0, 0, 0, 0, 0, 0],
+    "PartD": [0, 0, 0, 0, 0, 0],
+    "Date": [],
+    "Wins": [],
+    "Losses": [],
+    "Points": [],
+    "TA": [],
+    "TB": []
 }
 
 WetWillies = {
     "TeamsNames": ["Loose Gooses", "5 Musketeers", "LG", "5M", "Wet Willies"],
     "Quote": ["Screw Clarrie Jones, we like to eat little white boys."],
-    "Colours" : ["#e45e0b", "#8c3600", "#8c3600", "#ff690c"],
+    "Colours": ["#e45e0b", "#8c3600", "#8c3600", "#ff690c"],
     "VariablesPlayers": ["Player1", "Player2", "Player3", "Player4", "Player5"],
     "VariablesText": ["TPlayer1", "TPlayer2", "TPlayer3", "TPlayer4", "TPlayer5"],
     "Players": ["Michael Iffland", "Rudy Hoschke", "Lukas Johnston", "Conor Farrington", "Will Weekes"],
     "Images": ["../Images/Players/Michael.png", "../Images/Players/Rudy.png", "../Images/Players/Lukas.png", "../Images/Players/Conor.png", "../Images/Players/Willie.png"],
-    "PartA":[0,0],
-    "PartB":[0,"N/A",0,"N/A",0,"N/A",0,"N/A"],
-    "PartC":[0,0,0,0,0,0],    
-    "PartD":[0,0,0,0,0,0],     
-    "Date":[],
-    "Wins":[],
-    "Losses":[],
-    "Points":[],
-    "TA":[],
-    "TB":[]
+    "PartA": [0, 0],
+    "PartB": [0, "N/A", 0, "N/A", 0, "N/A", 0, "N/A"],
+    "PartC": [0, 0, 0, 0, 0, 0],
+    "PartD": [0, 0, 0, 0, 0, 0],
+    "Date": [],
+    "Wins": [],
+    "Losses": [],
+    "Points": [],
+    "TA": [],
+    "TB": []
 }
 
 Musketeers = {
     "TeamsNames": ["Loose Gooses", "Wet Willies", "LG", "WW", "5 Musketeers"],
     "Quote": ["With Nick, we're the 6 Musketeers"],
-    "Colours" : ["#004045", "#004045", "#47aeb5", "#47aeb5"],
+    "Colours": ["#004045", "#004045", "#47aeb5", "#47aeb5"],
     "VariablesPlayers": ["Player1", "Player2", "Player3", "Player4", "Player5"],
     "VariablesText": ["TPlayer1", "TPlayer2", "TPlayer3", "TPlayer4", "TPlayer5"],
     "Players": ["Samuel McConaghy", "Alexander Galt", "Nicholas Szogi", "Ryan Pattemore", "Jasper Collier"],
     "Images": ["../Images/Players/SamM.png", "../Images/Players/Alex.png", "../Images/Players/Nicholas.jpeg", "../Images/Players/Ryan.png", "../Images/Players/Jasper.png"],
-    "PartA":[0,0],
-    "PartB":[0,"N/A",0,"N/A",0,"N/A",0,"N/A"],
-    "PartC":[0,0,0,0,0,0],    
-    "PartD":[0,0,0,0,0,0],       
-    "Date":[],
-    "Wins":[],
-    "Losses":[],
-    "Points":[],
-    "TA":[],
-    "TB":[]
+    "PartA": [0, 0],
+    "PartB": [0, "N/A", 0, "N/A", 0, "N/A", 0, "N/A"],
+    "PartC": [0, 0, 0, 0, 0, 0],
+    "PartD": [0, 0, 0, 0, 0, 0],
+    "Date": [],
+    "Wins": [],
+    "Losses": [],
+    "Points": [],
+    "TA": [],
+    "TB": []
 }
 
 currentLocation = window.location
@@ -79,7 +79,7 @@ if (SelectedTeam == "5M") {
 function RunMain() {
     for (i = 0; i < variable.VariablesPlayers.length; i++) {
         rowOne = document.getElementById("playersRow1")
-        width = 100/variable.VariablesPlayers.length
+        width = 100 / variable.VariablesPlayers.length
         rowOne.innerHTML = rowOne.innerHTML + "<td style='width: " + width + "%; cursor: pointer;'><img src='" + variable.Images[i] + "' class='playerImages'/></td>"
         rowTwo = document.getElementById("playersRow2")
         if (i == 0) {
@@ -87,13 +87,13 @@ function RunMain() {
         } else {
             rowTwo.innerHTML = rowTwo.innerHTML + "<td style='width: " + width + "%; cursor: pointer;'><h3 class=' section-heading centered' id='playersText'>" + variable.Players[i] + "</h3></td>"
         }
-        
+
     }
 
     for (i = 0; i < document.getElementById("playersRow1").children.length; i++) {
-        rowOne.children[i].onclick = function() {openStats(this)};
+        rowOne.children[i].onclick = function () { openStats(this) };
         rowOne.children[i].id = i
-        rowTwo.children[i].onclick = function() {openStats(this)};
+        rowTwo.children[i].onclick = function () { openStats(this) };
         rowTwo.children[i].id = i
     }
     console.log()
@@ -138,7 +138,7 @@ function RunMain() {
     document.querySelector(':root').style.setProperty('--colour-d', variable.Colours[3]);
     console.log(document.querySelector(':root').style)
 
-    if(variable == LooseGooses) {
+    if (variable == LooseGooses) {
         document.getElementById("champions").style.display = "block"
     }
 
@@ -157,6 +157,8 @@ function RunMain() {
     }
 }
 
+RunMain()
+
 function openStats(item) {
     if (variable == LooseGooses) {
         ourHref = 'Stats.html?Player=' + LooseGooses.Players[item.id]
@@ -167,4 +169,31 @@ function openStats(item) {
     }
 
     window.location.href = ourHref
-  }
+}
+
+function scaleImages() {
+    if (document.getElementById("pTT").offsetWidth < window.innerWidth) {
+        objects = document.getElementsByClassName("playerImages").length
+        for (i = 0; i < objects; i++) {
+            document.getElementsByClassName("playerImages")[i].style.width = (window.innerWidth / (objects * 1.7)) + "px"
+        }
+        document.getElementById("pTT").style.width = "100%"
+
+    } else {
+        objects = document.getElementsByClassName("playerImages").length
+        for (i = 0; i < objects; i++) {
+            document.getElementsByClassName("playerImages")[i].style.width = (window.innerWidth / objects * 2.5) + "px"
+            
+        }
+        document.getElementById("pTT").style.width = (objects * 250) + "px"
+    }
+}
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    scaleImages()
+
+});
+
+$(window).resize(function () {
+    scaleImages()
+});	

@@ -124,7 +124,6 @@ function header(location) {
             template.innerHTML = template.innerHTML.replace('<span class="navigation-link w-nav-link">More</span>', '<span class="navigation-link w-nav-link w--current">More</span>')
             break;
         case "Loose Gooses" :
-            console.log("yes")
             template.innerHTML = template.innerHTML.replace('">Loose Gooses Home', ' w-nav-link w--current">Loose Gooses Home')
             template.innerHTML = template.innerHTML.replace('class="navigation-link w-nav-link">Loose Gooses Home</a>', 'class="navigation-link w-nav-link w--current">Loose Gooses Home</a>')
             template.innerHTML = template.innerHTML.replace('<span class="navigation-link w-nav-link">More</span>', '<span class="navigation-link w-nav-link w--current">More</span>')

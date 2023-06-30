@@ -29,18 +29,18 @@
             }
         });
     </script>
-  
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
     <style>
-
         :root {
             --colour-a: #d74268;
             --colour-b: #f5b153;
             --colour-c: #d48619;
             --colour-d: #d74268;
         }
+
         table {
             position: relative;
             border-collapse: separate;
@@ -120,6 +120,7 @@
         #playersTable {
             table-layout: fixed;
         }
+
         @media screen and (max-width: 1300px) {
             #playersTable {
                 overflow-x: scroll;
@@ -127,10 +128,10 @@
         }
 
         .reigning {
-            font-family: "Brush King"; 
-            letter-spacing: 0.7em; 
-            color: rgb(229, 197, 18); 
-            font-size: 2.2em; 
+            font-family: "Brush King";
+            letter-spacing: 0.7em;
+            color: rgb(229, 197, 18);
+            font-size: 2.2em;
             line-height: 5em;
         }
 
@@ -148,13 +149,13 @@
         }
 
         .teamsSize {
-            font-size: 2em; 
+            font-size: 2em;
             line-height: 2em
         }
 
         @media screen and (max-width: 1000px) {
             .teamsSize {
-                font-size: 1em; 
+                font-size: 1em;
                 line-height: 1em
             }
         }
@@ -185,7 +186,7 @@
             }
         }
 
-        #playersRow2 > td {
+        #playersRow2>td {
             padding: 5px
         }
 
@@ -206,9 +207,9 @@
             }
 
             .dayResults2 {
-            font-size: 0.7em;
-            line-height: 1em;
-        }
+                font-size: 0.7em;
+                line-height: 1em;
+            }
         }
 
         @media screen and (max-width: 700px) {
@@ -218,9 +219,9 @@
             }
 
             .dayResults2 {
-            font-size: 0.5em;
-            line-height: 1em;
-        }
+                font-size: 0.5em;
+                line-height: 1em;
+            }
         }
 
         @media screen and (max-width: 450px) {
@@ -253,16 +254,18 @@
                         <br><br><br><br><br><br><br>
                     </div>
                     <h2 class="section-heading centered">Home of the <span id="name4"></span></h2>
-                    <p>Here, you can find the stats, players, history, and more of the LTBO team the <span id="name5"></span>.</p>
+                    <p>Here, you can find the stats, players, history, and more of the LTBO team the <span
+                            id="name5"></span>.</p>
                     <br><br>
                     <p
                         style="font-family: 'Playfair Display', serif; letter-spacing: 0.4em; font-size: 2.3em; line-height: 1.2em;">
-                        <i id="quoteLocation"></i></p>
+                        <i id="quoteLocation"></i>
+                    </p>
                     <br><br><br><br>
                     <h2 class="section-heading centered" style="text-align: left; font-size: 7vw; line-height: 9vw;">
                         Players</h2>
-                        <div id="playersTable">
-                        <table style="width: 100%; position: inherit;">
+                    <div id="playersTable">
+                        <table style="width: 100%; position: inherit;" id="pTT">
                             <tr id="playersRow1">
 
                             </tr>
@@ -271,6 +274,7 @@
                             </tr>
                         </table>
                     </div>
+                    <p class="inverseheading-hide"><i>Scroll across to see all players.</i></p>
                     <br><br><br><br><br><br><br><br><br><br><br>
                     <h2 class="section-heading centered" style="text-align: left; font-size: 7vw; line-height: 9vw;">
                         Team Stats</h2>
@@ -434,8 +438,8 @@
                             </tr>
                             <tr style="border:2px solid rgb(150,150,150);">
                                 <td>
-                                    <h2 class="section-heading centered"><span
-                                            class="teamsSize" id="teamAbig"></span></h2>
+                                    <h2 class="section-heading centered"><span class="teamsSize" id="teamAbig"></span>
+                                    </h2>
                                 </td>
                                 <td>
                                     <h1 class="title h1class" id="AWins">20</h1>
@@ -519,7 +523,7 @@
         </tr>
     </template>
     <script src="../js/TeamMain.js"></script>
-    <script>RunMain()</script>
+    <script></script>
     <script>header("LG")</script>
     <script src="../js/heading.js"></script>
     <script src="../js/Scroll.js"></script>

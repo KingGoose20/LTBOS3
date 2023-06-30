@@ -227,12 +227,19 @@ function offHover(elementToUse) {
     elementToUse.getElementsByTagName("h5")[0].classList.remove("TitleHoverInverse")
 }
 
-window.addEventListener('DOMContentLoaded', (event) => {
+function scaleArticles() {
     if (window.innerWidth > 800) {
         for (i = 0; i < elementsToScaleSmall.length; i++) {
             elementsToScaleSmall[i].style.height = elementsToScaleLarge[i].offsetHeight + "px"
             elementsToScaleSmall[i].querySelector("#Description").style.height = elementsToScaleLarge[i].querySelector("#Description").offsetHeight + "px"
         }
     }
+}
+window.addEventListener('DOMContentLoaded', (event) => {
+    scaleArticles()
 
 });
+
+$(window).resize(function () {
+    scaleArticles()
+});	

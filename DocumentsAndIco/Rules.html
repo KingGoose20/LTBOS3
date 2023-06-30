@@ -73,6 +73,10 @@
     .completeYellow {
       background-color: darkgoldenrod;
     }
+
+    .purple {
+      background-color: darkorchid;
+    }
   </style>
 
 </head>
@@ -170,12 +174,12 @@
                 <td onmouseenter="showDate(this, 0,0)" onmouseleave="removeDate(this)" class="red">
                   <p>No School</p>
                 </td>
-                <td onmouseenter="showDate(this, 1,0)" onmouseleave="removeDate(this)">
+                <td onmouseenter="showDate(this, 1,0)" onmouseleave="removeDate(this)" class="purple">
                   <p>Draft</p>
                   <p>Preseason Commences</p>
                 </td>
-                <td onmouseenter="showDate(this, 2,0)" onmouseleave="removeDate(this)"></td>
-                <td onmouseenter="showDate(this, 3,0)" onmouseleave="removeDate(this)">
+                <td onmouseenter="showDate(this, 2,0)" onmouseleave="removeDate(this)" class="purple"></td>
+                <td onmouseenter="showDate(this, 3,0)" onmouseleave="removeDate(this)" class="purple">
                   <p></p>
                 </td>
                 <td onmouseenter="showDate(this, 4,0)" onmouseleave="removeDate(this)" class="red">
@@ -330,7 +334,7 @@
           <br>
           <p class="title">Key</p>
 
-          <p class="title" style="font-size: smaller;"><span style="color: rgb(100,150,200)">Blue coloured:</span>
+          <p class="title" style="font-size: smaller; color: grey"><span style="color: darkorchid">Purple coloured:</span> Preseason   <span style="color: rgb(100,150,200)">Blue coloured:</span>
             Complete days   <span style="color: red">Red coloured:</span> No games   <span style="color: gold">Gold
               coloured:</span> Finals Week  <span style="color: mediumseagreen">Green coloured:</span> Post Season</p>
 

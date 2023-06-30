@@ -1,32 +1,31 @@
-LooseGooses = ["Angus Walker", "William Kim", "Clarrie Jones", "Christopher Tomkinson", "Mitch Yue", "Sam James"]
-WetWillies = ["Michael Iffland", "Rudy Hoschke", "Lukas Johnston", "Conor Farrington", "Will Weekes"]
-Musketeers = ["Samuel McConaghy", "Alexander Galt", "Nicholas Szogi", "Ryan Pattemore", "Jasper Collier"]
+LooseGooses = ["Angus Walker"]
+WetWillies = ["Rudy Hoschke"]
+Musketeers = ["Samuel McConaghy"]
 
 Today = {
-    "Date": ["1 June"],
-    "Game Number":[1,1,2,2,3,4,4,5,5,6,6,7,7,8,8,8,9,9,10,10,10],
-    "Winner":["Loose Gooses","Loose Gooses","5 Musketeers","5 Musketeers","5 Musketeers","Loose Gooses","5 Musketeers","Wet Willies","5 Musketeers","Loose Gooses","Loose Gooses","Wet Willies","Wet Willies","Wet Willies","5 Musketeers","Wet Willies","Loose Gooses","Loose Gooses","5 Musketeers","Loose Gooses","Loose Gooses"],
-    "Loser":["Wet Willies","Wet Willies","Loose Gooses","Loose Gooses","Wet Willies","5 Musketeers","Loose Gooses","5 Musketeers","Wet Willies","5 Musketeers","5 Musketeers","Loose Gooses","Loose Gooses","5 Musketeers","Wet Willies","5 Musketeers","Wet Willies","Wet Willies","Loose Gooses","5 Musketeers","5 Musketeers"],
-    "Score":["1-0","2-0","1-0","2-0","2-0","1-0","2-1","1-0","2-1","1-0","2-0","1-0","2-0","1-0","1-1","2-1","1-0","2-0","1-0","1-1","2-1"],
-    "Scorer":["Angus Walker","Christopher Tomkinson","Alexander Galt","Samuel McConaghy","Samuel McConaghy","Angus Walker","Ryan Pattemore","Rudy Hoschke","Samuel McConaghy","William Kim","Sam James","Michael Iffland","Lukas Johnston","Rudy Hoschke","Alexander Galt","Rudy Hoschke","Angus Walker","Christopher Tomkinson","Alexander Galt","Mitch Yue","Angus Walker"],
-    "Type":["Midrange","Midrange","Finish","Midrange","Three Pointer","Midrange","Three Pointer","Finish","Three Pointer","Finish","Midrange","Finish","Midrange","Finish","Finish","Finish","Midrange","Midrange","Finish","Midrange","Finish"],
-    "WStreak":["-","1","-","1","2","-","3","-","4","-","1","-","1","-","-","2","-","1","-","-","2"],
-    "LStreak":["-","1","-","1","2","-","2","-","3","-","1","-","1","-","-","2","-","1","-","-","3"],
-    "SStreak":[1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+    "Date": [],
+    "Game Number":[],
+    "Winner":[],
+    "Loser":[],
+    "Scorer":[],
+    "Type":[],
+    "WStreak":[],
+    "LStreak":[],
+    "SStreak":[]
   }
 
-DidNotPlay = ["Nicholas Szogi"]
-
-LadderPoints = [35,26,35]
-Leaders = ["Angus Walker", "Rudy Hoschke", "Alexander Galt"]
-LeadersPoints = [2.43,2.81,3.14]
+DidNotPlay = [""]
+/* Goes LG, WW, 5M */
+LadderPoints = [0,0,0]
+Leaders = ["Angus Walker", "Rudy Hoschke", "Samuel McConaghy"]
+LeadersPoints = [0.00,0.00,0.00]
 
 Override = true
 OverrideOrder = ["LG", "5M", "WW"]
-overRideDate = "Fourth Finals"
+overRideDate = "Last Season"
 overrideW = "Loose Gooses"
-overrideL = "Wet Willies"
-overrideDayPoints = [2, 1, 2]
+overrideL = "5 Musketeers"
+overrideDayPoints = [0, 0, 0]
 
 
 
@@ -321,9 +320,9 @@ function ladder() {
 
 
 players = ["Jasper Collier", "Conor Farrington", "Alexander Galt", "Rudy Hoschke", 
-"Michael Iffland", "Lukas Johnston", "Clarrie Jones", "William Kim",
+"Michael Iffland", "Lukas Johnston", "Sam James", "Clarrie Jones", "William Kim",
 "Samuel McConaghy", "Ryan Pattemore", "Nicholas Szogi", "Christopher Tomkinson", 
-"Angus Walker", "Willie Weekes", "Mitch Yue", "Sam James"
+"Angus Walker", "Willie Weekes", "Mitch Yue"
 ]
 
 
@@ -414,17 +413,15 @@ function results() {
     var cell6 = row.insertCell(5);
     var cell7 = row.insertCell(6);
     var cell8 = row.insertCell(7);
-    var cell9 = row.insertCell(8);
 
     cell1.innerHTML = i + 1;
     cell2.innerHTML = Today.Winner[i];
     cell3.innerHTML = Today.Loser[i];
     cell4.innerHTML = Today.Scorer[i];
-    cell5.innerHTML = Today.Score[i]
-    cell6.innerHTML = Today.Type[i];
-    cell7.innerHTML = Today.WStreak[i];
-    cell8.innerHTML = Today.LStreak[i];
-    cell9.innerHTML = Today.SStreak[i];
+    cell5.innerHTML = Today.Type[i];
+    cell6.innerHTML = Today.WStreak[i];
+    cell7.innerHTML = Today.LStreak[i];
+    cell8.innerHTML = Today.SStreak[i];
   }
 
   for (x = 0; x < players.length; x ++) {

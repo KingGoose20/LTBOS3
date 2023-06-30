@@ -59,59 +59,51 @@
         <div class="section-title-group">
           <h2 class="section-heading centered">News Articles (from latest to oldest)</h2>
         </div>
-        <table>
+        <div id="articles">
+          <!--
           <div class="w-row col-containerCC">
-            <tr>
-              <h2 class="title" style="padding-top: 120px; padding-bottom: 10px; font-size: 400%">Finals</h2>
-              <br>
-            </tr>
+            <h2 class="title" style="padding-top: 120px; padding-bottom: 10px; font-size: 400%">Finals</h2>
+            <br>
             <div id="Finals"></div>
           </div>
           <div class="w-row col-containerCC">
-            <tr>
-              <h2 class="title" style="padding-top: 120px; padding-bottom: 10px; font-size: 400%">Week 5</h2>
-              <br>
-            </tr>
+            <h2 class="title" style="padding-top: 120px; padding-bottom: 10px; font-size: 400%">Week 6</h2>
+            <br>
+            <div id="Week6"></div>
+          </div>
+          <div class="w-row col-containerCC">
+            <h2 class="title" style="padding-top: 120px; padding-bottom: 10px; font-size: 400%">Week 5</h2>
+            <br>
             <div id="Week5"></div>
           </div>
           <div class="w-row col-containerCC">
-            <tr>
-              <h2 class="title" style="padding-top: 120px; padding-bottom: 10px; font-size: 400%">Week 4</h2>
-              <br>
-            </tr>
+            <h2 class="title" style="padding-top: 120px; padding-bottom: 10px; font-size: 400%">Week 4</h2>
+            <br>
             <div id="Week4"></div>
           </div>
           <div class="w-row col-containerCC">
-            <tr>
-              <h2 class="title" style="padding-top: 120px; padding-bottom: 10px; font-size: 400%">Week 3</h2>
-              <br>
-            </tr>
+            <h2 class="title" style="padding-top: 120px; padding-bottom: 10px; font-size: 400%">Week 3</h2>
+            <br>
             <div id="Week3"></div>
           </div>
           <div class="w-row col-containerCC">
-            <tr>
-              <h2 class="title" style="padding-top: 120px; padding-bottom: 10px; font-size: 400%">Week 2</h2>
-              <br>
-            </tr>
+            <h2 class="title" style="padding-top: 120px; padding-bottom: 10px; font-size: 400%">Week 2</h2>
+            <br>
             <div id="Week2"></div>
           </div>
           <div class="w-row col-containerCC">
-            <tr>
-              <h2 class="title" style="padding-top: 120px; padding-bottom: 10px; font-size: 400%">Week 1</h2>
-              <br>
-            </tr>
+            <h2 class="title" style="padding-top: 120px; padding-bottom: 10px; font-size: 400%">Week 1</h2>
+            <br>
             <div id="Week1"></div>
           </div>
           <div class="w-row col-containerCC">
-            <tr>
-              <h2 class="title" style="padding-top: 120px; padding-bottom: 10px; font-size: 400%" id="bottom">Preseason
-              </h2>
-              <br>
-            </tr>
-            <div id="Preseason" class="NewsHeader">
-            </div>
+            <h2 class="title" style="padding-top: 120px; padding-bottom: 10px; font-size: 400%">Preseason</h2>
+            <br>
+            <div id="Preseason"></div>
           </div>
-        </table>
+        -->
+        </div>
+
       </div>
     </div>
   </div>
@@ -125,25 +117,27 @@
       <a href="NewsPages/02.html" style="text-decoration: none;" id="Link" onmouseenter="onHover(this)"
         onmouseleave="offHover(this)">
         <div class="white-box" id="startImages">
-          <img src="../Images/Logo.png" alt="" class="news-image" style="max-height:150px; max-width:150px;"
-            id="ImageA" />
-          <img src="../Images/WW_Final.png" alt="" class="news-image" style="max-height:150px; max-width:150px;"
-            id="ImageB" />
-          <img src="../Images/Logo.png" alt="" class="news-image" style="max-height:150px; max-width:150px;"
-            id="ImageC" />
-          <img src="../Images/WW_Final.png" alt="" class="news-image" style="max-height:150px; max-width:150px;"
-            id="ImageD" />
-          <br><br>
-          <h3 class="box-title" id="Title">Preseason Summary by Rudy Hoschke!</h3>
-          <p id="Description">EX-GM Rudy Hoschke has provided us with a detailed analysis on the results of the
-            preseason, and what to expect from each team during the Term 2 Tournament.</p>
+          <div>
+            <img src="../Images/Logo.png" alt="" class="news-image" style="max-height:150px; max-width:150px;"
+              id="ImageA" />
+            <img src="../Images/WW_Final.png" alt="" class="news-image" style="max-height:150px; max-width:150px;"
+              id="ImageB" />
+            <img src="../Images/Logo.png" alt="" class="news-image" style="max-height:150px; max-width:150px;"
+              id="ImageC" />
+            <img src="../Images/WW_Final.png" alt="" class="news-image" style="max-height:150px; max-width:150px;"
+              id="ImageD" />
+            <br><br>
+            <h3 class="box-title" id="Title">Preseason Summary by Rudy Hoschke!</h3>
+            <p id="Description">EX-GM Rudy Hoschke has provided us with a detailed analysis on the results of the
+              preseason, and what to expect from each team during the Term 2 Tournament.</p>
+          </div>
           <h5 id="Date" style="width: 100%">20/04</h5>
         </div>
       </a>
     </div>
   </template>
   <script src="../js/News.js"></script>
-  <script>createArticles(Preseason, "Preseason"); createArticles(Week1, "Week1"); createArticles(Week2, "Week2"); createArticles(Week3, "Week3"); createArticles(Week4, "Week4"); createArticles(Week5, "Week5"); createArticles(Finals, "Finals")</script>
+  <script>/* createArticles(Preseason, "Preseason"); createArticles(Week1, "Week1"); createArticles(Week2, "Week2"); createArticles(Week3, "Week3"); createArticles(Week4, "Week4"); createArticles(Week5, "Week5"); createArticles(Week6, "Week6"); createArticles(Finals, "Finals");*/</script>
   <script>
   </script>
 </body>

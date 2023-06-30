@@ -3496,6 +3496,12 @@ html {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .box-title {
+    font-size: 6vw
+  }
+}
+
 .leftNews {
   float: left;
 }

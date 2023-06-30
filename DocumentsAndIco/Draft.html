@@ -123,6 +123,59 @@
       padding-top: 2px;
       padding-bottom: 2px;
     }
+
+    #mask {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 9000;
+      background-color: #26262c;
+      display: none;
+    }
+
+    #boxes .window {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 55vw;
+      min-width: 300px;
+      height: 850px;
+      display: none;
+      z-index: 9999;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    #boxes #dialog {
+      width: 55vw;
+      min-width: 325px;
+      height: 87vh;
+      background-color: #ffffff;
+      font-size: 15pt;
+    }
+
+    @media screen and (max-width: 500px) {
+
+      #dialog,
+      #boxes #dialog,
+      #boxes .window {
+        width: 100%;
+      }
+    }
+
+    .agree:hover {
+      background-color: #D1D1D1;
+    }
+
+    .popupoption:hover {
+      background-color: #D1D1D1;
+      color: green;
+    }
+
+    .popupoption2:hover {
+      color: red;
+    }
   </style>
 </head>
 
@@ -145,272 +198,302 @@
   <div data-collapse="medium" data-animation="default" data-duration="400" class="navigation-bar w-nav" id="header">
     <script>header("docs")</script>
   </div>
-  </div>
-  <div class="hero-section centered container gf" style="background-size: cover;">
-    <br>
-    <div data-ix="new-interaction" class="w-container">
-      <h1 class="hero-heading mainHeading animate-heading fade-inHeading">The Draft | Term 3</h1>
-      <div class="button fade-inHeading"><i>Announced on the 11th of July</i></div>
-    </div>
-  </div>
-  <div id="confetti-wrapper">
-    <div class="section">
-      <div class="w-container">
-        <div class="LearnMore">
-          <p>The <strong>Loose Gooses</strong> will be retaining: <strong>????????????????</strong></p>
-          <p>The <strong>5 Musketeers</strong> will be retaining: <strong>????????????????</strong>
-          </p>
-          <p>The <strong>Wet Willies</strong> will be retaining: <strong>????????????????</strong></p>
-          <br><br>
-          <table style="width:100%" class="heading-hide">
-            <col style="width: 20%">
-            <col style="width: 40%">
-            <col style="width: 40%">
-            <thead>
-              <tr>
-                <td>
-                  <p><strong>Pick Number</strong></p>
-                </td>
-                <td>
-                  <p><strong>Team</strong></p>
-                </td>
-                <td>
-                  <p><strong>Player</strong></p>
-                </td>
-              </tr>
-            </thead>
-            <tr style="height: 75px">
-              <td>
-                <p>1st</p>
-              </td>
-              <td><img ../Images/WW_Final.png" style="max-width:100%; max-height: 75px;"></td>
-              <td>
-                <p id="countDown"></p>
-              </td>
-            </tr>
-            <tr style="height: 75px">
-              <td>
-                <p>2nd</p>
-              </td>
-              <td><img ../Images/5M_Final.png" style="max-width:100%; max-height: 75px;"></td>
-              <td>
-                <p id="countDown1"></p>
-              </td>
-            </tr>
-            <tr style="height: 75px">
-              <td>
-                <p>3rd</p>
-              </td>
-              <td><img ../Images/LG_Final.png" style="max-width:100%; max-height: 75px;"></td>
-              <td>
-                <p id="countDown2"></p>
-              </td>
-            </tr>
-            <tr style="height: 75px">
-              <td>
-                <p>4th</p>
-              </td>
-              <td><img ../Images/LG_Final.png" style="max-width:100%; max-height: 75px;"></td>
-              <td>
-                <p id="countDown3"></p>
-              </td>
-            </tr>
-            <tr style="height: 75px">
-              <td>
-                <p>5th</p>
-              </td>
-              <td><img ../Images/5M_Final.png" style="max-width:100%; max-height: 75px;"></td>
-              <td>
-                <p id="countDown4"></p>
-              </td>
-            </tr>
-            <tr style="height: 75px">
-              <td>
-                <p>6th</p>
-              </td>
-              <td><img ../Images/WW_Final.png" style="max-width:100%; max-height: 75px;"></td>
-              <td>
-                <p id="countDown5"></p>
-              </td>
-            </tr>
-            <tr style="height: 75px">
-              <td>
-                <p>7th</p>
-              </td>
-              <td><img ../Images/WW_Final.png" style="max-width:100%; max-height: 75px;"></td>
-              <td>
-                <p id="countDown6"></p>
-              </td>
-            </tr>
-            <tr style="height: 75px">
-              <td>
-                <p>8th</p>
-              </td>
-              <td><img ../Images/5M_Final.png" style="max-width:100%; max-height: 75px;"></td>
-              <td>
-                <p id="countDown7"></p>
-              </td>
-            </tr>
-            <tr style="height: 75px">
-              <td>
-                <p>9th</p>
-              </td>
-              <td><img ../Images/LG_Final.png" style="max-width:100%; max-height: 75px;"></td>
-              <td>
-                <p id="countDown8"></p>
-              </td>
-            </tr>
-            <tr style="height: 75px">
-              <td>
-                <p>10th</p>
-              </td>
-              <td><img ../Images/LG_Final.png" style="max-width:100%; max-height: 75px;"></td>
-              <td>
-                <p id="countDown9"></p>
-              </td>
-            </tr>
-          </table>
-          <span class="inverseheading-hide">
-            <p><b><u><i>Due to your device size, you cannot view the draft results. Please go into <span
-                      style="color: grey;">landscape mode</span> or <span style="color: grey;">open on a larger
-                      device</span> to view them.</i></u></b></p>
-          </span>
+  <div id="boxes">
+    <div style="top: 50%; left: 50%; display: none;" id="dialog" class="window">
+      <div id="san">
+        <a href="#" class="close agree"
+          style="color: red; font-size: 1.1em; text-decoration: underline; float: right;">Close</a>
+        <br><br>
+        <img src="../Images/Logo.png" style="height: 20vh" id="teamImage">
+        <h3 style="margin-top: 20px;">With the first pick in the Term 3 LTBO Draft, the Loose Gooses select</h3>
+        <h1 class="title" id="name"></h1>
+        <br>
+        <div>
+          <div style="float: left; width: 40%">
+            <img src="../Images/Players/Logo.png" style="width: 85%" id="playerImage"></div>
+          <div style="float: right; width: 60%">
+            <h3 style="color: black;">Last Term's Averages:</h3>
+            <h3>Points: <span style="color: darkorchid" id="points"></span></h3>
+            <h3>Finishes: <span style="color: darkorchid" id="finishes"></span></h3>
+            <h3>Midranges: <span style="color: darkorchid" id="midranges"></span></h3>
+            <h3>Threes: <span style="color: darkorchid" id="threes"></span></h3>
+            <br><br>
+            <h3 style="color: black;">Biggest accomplishment:</h3>
+            <h3 id="accomplishment" style="color: darkorchid">Champion</h3>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div id="footer">
-    <script>footer("docs")</script>
-  </div>
-  <div id="confettissss" style="z-index: 300">
-    <script>
-      function rainConfetti() {
-        for (i = 0; i < 400; i++) {
-          // Random rotation
-          var randomRotation = Math.floor(Math.random() * 360);
-          // Random width & height between 0 and viewport
-          var randomWidth = Math.floor(Math.random() * Math.max(document.documentElement.clientWidth, window.innerWidth || 0));
-          var randomHeight = Math.floor(Math.random() * Math.max(document.documentElement.clientHeight, window.innerHeight || 0));
+    <div style="width: 2478px; font-size: 32pt; color:white; height: 1202px; display: none; opacity: 0.4;" id="mask">
+    </div>
+    <div class="hero-section centered container gf" style="background-size: cover;">
+      <br>
+      <div data-ix="new-interaction" class="w-container">
+        <h1 class="hero-heading mainHeading animate-heading fade-inHeading">The Draft | Term 3</h1>
+        <div class="button fade-inHeading"><i>Announced on the 11th of July</i></div>
+      </div>
+    </div>
+    <div id="confetti-wrapper">
+      <div class="section">
+        <div class="w-container">
+          <div class="LearnMore">
+            <p>The <strong>Loose Gooses</strong> will be retaining: <strong>????????????????</strong></p>
+            <p>The <strong>5 Musketeers</strong> will be retaining: <strong>????????????????</strong>
+            </p>
+            <p>The <strong>Wet Willies</strong> will be retaining: <strong>????????????????</strong></p>
+            <br><br>
+            <table style="width:100%" class="heading-hide">
+              <col style="width: 20%">
+              <col style="width: 40%">
+              <col style="width: 40%">
+              <thead>
+                <tr>
+                  <td>
+                    <p><strong>Pick Number</strong></p>
+                  </td>
+                  <td>
+                    <p><strong>Team</strong></p>
+                  </td>
+                  <td>
+                    <p><strong>Player</strong></p>
+                  </td>
+                </tr>
+              </thead>
+              <tr style="height: 75px">
+                <td>
+                  <p>1st</p>
+                </td>
+                <td><img ../Images/WW_Final.png" style="max-width:100%; max-height: 75px;"></td>
+                <td>
+                  <p id="countDown"></p>
+                </td>
+              </tr>
+              <tr style="height: 75px">
+                <td>
+                  <p>2nd</p>
+                </td>
+                <td><img ../Images/5M_Final.png" style="max-width:100%; max-height: 75px;"></td>
+                <td>
+                  <p id="countDown1"></p>
+                </td>
+              </tr>
+              <tr style="height: 75px">
+                <td>
+                  <p>3rd</p>
+                </td>
+                <td><img ../Images/LG_Final.png" style="max-width:100%; max-height: 75px;"></td>
+                <td>
+                  <p id="countDown2"></p>
+                </td>
+              </tr>
+              <tr style="height: 75px">
+                <td>
+                  <p>4th</p>
+                </td>
+                <td><img ../Images/LG_Final.png" style="max-width:100%; max-height: 75px;"></td>
+                <td>
+                  <p id="countDown3"></p>
+                </td>
+              </tr>
+              <tr style="height: 75px">
+                <td>
+                  <p>5th</p>
+                </td>
+                <td><img ../Images/5M_Final.png" style="max-width:100%; max-height: 75px;"></td>
+                <td>
+                  <p id="countDown4"></p>
+                </td>
+              </tr>
+              <tr style="height: 75px">
+                <td>
+                  <p>6th</p>
+                </td>
+                <td><img ../Images/WW_Final.png" style="max-width:100%; max-height: 75px;"></td>
+                <td>
+                  <p id="countDown5"></p>
+                </td>
+              </tr>
+              <tr style="height: 75px">
+                <td>
+                  <p>7th</p>
+                </td>
+                <td><img ../Images/WW_Final.png" style="max-width:100%; max-height: 75px;"></td>
+                <td>
+                  <p id="countDown6"></p>
+                </td>
+              </tr>
+              <tr style="height: 75px">
+                <td>
+                  <p>8th</p>
+                </td>
+                <td><img ../Images/5M_Final.png" style="max-width:100%; max-height: 75px;"></td>
+                <td>
+                  <p id="countDown7"></p>
+                </td>
+              </tr>
+              <tr style="height: 75px">
+                <td>
+                  <p>9th</p>
+                </td>
+                <td><img ../Images/LG_Final.png" style="max-width:100%; max-height: 75px;"></td>
+                <td>
+                  <p id="countDown8"></p>
+                </td>
+              </tr>
+              <tr style="height: 75px">
+                <td>
+                  <p>10th</p>
+                </td>
+                <td><img ../Images/LG_Final.png" style="max-width:100%; max-height: 75px;"></td>
+                <td>
+                  <p id="countDown9"></p>
+                </td>
+              </tr>
+            </table>
+            <span class="inverseheading-hide">
+              <p><b><u><i>Due to your device size, you cannot view the draft results. Please go into <span
+                        style="color: grey;">landscape mode</span> or <span style="color: grey;">open on a larger
+                        device</span> to view them.</i></u></b></p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <script>footer("docs")</script>
+    </div>
+    <div id="confettissss" style="z-index: 300">
+      <script src="../js/Draft.js"></script>
+      <script>
+        function rainConfetti() {
+          for (i = 0; i < 400; i++) {
+            // Random rotation
+            var randomRotation = Math.floor(Math.random() * 360);
+            // Random width & height between 0 and viewport
+            var randomWidth = Math.floor(Math.random() * Math.max(document.documentElement.clientWidth, window.innerWidth || 0));
+            var randomHeight = Math.floor(Math.random() * Math.max(document.documentElement.clientHeight, window.innerHeight || 0));
 
-          // Random animation-delay
-          var randomAnimationDelay = Math.floor(Math.random() * 3);
-          console.log(randomAnimationDelay)
+            // Random animation-delay
+            var randomAnimationDelay = Math.floor(Math.random() * 3);
 
-          // Random colors
-          var colors = ['#0CD977', '#FF1C1C', '#FF93DE', '#5767ED', '#FFC61C', '#8497B0']
-          var randomColor = colors[Math.floor(Math.random() * colors.length)];
+            // Random colors
+            var colors = ['#0CD977', '#FF1C1C', '#FF93DE', '#5767ED', '#FFC61C', '#8497B0']
+            var randomColor = colors[Math.floor(Math.random() * colors.length)];
 
-          // Create confetti piece
-          var confetti = document.createElement('div');
-          confetti.className = 'confetti';
-          confetti.style.top = (randomHeight + 200) + 'px';
-          confetti.style.left = randomWidth + 'px';
-          confetti.style.backgroundColor = randomColor;
-          confetti.style.transform = 'skew(15deg) rotate(' + randomRotation + 'deg)';
-          confetti.style.animationDelay = randomAnimationDelay + 's';
-          document.getElementById("confetti-wrapper").appendChild(confetti);
-        }
-      }
-    </script>
-    <script>
-      /* Set the date we're counting down to */
-      var countDownDate = [new Date("July 11, 2023 15:27:00").getTime(), new Date("July 11, 2023 15:27:30"), new Date("July 11, 2023 11:34:00").getTime(),
-      new Date("July 11, 2023 11:35:30").getTime(), new Date("July 11, 2023 11:37:00"), new Date("July 11, 2023 11:38:30").getTime(),
-      new Date("July 11, 2023 11:40:00").getTime(), new Date("July 11, 2023 11:41:30"), new Date("July 11, 2023 11:43:00").getTime(), new Date("July 11, 2023 11:44:30").getTime()];
-
-
-      allID = ["countDown", "countDown1", "countDown2",
-        "countDown3", "countDown4", "countDown5",
-        "countDown6", "countDown7", "countDown8", "countDown9"];
-
-
-      allAnswers = ["Lukas Johnston", "Nicholas Szogi", "Clarrie Jones",
-        "Christopher Tomkinson", "Ryan Pattemore", "Conor Farrington",
-        "Willie Weekes", "Jasper Collier", "Mitch Yue", "Sam James"];
-      var selectedNumber = 0
-
-      function init() {
-        now = new Date().getTime();
-        for (i = 0; i < countDownDate.length; i++) {
-          distance = countDownDate[selectedNumber] - now;
-          if (distance <= 0) {
-            document.getElementById(allID[selectedNumber]).innerHTML = allAnswers[selectedNumber];
-            selectedNumber += 1
-          } else {
-            break;
+            // Create confetti piece
+            var confetti = document.createElement('div');
+            confetti.className = 'confetti';
+            confetti.style.top = (randomHeight + 200) + 'px';
+            confetti.style.left = randomWidth + 'px';
+            confetti.style.backgroundColor = randomColor;
+            confetti.style.transform = 'skew(15deg) rotate(' + randomRotation + 'deg)';
+            confetti.style.animationDelay = randomAnimationDelay + 's';
+            document.getElementById("confetti-wrapper").appendChild(confetti);
           }
         }
+      </script>
+      <script>
+        /* Set the date we're counting down to */
+        var countDownDate = [new Date("June 30, 2023 19:25:40").getTime(), new Date("July 11, 2023 15:27:30"), new Date("July 11, 2023 11:34:00").getTime(),
+        new Date("July 11, 2023 11:35:30").getTime(), new Date("July 11, 2023 11:37:00"), new Date("July 11, 2023 11:38:30").getTime(),
+        new Date("July 11, 2023 11:40:00").getTime(), new Date("July 11, 2023 11:41:30"), new Date("July 11, 2023 11:43:00").getTime(), new Date("July 11, 2023 11:44:30").getTime()];
+
+        detailsToUse = [Angus]
+
+        allID = ["countDown", "countDown1", "countDown2",
+          "countDown3", "countDown4", "countDown5",
+          "countDown6", "countDown7", "countDown8", "countDown9"];
 
 
-      }
+        allAnswers = ["Lukas Johnston", "Nicholas Szogi", "Clarrie Jones",
+          "Christopher Tomkinson", "Ryan Pattemore", "Conor Farrington",
+          "Willie Weekes", "Jasper Collier", "Mitch Yue", "Sam James"];
+        var selectedNumber = 0
 
-      init()
-
-      // Update the count down every 1 second
-      var x = setInterval(function () {
-
-        // Get today's date and time
-        var now = new Date().getTime();
-
-        var distance = 100
-        var days = 10
-        var hours = 10
-        var minutes = 10
-        var seconds = 10
-        var glowTick = 0
-        var glowOn = false
-
-        // Find the distance between now and the count down date
-        function main() {
-          if (glowTick < 3 && selectedNumber > 1 && glowOn) {
-            glowTick += 1
-          } else if (glowTick == 3) {
-            glowTick = 0
-            glowOn = false
-            document.getElementById(allID[selectedNumber - 1]).classList.remove(glow);
-          }
+        function init() {
           now = new Date().getTime();
-          distance = countDownDate[selectedNumber] - now;
-
-          // Time calculations for days, hours, minutes and seconds
-          days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        }
-
-        main()
-
-        // Output the result in an element with id=""
-
-        function checkNotZero(variable, letter) {
-          if (variable > 0) {
-            return (variable + letter)
-          } else {
-            return ("")
+          for (i = 0; i < countDownDate.length; i++) {
+            distance = countDownDate[selectedNumber] - now;
+            if (distance <= 0) {
+              document.getElementById(allID[selectedNumber]).innerHTML = allAnswers[selectedNumber];
+              selectedNumber += 1
+            } else {
+              break;
+            }
           }
-        }
-        document.getElementById(allID[selectedNumber]).innerHTML = checkNotZero(days, "d ") + checkNotZero(hours, "h ")
-          + checkNotZero(minutes, "m ") + checkNotZero(seconds, "s ");
 
-        // If the count down is over, write some text 
-        if (distance < 0) {
-          document.getElementById(allID[selectedNumber]).innerHTML = allAnswers[selectedNumber];
-          document.getElementById(allID[selectedNumber]).classList.add('glow');
-          glowOn = true
-          selectedNumber += 1
-          rainConfetti()
-          if (selectedNumber == 10) {
-            clearInterval(x);
-          } else {
-            main();
+
+        }
+
+        init()
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+          // Get today's date and time
+          var now = new Date().getTime();
+
+          var distance = 100
+          var days = 10
+          var hours = 10
+          var minutes = 10
+          var seconds = 10
+          var glowTick = 0
+          var glowOn = false
+
+          // Find the distance between now and the count down date
+          function main() {
+            if (glowTick < 3 && selectedNumber > 1 && glowOn) {
+              glowTick += 1
+            } else if (glowTick == 3) {
+              glowTick = 0
+              glowOn = false
+              document.getElementById(allID[selectedNumber - 1]).classList.remove(glow);
+            }
+            now = new Date().getTime();
+            distance = countDownDate[selectedNumber] - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
           }
-        }
-      }, 1000);
-    </script>
 
-    <script src="../js/heading.js"></script>
-    <script src="../js/Scroll.js"></script>
+          main()
+
+          // Output the result in an element with id=""
+
+          function checkNotZero(variable, letter) {
+            if (variable > 0) {
+              return (variable + letter)
+            } else {
+              return ("")
+            }
+          }
+          document.getElementById(allID[selectedNumber]).innerHTML = checkNotZero(days, "d ") + checkNotZero(hours, "h ")
+            + checkNotZero(minutes, "m ") + checkNotZero(seconds, "s ");
+
+          // If the count down is over, write some text 
+          if (distance < 0) {
+            document.getElementById(allID[selectedNumber]).innerHTML = allAnswers[selectedNumber];
+            document.getElementById(allID[selectedNumber]).classList.add('glow');
+            glowOn = true
+            selectedNumber += 1
+            rainConfetti()
+            setTimeout(() => { prepare(detailsToUse[selectedNumber-1], "Loose Gooses") }, 1000);
+            setTimeout(() => { showPlayer() }, 3000);
+            if (selectedNumber == 10) {
+              clearInterval(x);
+            } else {
+              main();
+            }
+          }
+        }, 1000);
+      </script>
+
+      <script src="../js/heading.js"></script>
+      <script src="../js/Scroll.js"></script>
 
 </body>

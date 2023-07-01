@@ -1,6 +1,17 @@
-Joe = ["../Images/Players/Alex.png", 3, 2, 5, 7, "Child", "lebym"]
-Angus = ["../Images/Players/Angus.png", 2, 1, 3, 4, "Champion", "Angus Walker"]
-Chris = ["../Images/Players/Christopher.png", 1, 2, 43, 41, "MVP", "Christopher Tomkinson"]
+Chris = ["../Images/Players/Christopher.png", 1.06, 0.41, 0.64, 0, "MVP", "Christopher Tomkinson"]
+Kimmy = ["../Images/Players/Kimmy.png", 1.41, 0.41, 1, 0, "Finals MVP", "William Kim"]
+SamJ = ["../Images/Players/SamJ.png", 0.31, 0.18, 0.13, 0, "Champion", "Sam James"]
+Mitch = ["../Images/Players/Mitch.png", 0.65, 0.24, 0.29, 0.06, "Champion", "Mitch Yue"]
+
+Alex = ["../Images/Players/Alex.png", 3.14, 3.07, 0.2, 0, "First All-Teams", "Alexander Galt"]
+Nick = ["../Images/Players/Nick.png", 1.07, 0.53, 0.13, 0.2, "X-Factor", "Nicholas Szogi"]
+Jasper = ["../Images/Players/Jasper.png", 0.41, 0.12, 0.29, 0, "Averaged 1.5 points for a week", "Jasper Collier"]
+Ryan = ["../Images/Players/Ryan.png", 0.88, 0.13, 0.63, 0.06, "Averaged 2 points for a week", "Ryan Pattemore"]
+
+Michael = ["../Images/Players/Michael.png", 2.06, 0.59, 0.76, 0.35, "Averaged 1.5 threes for a week", "Michael Iffland"]
+Lukas = ["../Images/Players/Lukas.png", 1.14, 0.64, 0.5, 0, "All-Second Offence Team", "Lukas Johnston"]
+Conor = ["../Images/Players/Conor.png", 0.6, 0.4, 0.2, 0, "Averaged 1.3 points for a week", "Conor Farrington"]
+Willie = ["../Images/Players/Willie.png", 0.12, 0.12, 0, 0, "Teammate of the Season", "Will Weekes"]
 
 function prepare(variable, team, number) {
     document.getElementById("playerImage").src = variable[0]

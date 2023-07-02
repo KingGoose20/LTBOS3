@@ -1,3 +1,5 @@
+Angus = ["../Images/Players/Angus.png", 2.43, 1.43, 0.57, 0.24, "Champion", "Angus Walker"]
+
 Chris = ["../Images/Players/Christopher.png", 1.06, 0.41, 0.64, 0, "MVP", "Christopher Tomkinson"]
 Kimmy = ["../Images/Players/Kimmy.png", 1.41, 0.41, 1, 0, "Finals MVP", "William Kim"]
 SamJ = ["../Images/Players/SamJ.png", 0.31, 0.18, 0.13, 0, "Champion", "Sam James"]
@@ -80,8 +82,6 @@ function showPlayer() {
         $('.window').hide();
     });
 }
-
-prepare(Joe, "abcd")
 
 
 

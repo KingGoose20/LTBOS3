@@ -24,7 +24,7 @@ WetWillies = {
     "Colours": ["#e45e0b", "#8c3600", "#8c3600", "#ff690c"],
     "VariablesPlayers": ["Player1", "Player2", "Player3", "Player4", "Player5"],
     "VariablesText": ["TPlayer1", "TPlayer2", "TPlayer3", "TPlayer4", "TPlayer5"],
-    "Players": ["Michael Iffland", "Rudy Hoschke", "Lukas Johnston", "Conor Farrington", "Will Weekes"],
+    "Players": ["Rudy Hoschke", "Michael Iffland", "Lukas Johnston", "Conor Farrington", "Will Weekes"],
     "Images": ["../Images/Players/Michael.png", "../Images/Players/Rudy.png", "../Images/Players/Lukas.png", "../Images/Players/Conor.png", "../Images/Players/Willie.png"],
     "PartA": [0, 0],
     "PartB": [0, "N/A", 0, "N/A", 0, "N/A", 0, "N/A"],

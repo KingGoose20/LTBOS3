@@ -19,7 +19,7 @@ mainArray = {
   "AccoladesEight": ["", "", "", "", "", "", "", "", "", "", "", "", "", "Champion T2", "", ""],
   "History":["","","","GM of Wet Willies","","","","","","GM of 5 Musketeers","","","","GM of Loose Gooses","",""],
   "TeamImage": ["../Images/Logo.png", "../Images/Logo.png", "../Images/Logo.png", "../Images/WW_Final.png", "../Images/Logo.png", "../Images/Logo.png", "../Images/Logo.png", "../Images/Logo.png", "../Images/Logo.png", "../Images/5M_Final.png", "../Images/Logo.png", "../Images/Logo.png", "../Images/Logo.png", "../Images/LG_Final.png", "../Images/Logo.png", "../Images/Logo.png",],
-  "PlayerImage": ["../Images/Players/Jasper.png", "../Images/Players/Conor.png", "../Images/Players/Alex.png", "../Images/Players/Rudy.png", "../Images/Players/Michael.png", "../Images/Players/Lukas.png", "../Images/Players/Sam J.png", "../Images/Players/Clarrie.png", "../Images/Players/Kimmy.png", "../Images/Players/SamM.png", "../Images/Players/Ryan.png", "../Images/Players/Nick.png", "../Images/Players/Chris.png", "../Images/Players/Angus.png", "../Images/Players/Willie.png", "../Images/Players/Mitch.png",],
+  "PlayerImage": ["../Images/Players/Jasper.png", "../Images/Players/Conor.png", "../Images/Players/Alex.png", "../Images/Players/Rudy.png", "../Images/Players/Michael.png", "../Images/Players/Lukas.png", "../Images/Players/Sam J.png", "../Images/Players/Clarrie.png", "../Images/Players/Kimmy.png", "../Images/Players/SamM.png", "../Images/Players/Ryan.png", "../Images/Players/Nick.png", "../Images/Players/Christopher.png", "../Images/Players/Angus.png", "../Images/Players/Willie.png", "../Images/Players/Mitch.png",],
 
 }
 

@@ -269,7 +269,7 @@
                 </td>
                 <td><img src="../Images/LG_Final.png" style="max-width:100%; max-height: 75px;"></td>
                 <td>
-                  <p id="countDown"></p>
+                  <p id="countDown0" style="font-size: 0.7em"></p>
                 </td>
               </tr>
               <tr style="height: 75px">
@@ -278,7 +278,7 @@
                 </td>
                 <td><img src="../Images/WW_Final.png" style="max-width:100%; max-height: 75px;"></td>
                 <td>
-                  <p id="countDown1"></p>
+                  <p id="countDown1" style="font-size: 0.7em"></p>
                 </td>
               </tr>
               <tr style="height: 75px">
@@ -287,7 +287,7 @@
                 </td>
                 <td><img src="../Images/5M_Final.png" style="max-width:100%; max-height: 75px;"></td>
                 <td>
-                  <p id="countDown2"></p>
+                  <p id="countDown2" style="font-size: 0.7em"></p>
                 </td>
               </tr>
               <tr style="height: 75px">
@@ -296,7 +296,7 @@
                 </td>
                 <td><img src="../Images/5M_Final.png" style="max-width:100%; max-height: 75px;"></td>
                 <td>
-                  <p id="countDown3"></p>
+                  <p id="countDown3" style="font-size: 0.7em"></p>
                 </td>
               </tr>
               <tr style="height: 75px">
@@ -305,7 +305,7 @@
                 </td>
                 <td><img src="../Images/WW_Final.png" style="max-width:100%; max-height: 75px;"></td>
                 <td>
-                  <p id="countDown4"></p>
+                  <p id="countDown4" style="font-size: 0.7em"></p>
                 </td>
               </tr>
               <tr style="height: 75px">
@@ -314,7 +314,7 @@
                 </td>
                 <td><img src="../Images/LG_Final.png" style="max-width:100%; max-height: 75px;"></td>
                 <td>
-                  <p id="countDown5"></p>
+                  <p id="countDown5" style="font-size: 0.7em"></p>
                 </td>
               </tr>
               <tr style="height: 75px">
@@ -323,7 +323,7 @@
                 </td>
                 <td><img src="../Images/LG_Final.png" style="max-width:100%; max-height: 75px;"></td>
                 <td>
-                  <p id="countDown6"></p>
+                  <p id="countDown6" style="font-size: 0.7em"></p>
                 </td>
               </tr>
               <tr style="height: 75px">
@@ -332,7 +332,7 @@
                 </td>
                 <td><img src="../Images/WW_Final.png" style="max-width:100%; max-height: 75px;"></td>
                 <td>
-                  <p id="countDown7"></p>
+                  <p id="countDown7" style="font-size: 0.7em"></p>
                 </td>
               </tr>
               <tr style="height: 75px">
@@ -341,7 +341,7 @@
                 </td>
                 <td><img src="../Images/5M_Final.png" style="max-width:100%; max-height: 75px;"></td>
                 <td>
-                  <p id="countDown8"></p>
+                  <p id="countDown8" style="font-size: 0.7em"></p>
                 </td>
               </tr>
             </table>
@@ -391,22 +391,14 @@
       </script>
       <script>
         /* Set the date we're counting down to */
-        var countDownDate = [new Date("July 11, 2023 11:30:00").getTime(), new Date("July 11, 2023 11:31:30"), new Date("July 11, 2023 11:34:00").getTime(),
-        new Date("July 11, 2023 11:35:30").getTime(), new Date("July 11, 2023 11:37:00"), new Date("July 11, 2023 11:38:30").getTime(),
-        new Date("July 11, 2023 11:40:00").getTime(), new Date("July 11, 2023 11:41:30"), new Date("July 11, 2023 11:43:00").getTime()];
+        var countDownDate = [new Date("July 11, 2023 11:33:00").getTime(), new Date("July 11, 2023 11:34:00"), new Date("July 11, 2023 11:35:00").getTime(),
+        new Date("July 11, 2023 11:36:00").getTime(), new Date("July 11, 2023 11:37:00"), new Date("July 11, 2023 11:38:00").getTime(),
+        new Date("July 11, 2023 11:39:00").getTime(), new Date("July 11, 2023 11:40:00"), new Date("July 11, 2023 11:41:00").getTime()];
 
-        detailsToUse = []
-        teamsToUse = ["Loose Gooses", "Wet Willies"]
+        detailsToUse = [Chris, SamJ, Mitch, Nick, Jasper, Ryan, Lukas, Conor, Willie]
+        teamsToUse = ["Loose Gooses", "Wet Willies", "5 Musketeers", "5 Musketeers", "Wet Willies", "Loose Gooses", "Loose Gooses", "Wet Willies", "5 Musketeers"]
         numbersToUse = ["First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth", "Nineth"]
 
-        allID = ["countDown", "countDown1", "countDown2",
-          "countDown3", "countDown4", "countDown5",
-          "countDown6", "countDown7", "countDown8"];
-
-
-        allAnswers = ["Lukas Johnston", "Nicholas Szogi", "Clarrie Jones",
-          "Christopher Tomkinson", "Ryan Pattemore", "Conor Farrington",
-          "Willie Weekes", "Jasper Collier", "Mitch Yue", "Sam James"];
         var selectedNumber = 0
 
         function init() {
@@ -414,7 +406,7 @@
           for (i = 0; i < countDownDate.length; i++) {
             distance = countDownDate[selectedNumber] - now;
             if (distance <= 0) {
-              document.getElementById(allID[selectedNumber]).innerHTML = allAnswers[selectedNumber];
+              document.getElementById("countDown" + selectedNumber).innerHTML = detailsToUse[selectedNumber][6];
               selectedNumber += 1
             } else {
               break;
@@ -447,7 +439,7 @@
             } else if (glowTick == 3) {
               glowTick = 0
               glowOn = false
-              document.getElementById(allID[selectedNumber - 1]).classList.remove(glow);
+              document.getElementById("countDown" + (selectedNumber-1)).classList.remove(glow);
             }
             now = new Date().getTime();
             distance = countDownDate[selectedNumber] - now;
@@ -471,13 +463,13 @@
               return ("")
             }
           }
-          document.getElementById(allID[selectedNumber]).innerHTML = checkNotZero(days, "d ") + checkNotZero(hours, "h ")
+          document.getElementById("countDown" + selectedNumber).innerHTML = checkNotZero(days, "d ") + checkNotZero(hours, "h ")
             + checkNotZero(minutes, "m ") + checkNotZero(seconds, "s ");
 
           // If the count down is over, write some text 
           if (distance < 0) {
-            document.getElementById(allID[selectedNumber]).innerHTML = allAnswers[selectedNumber];
-            document.getElementById(allID[selectedNumber]).classList.add('glow');
+            document.getElementById("countDown" + selectedNumber).innerHTML = detailsToUse[selectedNumber][6];
+            document.getElementById("countDown" + selectedNumber).classList.add('glow');
             glowOn = true
             selectedNumber += 1
             rainConfetti()

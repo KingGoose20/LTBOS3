@@ -6,7 +6,7 @@ SamJ = ["../Images/Players/SamJ.png", 0.31, 0.18, 0.13, 0, "Champion", "Sam Jame
 Mitch = ["../Images/Players/Mitch.png", 0.65, 0.24, 0.29, 0.06, "Champion", "Mitch Yue"]
 
 Alex = ["../Images/Players/Alex.png", 3.14, 3.07, 0.2, 0, "First All-Teams", "Alexander Galt"]
-Nick = ["../Images/Players/Nick.png", 1.07, 0.53, 0.13, 0.2, "X-Factor", "Nicholas Szogi"]
+Nick = ["../Images/Players/Nicholas.png", 1.07, 0.53, 0.13, 0.2, "X-Factor", "Nicholas Szogi"]
 Jasper = ["../Images/Players/Jasper.png", 0.41, 0.12, 0.29, 0, "Averaged 1.5 points for a week", "Jasper Collier"]
 Ryan = ["../Images/Players/Ryan.png", 0.88, 0.13, 0.63, 0.06, "Averaged 2 points for a week", "Ryan Pattemore"]
 

@@ -2,9 +2,7 @@ LooseGooses = {
     "TeamsNames": ["Wet Willies", "5 Musketeers", "WW", "5M", "Loose Gooses"],
     "Quote": ["Honk honk honk, honk honk"],
     "Colours": ["#d74268", "#f5b153", "#d48619", "#d74268"],
-    "VariablesPlayers": ["Player1", "Player2", "Player3", "Player4", "Player5", "Player6"],
-    "VariablesText": ["TPlayer1", "TPlayer2", "TPlayer3", "TPlayer4", "TPlayer5", "TPlayer6"],
-    "Players": ["Angus Walker", "William Kim", "Clarrie Jones", "Christopher Tomkinson", "Mitch Yue", "Sam James"],
+    "Players": ["Angus Walker", "William Kim"],
     "Images": ["../Images/Players/Angus.png", "../Images/Players/Kimmy.png", "../Images/Players/Clarrie.png", "../Images/Players/Christopher.png", "../Images/Players/Mitch.png", "../Images/Players/SamJ.png"],
     "PartA": [0, 0],
     "PartB": [0, "N/A", 0, "N/A", 0, "N/A", 0, "N/A"],
@@ -22,10 +20,8 @@ WetWillies = {
     "TeamsNames": ["Loose Gooses", "5 Musketeers", "LG", "5M", "Wet Willies"],
     "Quote": ["Screw Clarrie Jones, we like to eat little white boys."],
     "Colours": ["#e45e0b", "#8c3600", "#8c3600", "#ff690c"],
-    "VariablesPlayers": ["Player1", "Player2", "Player3", "Player4", "Player5"],
-    "VariablesText": ["TPlayer1", "TPlayer2", "TPlayer3", "TPlayer4", "TPlayer5"],
-    "Players": ["Rudy Hoschke", "Michael Iffland", "Lukas Johnston", "Conor Farrington", "Will Weekes"],
-    "Images": ["../Images/Players/Michael.png", "../Images/Players/Rudy.png", "../Images/Players/Lukas.png", "../Images/Players/Conor.png", "../Images/Players/Willie.png"],
+    "Players": ["Rudy Hoschke", "Michael Iffland"],
+    "Images": ["../Images/Players/Rudy.png", "../Images/Players/Michael.png", "../Images/Players/Lukas.png", "../Images/Players/Conor.png", "../Images/Players/Willie.png"],
     "PartA": [0, 0],
     "PartB": [0, "N/A", 0, "N/A", 0, "N/A", 0, "N/A"],
     "PartC": [0, 0, 0, 0, 0, 0],
@@ -42,9 +38,7 @@ Musketeers = {
     "TeamsNames": ["Loose Gooses", "Wet Willies", "LG", "WW", "5 Musketeers"],
     "Quote": ["With Nick, we're the 6 Musketeers"],
     "Colours": ["#004045", "#004045", "#47aeb5", "#47aeb5"],
-    "VariablesPlayers": ["Player1", "Player2", "Player3", "Player4", "Player5"],
-    "VariablesText": ["TPlayer1", "TPlayer2", "TPlayer3", "TPlayer4", "TPlayer5"],
-    "Players": ["Samuel McConaghy", "Alexander Galt", "Nicholas Szogi", "Ryan Pattemore", "Jasper Collier"],
+    "Players": ["Samuel McConaghy", "Alexander Galt"],
     "Images": ["../Images/Players/SamM.png", "../Images/Players/Alex.png", "../Images/Players/Nicholas.png", "../Images/Players/Ryan.png", "../Images/Players/Jasper.png"],
     "PartA": [0, 0],
     "PartB": [0, "N/A", 0, "N/A", 0, "N/A", 0, "N/A"],
@@ -77,9 +71,9 @@ if (SelectedTeam == "5M") {
 }
 
 function RunMain() {
-    for (i = 0; i < variable.VariablesPlayers.length; i++) {
+    for (i = 0; i < variable.Players.length; i++) {
         rowOne = document.getElementById("playersRow1")
-        width = 100 / variable.VariablesPlayers.length
+        width = 100 / variable.Players.length
         rowOne.innerHTML = rowOne.innerHTML + "<td style='width: " + width + "%; cursor: pointer;'><img src='" + variable.Images[i] + "' class='playerImages'/></td>"
         rowTwo = document.getElementById("playersRow2")
         if (i == 0) {

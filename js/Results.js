@@ -1,31 +1,31 @@
-LooseGooses = ["Angus Walker"]
-WetWillies = ["Rudy Hoschke"]
-Musketeers = ["Samuel McConaghy"]
+LooseGooses = ["Angus Walker", "William Kim", "Christopher Tomkinson", "Jasper Collier", "Conor Farrington"]
+WetWillies = ["Rudy Hoschke", "Michael Iffland", "Lukas Johnston", "Ryan Pattemore", "Will Weekes", "Clarrie Jones", "William Scott"]
+Musketeers = ["Samuel McConaghy", "Alexander Galt", "Nicholas Szogi", "Sam James", "Mitch Yue"]
 
 Today = {
-    "Date": [],
-    "Game Number":[],
-    "Winner":[],
-    "Loser":[],
-    "Scorer":[],
-    "Type":[],
-    "WStreak":[],
-    "LStreak":[],
-    "SStreak":[]
+    "Date": ["11 July"],
+    "Game Number":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],
+    "Winner":["Loose Gooses","Loose Gooses","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","Loose Gooses","Loose Gooses","5 Musketeers","5 Musketeers","Loose Gooses"],
+    "Loser":["5 Musketeers","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","5 Musketeers","Wet Willies","Loose Gooses","Wet Willies","5 Musketeers"],
+    "Scorer":["Christopher Tomkinson","Conor Farrington","Alexander Galt","Samuel McConaghy","Sam James","Samuel McConaghy","Samuel McConaghy","Alexander Galt","Alexander Galt","Samuel McConaghy","Nicholas Szogi","Sam James","William Kim","William Kim","Alexander Galt","Samuel McConaghy","Conor Farrington"],
+    "Type":["Midrange","Midrange","Finish","Three Pointer","Midrange","Midrange","Midrange","Finish","Finish","Midrange","Three Pointer","Finish","Finish","Three Pointer","Three Pointer","Midrange","Finish"],
+    "WStreak":[1,2,1,2,3,4,5,6,7,8,9,10,1,2,1,2,1],
+    "LStreak":[1,1,1,2,2,3,3,4,4,5,5,6,1,7,1,8,1],
+    "SStreak":[1,1,1,1,1,1,2,1,2,1,1,1,1,2,1,1,1]
   }
 
 DidNotPlay = [""]
 /* Goes LG, WW, 5M */
-LadderPoints = [0,0,0]
-Leaders = ["Angus Walker", "Rudy Hoschke", "Samuel McConaghy"]
-LeadersPoints = [0.00,0.00,0.00]
+LadderPoints = [2,1,3]
+Leaders = ["William Kim", "Rudy Hoschke", "Samuel McConaghy"]
+LeadersPoints = [3.00,0.00,6.00]
 
-Override = true
+Override = false
 OverrideOrder = ["LG", "5M", "WW"]
-overRideDate = "Last Season"
-overrideW = "Loose Gooses"
-overrideL = "5 Musketeers"
-overrideDayPoints = [0, 0, 0]
+overRideDate = ""
+overrideW = ""
+overrideL = ""
+overrideDayPoints = []
 
 
 
@@ -549,8 +549,3 @@ function openStatsLadder(item) {
   }
   window.location.href = ourHref
 }
-
-
-AddData(LooseGooses, "teamLista")
-AddData(Musketeers, "teamListb")
-AddData(WetWillies, "teamListc")

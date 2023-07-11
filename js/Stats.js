@@ -73,11 +73,14 @@ selectDiv.addEventListener('change', function (e) {
       break;
     case 'fifteen':
       number = 15
+    case 'sixteen':
+      number = 16
   }
   RunMain()
 });
 
 function RunMain() {
+  console.log(mainArray.Name[number])
   points.innerHTML = String(mainArray.PPG[number]) + "-" + String(mainArray.TP[number])
   finishes.innerHTML = String(mainArray.FPG[number]) + "-" + String(mainArray.TF[number])
   midranges.innerHTML = String(mainArray.MPG[number]) + "-" + String(mainArray.TM[number])
@@ -139,8 +142,8 @@ myKeyValues = currentLocation.search
 urlParams = new URLSearchParams(myKeyValues)
 SelectedPlayer = urlParams.get("Player")
 Players = ["Jasper Collier", "Conor Farrington", "Alexander Galt", "Rudy Hoschke", "Michael Iffland", "Lukas Johnston", "Sam James",
-  "Clarrie Jones", "William Kim", "Samuel McConaghy", "Ryan Pattemore", "Nicholas Szogi",
-  "Christopher Tomkinson", "Angus Walker", "Willie Weekes", "Mitch Yue"]
+  "Clarrie Jones", "William Kim", "Samuel McConaghy", "Ryan Pattemore", "William Scott", "Nicholas Szogi",
+  "Christopher Tomkinson", "Angus Walker", "Will Weekes", "Mitch Yue"]
 
 for (i = 0; i < Players.length; i++) {
   if (Players[i] == SelectedPlayer) {

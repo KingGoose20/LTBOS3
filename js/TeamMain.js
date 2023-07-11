@@ -4,16 +4,16 @@ LooseGooses = {
     "Colours": ["#d74268", "#f5b153", "#d48619", "#d74268"],
     "Players": ["Angus Walker", "William Kim", "Christopher Tomkinson", "Jasper Collier", "Conor Farrington"],
     "Images": ["../Images/Players/Angus.png", "../Images/Players/Kimmy.png", "../Images/Players/Christopher.png", "../Images/Players/Jasper.png", "../Images/Players/Conor.png"],
-    "PartA":[5,6],
-    "PartB":[3,"William Kim",1,"William Kim",1,"Christopher Tomkinson",1,"William Kim"],
-    "PartC":[6,2,2,1,5,6],
-    "PartD":[2,0,100,3,6,33.3],        
-    "Date":["11-July"],
-    "Wins":[0],
-    "Losses":[6],
-    "Points":[2],
-    "TA":["William Kim"],
-    "TB":["William Kim, Christopher Tomkinson, Conor Farrington"]
+    "PartA": [5, 6],
+    "PartB": [3, "William Kim", 1, "William Kim", 1, "Christopher Tomkinson", 1, "William Kim"],
+    "PartC": [6, 2, 2, 1, 5, 6],
+    "PartD": [2, 0, 100, 3, 6, 33.3],
+    "Date": ["11-July"],
+    "Wins": [0],
+    "Losses": [6],
+    "Points": [2],
+    "TA": ["William Kim"],
+    "TB": ["William Kim, Christopher Tomkinson, Conor Farrington"]
 }
 
 WetWillies = {
@@ -22,16 +22,16 @@ WetWillies = {
     "Colours": ["#e45e0b", "#8c3600", "#8c3600", "#ff690c"],
     "Players": ["Rudy Hoschke", "Michael Iffland", "Lukas Johnston", "Ryan Pattemore", "Will Weekes", "(OUT) Clarrie Jones", "William Scott"],
     "Images": ["../Images/Players/Rudy.png", "../Images/Players/Michael.png", "../Images/Players/Lukas.png", "../Images/Players/Ryan.png", "../Images/Players/Willie.png", "../Images/Players/Clarrie.png", "../Images/Players/Will.png"],
-    "PartA":[0,8],
-    "PartB":[0,"N/A",0,"N/A",0,"N/A",0,"N/A"],
-    "PartC":[0,0,0,0,0,8],
-    "PartD":[0,2,0,0,6,0],       
-    "Date":["11-July"],
-    "Wins":[0],
-    "Losses":[8],
-    "Points":[1],
-    "TA":["N/A"],
-    "TB":["N/A"]
+    "PartA": [0, 8],
+    "PartB": [0, "N/A", 0, "N/A", 0, "N/A", 0, "N/A"],
+    "PartC": [0, 0, 0, 0, 0, 8],
+    "PartD": [0, 2, 0, 0, 6, 0],
+    "Date": ["11-July"],
+    "Wins": [0],
+    "Losses": [8],
+    "Points": [1],
+    "TA": ["N/A"],
+    "TB": ["N/A"]
 }
 
 Musketeers = {
@@ -40,16 +40,16 @@ Musketeers = {
     "Colours": ["#004045", "#004045", "#47aeb5", "#47aeb5"],
     "Players": ["Samuel McConaghy", "Alexander Galt", "Nicholas Szogi", "Sam James", "Mitch Yue"],
     "Images": ["../Images/Players/SamM.png", "../Images/Players/Alex.png", "../Images/Players/Nicholas.png", "../Images/Players/SamJ.png", "../Images/Players/Mitch.png"],
-    "PartA":[12,3],
-    "PartB":[6,"Samuel McConaghy",3,"Alexander Galt",4,"Samuel McConaghy",1,"Samuel McConaghy"],
-    "PartC":[15,4,5,3,12,3],
-    "PartD":[6,3,66.7,6,0,100],       
-    "Date":["11-July"],
-    "Wins":[0],
-    "Losses":[3],
-    "Points":[3],
-    "TA":["Alexander Galt"],
-    "TB":["Samuel McConaghy"]
+    "PartA": [12, 3],
+    "PartB": [6, "Samuel McConaghy", 3, "Alexander Galt", 4, "Samuel McConaghy", 1, "Samuel McConaghy"],
+    "PartC": [15, 4, 5, 3, 12, 3],
+    "PartD": [6, 3, 66.7, 6, 0, 100],
+    "Date": ["11-July"],
+    "Wins": [0],
+    "Losses": [3],
+    "Points": [3],
+    "TA": ["Alexander Galt"],
+    "TB": ["Samuel McConaghy"]
 }
 
 currentLocation = window.location
@@ -177,7 +177,7 @@ function scaleImages() {
         objects = document.getElementsByClassName("playerImages").length
         for (i = 0; i < objects; i++) {
             document.getElementsByClassName("playerImages")[i].style.width = (window.innerWidth / objects * 2.5) + "px"
-            
+
         }
         document.getElementById("pTT").style.width = (objects * 250) + "px"
     }

@@ -9,7 +9,7 @@ mainArray = {
   "TM": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
   "TPG": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,],
   "TT": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-  "AccoladesOne": ["", "", "All-Defence Team T1", "All-Offence Team T1", "Playmaker T1", "MVP Runner Up T1", "Champion T2", "LTBO Manager", "MVP T1", "GM", "Perimeter T1", "", "The Biggest Bird", "MIP T1", "LTBO CEO", "Teammate T1", "All-2nd-Defence Team T2"],
+  "AccoladesOne": ["", "", "All-Defence Team T1", "All-Offence Team T1", "Playmaker T1", "MVP Runner Up T1", "Champion T2", "LTBO Manager", "MVP T1", "GM", "Perimeter T1", "LTBO Photographer", "The Biggest Bird", "MIP T1", "LTBO CEO", "Teammate T1", "All-2nd-Defence Team T2"],
   "AccoladesTwo": ["", "", "Champion T1", "All-Defence Team T1", "Thirdman T1", "All-Offence Team T1", "", "Champion T1", "All-Offence Team T1", "All-Offence Team T1", "Champion T1", "", "Champion T1", "MIP T2", "GM", "Champion T1", "Champion T2"],
   "AccoladesThree": ["", "", "All-Offence Team T2", "Champion T1", "All-Offence Team T2", "All-2nd-Offence Team T2", "", "Finals MVP T1", "All-Defence Team T1", "All-Defence Team T1", "", "", "", "MVP Runner Up T2", "MVP T2", "All-Offence Team T1", "Teammate T2", ""],
   "AccoladesFour": ["", "", "All-Defence Team T2", "All-Offence Team T2", "All-2nd-Defence Team T2", "", "", "Fifthman T2", "All-2nd-Offence Team T2", "All-Offence Team T2", "", "", "X-Factor T2", "All-2nd-Offence Team T2", "All-Defence Team T1", "", ""],

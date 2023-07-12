@@ -3,20 +3,21 @@ WetWilliesPlayers = ["Rudy Hoschke", "Michael Iffland", "Lukas Johnston", "Ryan 
 MusketeersPlayers = ["Samuel McConaghy", "Alexander Galt", "Nicholas Szogi", "Sam James", "Mitch Yue"]
 
 Today = {
-  "Date": ["11 July"],
-  "Game Number": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17],
-  "Winner": ["Loose Gooses", "Loose Gooses", "5 Musketeers", "5 Musketeers", "5 Musketeers", "5 Musketeers", "5 Musketeers", "5 Musketeers", "5 Musketeers", "5 Musketeers", "5 Musketeers", "5 Musketeers", "Loose Gooses", "Loose Gooses", "5 Musketeers", "5 Musketeers", "Loose Gooses"],
-  "Loser": ["5 Musketeers", "Wet Willies", "Loose Gooses", "Wet Willies", "Loose Gooses", "Wet Willies", "Loose Gooses", "Wet Willies", "Loose Gooses", "Wet Willies", "Loose Gooses", "Wet Willies", "5 Musketeers", "Wet Willies", "Loose Gooses", "Wet Willies", "5 Musketeers"],
-  "Scorer": ["Christopher Tomkinson", "Conor Farrington", "Alexander Galt", "Samuel McConaghy", "Sam James", "Samuel McConaghy", "Samuel McConaghy", "Alexander Galt", "Alexander Galt", "Samuel McConaghy", "Nicholas Szogi", "Sam James", "William Kim", "William Kim", "Alexander Galt", "Samuel McConaghy", "Conor Farrington"],
-  "Type": ["Midrange", "Midrange", "Finish", "Three Pointer", "Midrange", "Midrange", "Midrange", "Finish", "Finish", "Midrange", "Three Pointer", "Finish", "Finish", "Three Pointer", "Three Pointer", "Midrange", "Finish"],
-  "WStreak": [1, 2, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 1, 2, 1],
-  "LStreak": [1, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 1, 7, 1, 8, 1],
-  "SStreak": [1, 1, 1, 1, 1, 1, 2, 1, 2, 1, 1, 1, 1, 2, 1, 1, 1]
+  "Date": ["12 July"],
+  "Game Number":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26],
+  "Winner":["5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","Loose Gooses","Loose Gooses","5 Musketeers","5 Musketeers","Loose Gooses","Loose Gooses","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","Wet Willies","Wet Willies","5 Musketeers","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses"],
+  "Loser":["Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","5 Musketeers","Wet Willies","Loose Gooses","Wet Willies","5 Musketeers","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","5 Musketeers","Loose Gooses","Wet Willies","5 Musketeers","Wet Willies","5 Musketeers","Wet Willies","5 Musketeers"],
+  "Scorer":["Samuel McConaghy","Alexander Galt","Alexander Galt","Alexander Galt","Samuel McConaghy","Angus Walker","Angus Walker","Alexander Galt","Alexander Galt","Christopher Tomkinson","Christopher Tomkinson","Alexander Galt","Samuel McConaghy","Nicholas Szogi","Samuel McConaghy","Samuel McConaghy","Nicholas Szogi","Samuel McConaghy","Ryan Pattemore","Lukas Johnston","Alexander Galt","Christopher Tomkinson","Angus Walker","Angus Walker","Christopher Tomkinson","Angus Walker"],
+  "Type":["Midrange","Finish","Finish","Finish","Midrange","Three Pointer","Finish","Finish","Finish","Three Pointer","Finish","Finish","Finish","Finish","Midrange","Midrange","Finish","Midrange","Three Pointer","Finish","Finish","Finish","Finish","Midrange","Midrange","Finish"],
+  "WStreak":[1,2,3,4,5,1,2,1,2,1,2,1,2,3,4,5,6,7,1,2,1,1,2,3,4,5],
+  "LStreak":[1,1,2,2,3,1,4,1,5,1,6,1,7,2,8,3,9,4,1,5,1,1,2,2,3,3],
+  "SStreak":[1,1,2,3,1,1,2,1,2,1,2,1,1,1,1,2,1,1,1,1,1,1,1,2,1,1]
 }
 
-DidNotPlay = ["Rudy Hoschke", "William Scott"]
+DidNotPlay = ["Rudy Hoschke"]
 /* Goes LG, WW, 5M */
-LadderPoints = [2, 1, 3]
+LadderPoints = [4, 2, 6]
+DaysPlayed = (LadderPoints[0] + LadderPoints[1] + LadderPoints[2])/6
 
 Override = false
 OverrideOrder = ["LG", "5M", "WW"]
@@ -36,7 +37,7 @@ overrideDayPoints = []
 
 function ladder() {
   Leaders = [LooseGooses.PartB[1], WetWillies.PartB[1], Musketeers.PartB[1]]
-  LeadersPoints = [LooseGooses.PartB[0], WetWillies.PartB[0], Musketeers.PartB[0]]
+  LeadersPoints = [LooseGooses.PartB[0]/DaysPlayed, WetWillies.PartB[0]/DaysPlayed, Musketeers.PartB[0]/DaysPlayed]
   if (Override == false) {
     LG = false
     WW = false

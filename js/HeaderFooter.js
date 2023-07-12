@@ -11,7 +11,7 @@ function header(location) {
         <nav class="navbar heading-links w-nav-menu">
             <ul class="nav-menu">
             <li class="nav-item">
-                <a href="replacerDocumentsAndIco/Draft.html" class="navigation-link w-nav-link" style="color: darkred">Draft</a>
+                <a href="replacerDocumentsAndIco/Draft.html" class="navigation-link w-nav-link">Draft</a>
             </li>
             <li class="nav-item">
                 <a href="replacerDocumentsAndIco/Ladder.html" class="navigation-link w-nav-link">Ladder</a>
@@ -145,7 +145,9 @@ function header(location) {
             break;
         case "App" :
             template.innerHTML = template.innerHTML.replace('w-nav-link">Stats</a>', 'w-nav-link w--current">Stats</a>')
-            break;          
+            break; 
+        case "Draft" :
+            template.innerHTML = template.innerHTML.replace('w-nav-link">Draft</a>', 'w-nav-link w--current">Draft</a>')
             
     }
     if (location == "admin") {

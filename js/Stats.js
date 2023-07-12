@@ -76,8 +76,8 @@ selectDiv.addEventListener('change', function (e) {
       break;
     case 'sixteen':
       number = 16
+      break;
   }
-  console.log(number)
   RunMain()
 });
 

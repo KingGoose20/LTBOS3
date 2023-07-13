@@ -121,22 +121,19 @@
             height: auto;
         }
 
-        table,
-        th {
-            background-color: #5c2678;
-        }
 
         td,
         th {
             padding-top: 2px;
             padding-bottom: 2px;
             color: rgb(210, 210, 210);
-            border: 0.5px solid rgb(0, 0, 0);
+            border: 2px solid rgb(150, 150, 150);
         }
 
         table {
             position: relative;
             border-collapse: separate;
+            border: 2px solid rgb(150, 150, 150);
         }
 
         th {
@@ -319,6 +316,14 @@
                 padding-bottom: 10px;
             }
         }
+
+        tr.spaceUnder>td {
+            padding-bottom: 1em;
+        }
+
+        .stat {
+            margin: 0px;
+        }
     </style>
 </head>
 
@@ -349,54 +354,156 @@
                         <colgroup style="width: 20%"></colgroup>
                         <colgroup style="width: 40%"></colgroup>
                         <tr>
-                            <td>blah</td>
-                            <td></td>
-                            <td>blah</td>
+                            <td>
+                                <br>
+                                <form style="color: black;">
+                                    <select id="changerA" class="changer">
+                                      <option disabled selected value="none">Choose a player</option>
+                                      <option value="zero">Jasper Collier</option>
+                                      <option value="one">Conor Farrington</option>
+                                      <option value="two">Alexander Galt</option>
+                                      <option value="three">Rudy Hoschke</option>
+                                      <option value="four">Michael Iffland</option>
+                                      <option value="five">Lukas Johnston</option>
+                                      <option value="six">Sam James</option>
+                                      <option value="seven">Clarrie Jones</option>
+                                      <option value="eight">William Kim</option>
+                                      <option value="nine">Samuel McConaghy</option>
+                                      <option value="ten">Ryan Pattemore</option>
+                                      <option value="eleven">William Scott</option>
+                                      <option value="twelve">Nicholas Szogi</option>
+                                      <option value="thirteen">Christopher Tomkinson</option>
+                                      <option value="fourteen">Angus Walker</option>
+                                      <option value="fifteen">Will Weekes</option>
+                                      <option value="sixteen">Mitch Yue</option>
+                                    </select>
+                                  </form>
+                                  <br>
+                            </td>
+                            <td>Type</td>
+                            <td>
+                                <br>
+                                <form style="color: black;">
+                                    <select id="changerB" class="changer">
+                                      <option disabled selected value="none">Choose a player</option>
+                                      <option value="zero">Jasper Collier</option>
+                                      <option value="one">Conor Farrington</option>
+                                      <option value="two">Alexander Galt</option>
+                                      <option value="three">Rudy Hoschke</option>
+                                      <option value="four">Michael Iffland</option>
+                                      <option value="five">Lukas Johnston</option>
+                                      <option value="six">Sam James</option>
+                                      <option value="seven">Clarrie Jones</option>
+                                      <option value="eight">William Kim</option>
+                                      <option value="nine">Samuel McConaghy</option>
+                                      <option value="ten">Ryan Pattemore</option>
+                                      <option value="eleven">William Scott</option>
+                                      <option value="twelve">Nicholas Szogi</option>
+                                      <option value="thirteen">Christopher Tomkinson</option>
+                                      <option value="fourteen">Angus Walker</option>
+                                      <option value="fifteen">Will Weekes</option>
+                                      <option value="sixteen">Mitch Yue</option>
+                                    </select>
+                                  </form>
+                                  <br>
+                            </td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td><h2 class="section-heading centered stat" id="avgPointsA"></h2></td>
                             <td>Average Points</td>
-                            <td></td>
+                            <td><h2 class="section-heading centered stat" id="avgPointsB"></h2></td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td><h2 class="section-heading centered stat" id="avgFinishesA"></h2></td>
                             <td>Average Finishes</td>
-                            <td></td>
+                            <td><h2 class="section-heading centered stat" id="avgFinishesB"></h2></td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td><h2 class="section-heading centered stat" id="avgMidrangesA"></h2></td>
                             <td>Average Midranges</td>
-                            <td></td>
+                            <td><h2 class="section-heading centered stat" id="avgMidrangesB"></h2></td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td><h2 class="section-heading centered stat" id="avgThreesA"></h2></td>
                             <td>Average Threes</td>
-                            <td></td>
+                            <td><h2 class="section-heading centered stat" id="avgThreesB"></h2></td>
                         </tr>
+                    </table>
+                    <br><br><br>
+                    <table style="width: 100%">
+                        <colgroup style="width: 40%"></colgroup>
+                        <colgroup style="width: 20%"></colgroup>
+                        <colgroup style="width: 40%"></colgroup>
                         <tr>
-                            <td></td>
+                            <td><h2 class="section-heading centered stat" id="ttlPointsA"></h2></td>
                             <td>Total Points</td>
-                            <td></td>
+                            <td><h2 class="section-heading centered stat" id="ttlPointsB"></h2></td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td><h2 class="section-heading centered stat" id="ttlFinishesA"></h2></td>
                             <td>Total Finishes</td>
-                            <td></td>
+                            <td><h2 class="section-heading centered stat" id="ttlFinishesB"></h2></td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td><h2 class="section-heading centered stat" id="ttlMidrangesA"></h2></td>
                             <td>Total Midranges</td>
-                            <td></td>
+                            <td><h2 class="section-heading centered stat" id="ttlMidrangesB"></h2></td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td><h2 class="section-heading centered stat" id="ttlThreesA"></h2></td>
                             <td>Total Threes</td>
-                            <td></td>
+                            <td><h2 class="section-heading centered stat" id="ttlThreesB"></h2></td>
+                        </tr>
+                    </table>
+                    <br><br><br>
+                    <table style="width: 100%">
+                        <colgroup style="width: 40%"></colgroup>
+                        <colgroup style="width: 20%"></colgroup>
+                        <colgroup style="width: 40%"></colgroup>
+                        <tr>
+                            <td><h2 class="section-heading centered stat" id="accolade1A"></h2></td>
+                            <td>Accolade 1</td>
+                            <td><h2 class="section-heading centered stat" id="accolade1B"></h2></td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td><h2 class="section-heading centered stat" id="accolade2A"></h2></td>
+                            <td>Accolade 2</td>
+                            <td><h2 class="section-heading centered stat" id="accolade2B"></h2></td>
+                        </tr>
+                        <tr>
+                            <td><h2 class="section-heading centered stat" id="accolade3A"></h2></td>
+                            <td>Accolade 3</td>
+                            <td><h2 class="section-heading centered stat" id="accolade3B"></h2></td>
+                        </tr>
+                        <tr>
+                            <td><h2 class="section-heading centered stat" id="accolade4A"></h2></td>
+                            <td>Accolade 4</td>
+                            <td><h2 class="section-heading centered stat" id="accolade4B"></h2></td>
+                        </tr>
+                        <tr>
+                            <td><h2 class="section-heading centered stat" id="accolade5A"></h2></td>
+                            <td>Accolade 5</td>
+                            <td><h2 class="section-heading centered stat" id="accolade5B"></h2></td>
+                        </tr>
+                        <tr>
+                            <td><h2 class="section-heading centered stat" id="accolade6A"></h2></td>
+                            <td>Accolade 6</td>
+                            <td><h2 class="section-heading centered stat" id="accolade6B"></h2></td>
+                        </tr>
+                        <tr>
+                            <td><h2 class="section-heading centered stat" id="accolade7A"></h2></td>
+                            <td>Accolade 7</td>
+                            <td><h2 class="section-heading centered stat" id="accolade7B"></h2></td>
+                        </tr>
+                        <tr>
+                            <td><h2 class="section-heading centered stat" id="accolade8A"></h2></td>
+                            <td>Accolade 8</td>
+                            <td><h2 class="section-heading centered stat" id="accolade8B"></h2></td>
+                        </tr>
+                        <tr>
+                            <td><h2 class="section-heading centered stat" id="historyA"></h2></td>
+                            <td>History</td>
+                            <td><h2 class="section-heading centered stat" id="historyB"></h2></td>
                         </tr>
                     </table>
 

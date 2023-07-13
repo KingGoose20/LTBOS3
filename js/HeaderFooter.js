@@ -34,6 +34,7 @@ function header(location) {
                 <div class="dropdown-content">
                     <a href="replacerDocumentsAndIco/Rules.html" class="dropDown-link">Rules, FAQ, Calendar</a>
                     <a href="replacerDocumentsAndIco/Contact.html" class="dropDown-link">Contact Us</a>
+                    <a href="replacerDocumentsAndIco/LeagueHome.html?Team=LTBO" class="dropDown-link">League Home</a>
                     <a href="replacerDocumentsAndIco/TeamHome.html?Team=LG" class="dropDown-link">Loose Gooses Home</a>
                     <a href="replacerDocumentsAndIco/TeamHome.html?Team=WW" class="dropDown-link">Wet Willies Home</a>
                     <a href="replacerDocumentsAndIco/TeamHome.html?Team=5M" class="dropDown-link">5 Musketeers Home</a>
@@ -52,6 +53,9 @@ function header(location) {
             <li class="nav-item dropdownShow">
                 <a href="replacerDocumentsAndIco/Contact.html" class="navigation-link w-nav-link">Contact Us</a>
             </li>
+            <li class="nav-item dropdownShow">
+            <a href="replacerDocumentsAndIco/LeagueHome?Team=LTBO" class="navigation-link w-nav-link">League Home</a>
+        </li>
             <li class="nav-item dropdownShow">
                 <a href="replacerDocumentsAndIco/TeamHome.html?Team=LG" class="navigation-link w-nav-link">Loose Gooses Home</a>
             </li>
@@ -138,6 +142,11 @@ function header(location) {
         case "Contact":
             template.innerHTML = template.innerHTML.replace('">Contact Us', ' w-nav-link w--current">Contact Us')
             template.innerHTML = template.innerHTML.replace('class="navigation-link w-nav-link">Contact Us</a>', 'class="navigation-link w-nav-link w--current">Contact Us</a>')
+            template.innerHTML = template.innerHTML.replace('<span class="navigation-link w-nav-link">More</span>', '<span class="navigation-link w-nav-link w--current">More</span>')
+            break;
+        case "League Home":
+            template.innerHTML = template.innerHTML.replace('">League Home', ' w-nav-link w--current">League Home')
+            template.innerHTML = template.innerHTML.replace('class="navigation-link w-nav-link">League Home</a>', 'class="navigation-link w-nav-link w--current">League Home</a>')
             template.innerHTML = template.innerHTML.replace('<span class="navigation-link w-nav-link">More</span>', '<span class="navigation-link w-nav-link w--current">More</span>')
             break;
         case "Loose Gooses":

@@ -1,3 +1,10 @@
+numberA = null
+numberB = null
+
+dataA = null
+dataB = null
+elementID = ["avgPoints", "avgFinishes", "avgMidranges", "avgThrees", "ttlPoints", "ttlFinishes", "ttlMidranges", "ttlThrees"]
+
 let selectDiv = document.getElementById('changerA');
 selectDiv.addEventListener('change', function (e) {
 
@@ -137,6 +144,54 @@ function RunMain(option) {
   document.getElementById("accolade8" + option).innerHTML = mainArray.AccoladesEight[number]
 
   document.getElementById("history" + option).innerHTML = mainArray.History[number]
+
+  if (option == "A") {
+    dataA = [mainArray.PPG[number], mainArray.FPG[number], mainArray.MPG[number], mainArray.TPG[number], mainArray.TP[number], mainArray.TF[number], mainArray.TM[number], mainArray.TT[number]]
+    numberA = number
+  } else {
+    dataB = [mainArray.PPG[number], mainArray.FPG[number], mainArray.MPG[number], mainArray.TPG[number], mainArray.TP[number], mainArray.TF[number], mainArray.TM[number], mainArray.TT[number]]
+    numberB = number
+  }
+
+  if (dataA != null && dataB != null) {
+    for (i = 0; i < dataA.length; i++) {
+      if (dataA[i] > dataB[i]) {
+        document.getElementById(elementID[i] + "A").style.color = "rgb(0, 150,0)"
+        document.getElementById(elementID[i] + "B").style.color = "rgb(200, 0,0)"
+      } else if (dataA[i] < dataB[i]) {
+        document.getElementById(elementID[i] + "B").style.color = "rgb(0, 150,0)"
+        document.getElementById(elementID[i] + "A").style.color = "rgb(200, 0,0)"
+      } else {
+        document.getElementById(elementID[i] + "B").style.color = "rgb(220, 160,0)"
+        document.getElementById(elementID[i] + "A").style.color = "rgb(220, 160,0)"
+      }
+    }
+  }
+
+  table = document.getElementById("dayByDayTable")
+  for (let i = (table.rows.length - 1); i > 0; i--) {
+    table.deleteRow(i)
+  }
+  for (i = 0; i < dayArray.length; i++) {
+    template = document.getElementsByTagName("template")[0];
+    clone = template.content.cloneNode(true);
+    if (numberA != null) {
+      clone.getElementById("1").innerHTML = dayArray[i].Points[numberA]
+      clone.getElementById("2").innerHTML = dayArray[i].Finishes[numberA]
+      clone.getElementById("3").innerHTML = dayArray[i].Midrange[numberA]
+      clone.getElementById("4").innerHTML = dayArray[i].ThreePointers[numberA]
+    }
+    if (numberB != null) {
+      
+      clone.getElementById("6").innerHTML = dayArray[i].Points[numberB]
+      clone.getElementById("7").innerHTML = dayArray[i].Finishes[numberB]
+      clone.getElementById("8").innerHTML = dayArray[i].Midrange[numberB]
+      clone.getElementById("9").innerHTML = dayArray[i].ThreePointers[numberB]
+    }
+  clone.getElementById("5").innerHTML = dayArray[i].Date[0]
+
+    document.getElementById("dayByDayTable").appendChild(clone)
+  }
 
 }
 

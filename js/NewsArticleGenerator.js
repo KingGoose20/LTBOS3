@@ -49,6 +49,9 @@ function CreateArticle() {
     selectedWeek = z.options[z.selectedIndex].text
     
     switch (selectedWeek) {
+        case "Preseason":
+            weekVariable = Preseason
+            break;
         case "Week 1":
             weekVariable = Week1
             break;

@@ -4,24 +4,24 @@ MusketeersPlayers = ["Samuel McConaghy", "Alexander Galt", "Nicholas Szogi", "Sa
 
 Today = {
   "Date": ["13 July"],
-  "Game Number":[1,2,3,4,5,6,7,8,9,10,11,12,13],
-  "Winner":["Wet Willies","Wet Willies","Wet Willies","Loose Gooses","Loose Gooses","Wet Willies","5 Musketeers","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses"],
-  "Loser":["5 Musketeers","Loose Gooses","5 Musketeers","Wet Willies","5 Musketeers","Loose Gooses","Wet Willies","5 Musketeers","Wet Willies","5 Musketeers","Wet Willies","5 Musketeers","Wet Willies"],
-  "Scorer":["Michael Iffland","Clarrie Jones","William Scott","William Kim","Angus Walker","Michael Iffland","Nicholas Szogi","Angus Walker","Angus Walker","Angus Walker","Angus Walker","William Kim","Christopher Tomkinson"],
-  "Type":["Midrange","Three Pointer","Finish","Midrange","Three Pointer","Three Pointer","Finish","Finish","Finish","Midrange","Finish","Midrange","Finish"],
-  "WStreak":[1,2,3,1,2,1,1,1,2,3,4,5,6],
-  "LStreak":[1,1,2,1,3,1,1,1,2,2,3,3,4],
-  "SStreak":[1,1,1,1,1,1,1,1,2,3,4,1,1]
+  "Game Number": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+  "Winner": ["Wet Willies", "Wet Willies", "Wet Willies", "Loose Gooses", "Loose Gooses", "Wet Willies", "5 Musketeers", "Loose Gooses", "Loose Gooses", "Loose Gooses", "Loose Gooses", "Loose Gooses", "Loose Gooses"],
+  "Loser": ["5 Musketeers", "Loose Gooses", "5 Musketeers", "Wet Willies", "5 Musketeers", "Loose Gooses", "Wet Willies", "5 Musketeers", "Wet Willies", "5 Musketeers", "Wet Willies", "5 Musketeers", "Wet Willies"],
+  "Scorer": ["Michael Iffland", "Clarrie Jones", "William Scott", "William Kim", "Angus Walker", "Michael Iffland", "Nicholas Szogi", "Angus Walker", "Angus Walker", "Angus Walker", "Angus Walker", "William Kim", "Christopher Tomkinson"],
+  "Type": ["Midrange", "Three Pointer", "Finish", "Midrange", "Three Pointer", "Three Pointer", "Finish", "Finish", "Finish", "Midrange", "Finish", "Midrange", "Finish"],
+  "WStreak": [1, 2, 3, 1, 2, 1, 1, 1, 2, 3, 4, 5, 6],
+  "LStreak": [1, 1, 2, 1, 3, 1, 1, 1, 2, 2, 3, 3, 4],
+  "SStreak": [1, 1, 1, 1, 1, 1, 1, 1, 2, 3, 4, 1, 1]
 }
 
 DidNotPlay = ["Rudy Hoschke", "Alexander Galt", "Jasper Collier"]
 /* Goes LG, WW, 5M */
 LadderPoints = [7, 4, 7]
-DaysPlayed = (LadderPoints[0] + LadderPoints[1] + LadderPoints[2])/6
+DaysPlayed = (LadderPoints[0] + LadderPoints[1] + LadderPoints[2]) / 6
 
 Override = true
 OverrideOrder = ["LG", "5M", "WW"]
-overRideDate = ""
+overRideDate = "Preseason"
 overrideW = ""
 overrideL = ""
 overrideDayPoints = []
@@ -37,7 +37,7 @@ overrideDayPoints = []
 
 function ladder() {
   Leaders = [LooseGooses.PartB[1], WetWillies.PartB[1], Musketeers.PartB[1]]
-  LeadersPoints = [LooseGooses.PartB[0]/DaysPlayed, WetWillies.PartB[0]/DaysPlayed, Musketeers.PartB[0]/DaysPlayed]
+  LeadersPoints = [LooseGooses.PartB[0] / DaysPlayed, WetWillies.PartB[0] / DaysPlayed, Musketeers.PartB[0] / DaysPlayed]
   if (Override == false) {
     LG = false
     WW = false
@@ -185,138 +185,146 @@ function ladder() {
 
   } else {
     for (i = 0; i < OverrideOrder.length; i++) {
-      switch (i) {
-        case 0:
-          if (OverrideOrder[i] == "LG") {
-            document.getElementById("firstName").innerHTML = "Loose Gooses";
-            document.getElementById("firstPoints").innerHTML = LadderPoints[0];
-            document.getElementById("firstImagea").src = "../Images/LG_Final.png"
-            document.getElementById("firstImageb").src = "../Images/LG_Final.png"
-            document.getElementById("firstLeader").innerHTML = Leaders[0]
-            if (LeadersPoints[0] == 1) {
-              document.getElementById("firstScoring").innerHTML = (LeadersPoints[0] + " point")
-            } else {
-              document.getElementById("firstScoring").innerHTML = (LeadersPoints[0] + " points")
-            }
-            leader = LadderPoints[0]
-            LG = true
-          } else if (OverrideOrder[i] == "WW") {
-            document.getElementById("firstName").innerHTML = "Wet Willies";
-            document.getElementById("firstPoints").innerHTML = LadderPoints[1];
-            document.getElementById("firstImagea").src = "../Images/WW_Final.png"
-            document.getElementById("firstImageb").src = "../Images/WW_Final.png"
-            document.getElementById("firstLeader").innerHTML = Leaders[1]
-            if (LeadersPoints[1] == 1) {
-              document.getElementById("firstScoring").innerHTML = (LeadersPoints[1] + " point")
-            } else {
-              document.getElementById("firstScoring").innerHTML = (LeadersPoints[1] + " points")
-            }
-            leader = LadderPoints[1]
-            WW = true
+      if (i == 0) {
+        if (OverrideOrder[i] == "LG") {
+          document.getElementById("firstName").innerHTML = "Loose Gooses";
+          document.getElementById("firstPoints").innerHTML = LadderPoints[0];
+          document.getElementById("firstImagea").src = "../Images/LG_Final.png"
+          document.getElementById("firstImageb").src = "../Images/LG_Final.png"
+          document.getElementById("firstLeader").innerHTML = Leaders[0]
+          if (LeadersPoints[0] == 1) {
+            document.getElementById("firstScoring").innerHTML = (LeadersPoints[0] + " point")
           } else {
-            document.getElementById("firstName").innerHTML = "5 Musketeers";
-            document.getElementById("firstPoints").innerHTML = LadderPoints[2];
-            document.getElementById("firstImagea").src = "../Images/5M_Final.png"
-            document.getElementById("firstImageb").src = "../Images/5M_Final.png"
-            document.getElementById("firstLeader").innerHTML = Leaders[2]
-            if (LeadersPoints[2] == 1) {
-              document.getElementById("firstScoring").innerHTML = (LeadersPoints[2] + " point")
-            } else {
-              document.getElementById("firstScoring").innerHTML = (LeadersPoints[2] + " points")
-            }
-            leader = LadderPoints[2]
-            MM = true
+            document.getElementById("firstScoring").innerHTML = (LeadersPoints[0] + " points")
           }
-          break;
-        case 1:
-          if (OverrideOrder[i] == "LG") {
-            document.getElementById("secondName").innerHTML = "Loose Gooses";
-            document.getElementById("secondPoints").innerHTML = LadderPoints[0];
-            document.getElementById("secondImagea").src = "../Images/LG_Final.png"
-            document.getElementById("secondImageb").src = "../Images/LG_Final.png"
-            document.getElementById("secondLeader").innerHTML = Leaders[0]
-            if (LeadersPoints[0] == 1) {
-              document.getElementById("secondScoring").innerHTML = (LeadersPoints[0] + " point")
-            } else {
-              document.getElementById("secondScoring").innerHTML = (LeadersPoints[0] + " points")
-            }
-          } else if (OverrideOrder[i] == "WW") {
-            document.getElementById("secondName").innerHTML = "Wet Willies";
-            document.getElementById("secondPoints").innerHTML = LadderPoints[1];
-            document.getElementById("secondImagea").src = "../Images/WW_Final.png"
-            document.getElementById("secondImageb").src = "../Images/WW_Final.png"
-            document.getElementById("secondLeader").innerHTML = Leaders[1]
-            if (LeadersPoints[1] == 1) {
-              document.getElementById("secondScoring").innerHTML = (LeadersPoints[1] + " point")
-            } else {
-              document.getElementById("secondScoring").innerHTML = (LeadersPoints[1] + " points")
-            }
+          leader = LadderPoints[0]
+          LG = true
+          AddData(LooseGoosesPlayers, "teamLista")
+        } else if (OverrideOrder[i] == "WW") {
+          document.getElementById("firstName").innerHTML = "Wet Willies";
+          document.getElementById("firstPoints").innerHTML = LadderPoints[1];
+          document.getElementById("firstImagea").src = "../Images/WW_Final.png"
+          document.getElementById("firstImageb").src = "../Images/WW_Final.png"
+          document.getElementById("firstLeader").innerHTML = Leaders[1]
+          if (LeadersPoints[1] == 1) {
+            document.getElementById("firstScoring").innerHTML = (LeadersPoints[1] + " point")
           } else {
-            document.getElementById("secondName").innerHTML = "5 Musketeers";
-            document.getElementById("secondPoints").innerHTML = LadderPoints[2];
-            document.getElementById("secondImagea").src = "../Images/5M_Final.png"
-            document.getElementById("secondImageb").src = "../Images/5M_Final.png"
-            document.getElementById("secondLeader").innerHTML = Leaders[2]
-            if (LeadersPoints[2] == 1) {
-              document.getElementById("secondScoring").innerHTML = (LeadersPoints[2] + " point")
-            } else {
-              document.getElementById("secondScoring").innerHTML = (LeadersPoints[2] + " points")
-            }
+            document.getElementById("firstScoring").innerHTML = (LeadersPoints[1] + " points")
           }
-          break;
-        case 2:
-          if (OverrideOrder[i] == "LG") {
-            document.getElementById("thirdName").innerHTML = "Loose Gooses";
-            document.getElementById("thirdPoints").innerHTML = LadderPoints[0];
-            document.getElementById("thirdImagea").src = "../Images/LG_Final.png"
-            document.getElementById("thirdImageb").src = "../Images/LG_Final.png"
-            document.getElementById("thirdLeader").innerHTML = Leaders[0]
-            if (LeadersPoints[0] == 1) {
-              document.getElementById("thirdScoring").innerHTML = (LeadersPoints[0] + " point")
-            } else {
-              document.getElementById("thirdScoring").innerHTML = (LeadersPoints[0] + " points")
-            }
-          } else if (OverrideOrder[i] == "WW") {
-            document.getElementById("thirdName").innerHTML = "Wet Willies";
-            document.getElementById("thirdPoints").innerHTML = LadderPoints[1];
-            document.getElementById("thirdImagea").src = "../Images/WW_Final.png"
-            document.getElementById("thirdImageb").src = "../Images/WW_Final.png"
-            document.getElementById("thirdLeader").innerHTML = Leaders[1]
-            if (LeadersPoints[1] == 1) {
-              document.getElementById("thirdScoring").innerHTML = (LeadersPoints[1] + " point")
-            } else {
-              document.getElementById("thirdScoring").innerHTML = (LeadersPoints[1] + " points")
-            }
+          leader = LadderPoints[1]
+          WW = true
+          AddData(WetWillies, "teamLista")
+        } else {
+          document.getElementById("firstName").innerHTML = "5 Musketeers";
+          document.getElementById("firstPoints").innerHTML = LadderPoints[2];
+          document.getElementById("firstImagea").src = "../Images/5M_Final.png"
+          document.getElementById("firstImageb").src = "../Images/5M_Final.png"
+          document.getElementById("firstLeader").innerHTML = Leaders[2]
+          if (LeadersPoints[2] == 1) {
+            document.getElementById("firstScoring").innerHTML = (LeadersPoints[2] + " point")
           } else {
-            document.getElementById("thirdName").innerHTML = "5 Musketeers";
-            document.getElementById("thirdPoints").innerHTML = LadderPoints[2];
-            document.getElementById("thirdImagea").src = "../Images/5M_Final.png"
-            document.getElementById("thirdImageb").src = "../Images/5M_Final.png"
-            document.getElementById("thirdLeader").innerHTML = Leaders[2]
-            if (LeadersPoints[2] == 1) {
-              document.getElementById("thirdScoring").innerHTML = (LeadersPoints[2] + " point")
-            } else {
-              document.getElementById("thirdScoring").innerHTML = (LeadersPoints[2] + " points")
-            }
+            document.getElementById("firstScoring").innerHTML = (LeadersPoints[2] + " points")
           }
-          break;
+          leader = LadderPoints[2]
+          MM = true
+          AddData(MusketeersPlayers, "teamLista")
+        }
+      }
+      else if (i == 1) {
+        if (OverrideOrder[i] == "LG") {
+          document.getElementById("secondName").innerHTML = "Loose Gooses";
+          document.getElementById("secondPoints").innerHTML = LadderPoints[0];
+          document.getElementById("secondImagea").src = "../Images/LG_Final.png"
+          document.getElementById("secondImageb").src = "../Images/LG_Final.png"
+          document.getElementById("secondLeader").innerHTML = Leaders[0]
+          if (LeadersPoints[0] == 1) {
+            document.getElementById("secondScoring").innerHTML = (LeadersPoints[0] + " point")
+          } else {
+            document.getElementById("secondScoring").innerHTML = (LeadersPoints[0] + " points")
+          }
+          AddData(LooseGoosesPlayers, "teamListb")
+        } else if (OverrideOrder[i] == "WW") {
+          document.getElementById("secondName").innerHTML = "Wet Willies";
+          document.getElementById("secondPoints").innerHTML = LadderPoints[1];
+          document.getElementById("secondImagea").src = "../Images/WW_Final.png"
+          document.getElementById("secondImageb").src = "../Images/WW_Final.png"
+          document.getElementById("secondLeader").innerHTML = Leaders[1]
+          if (LeadersPoints[1] == 1) {
+            document.getElementById("secondScoring").innerHTML = (LeadersPoints[1] + " point")
+          } else {
+            document.getElementById("secondScoring").innerHTML = (LeadersPoints[1] + " points")
+          }
+          AddData(WetWilliesPlayers, "teamListb")
+        } else {
+          document.getElementById("secondName").innerHTML = "5 Musketeers";
+          document.getElementById("secondPoints").innerHTML = LadderPoints[2];
+          document.getElementById("secondImagea").src = "../Images/5M_Final.png"
+          document.getElementById("secondImageb").src = "../Images/5M_Final.png"
+          document.getElementById("secondLeader").innerHTML = Leaders[2]
+          if (LeadersPoints[2] == 1) {
+            document.getElementById("secondScoring").innerHTML = (LeadersPoints[2] + " point")
+          } else {
+            document.getElementById("secondScoring").innerHTML = (LeadersPoints[2] + " points")
+          }
+          AddData(MusketeersPlayers, "teamListb")
+        }
+      }
+      else {
+        if (OverrideOrder[i] == "LG") {
+          document.getElementById("thirdName").innerHTML = "Loose Gooses";
+          document.getElementById("thirdPoints").innerHTML = LadderPoints[0];
+          document.getElementById("thirdImagea").src = "../Images/LG_Final.png"
+          document.getElementById("thirdImageb").src = "../Images/LG_Final.png"
+          document.getElementById("thirdLeader").innerHTML = Leaders[0]
+          if (LeadersPoints[0] == 1) {
+            document.getElementById("thirdScoring").innerHTML = (LeadersPoints[0] + " point")
+          } else {
+            document.getElementById("thirdScoring").innerHTML = (LeadersPoints[0] + " points")
+          }
+          AddData(LooseGoosesPlayers, "teamListc")
+        } else if (OverrideOrder[i] == "WW") {
+          document.getElementById("thirdName").innerHTML = "Wet Willies";
+          document.getElementById("thirdPoints").innerHTML = LadderPoints[1];
+          document.getElementById("thirdImagea").src = "../Images/WW_Final.png"
+          document.getElementById("thirdImageb").src = "../Images/WW_Final.png"
+          document.getElementById("thirdLeader").innerHTML = Leaders[1]
+          if (LeadersPoints[1] == 1) {
+            document.getElementById("thirdScoring").innerHTML = (LeadersPoints[1] + " point")
+          } else {
+            document.getElementById("thirdScoring").innerHTML = (LeadersPoints[1] + " points")
+          }
+          AddData(WetWilliesPlayers, "teamListc")
+        } else {
+          document.getElementById("thirdName").innerHTML = "5 Musketeers";
+          document.getElementById("thirdPoints").innerHTML = LadderPoints[2];
+          document.getElementById("thirdImagea").src = "../Images/5M_Final.png"
+          document.getElementById("thirdImageb").src = "../Images/5M_Final.png"
+          document.getElementById("thirdLeader").innerHTML = Leaders[2]
+          if (LeadersPoints[2] == 1) {
+            document.getElementById("thirdScoring").innerHTML = (LeadersPoints[2] + " point")
+          } else {
+            document.getElementById("thirdScoring").innerHTML = (LeadersPoints[2] + " points")
+          }
+          AddData(MusketeersPlayers, "teamListc")
+        }
       }
     }
   }
-
+  
   document.getElementById("firstText").title = "Click on me to see " + document.getElementById("firstLeader").innerHTML + "'s stats!"
-  document.getElementById("firstText").style.cursor = "pointer"
-  document.getElementById("firstText").onclick = function () { window.location.href = 'Stats.html?Player=' + document.getElementById("firstLeader").innerHTML; };
+document.getElementById("firstText").style.cursor = "pointer"
+document.getElementById("firstText").onclick = function () { window.location.href = 'Stats.html?Player=' + document.getElementById("firstLeader").innerHTML; };
 
-  document.getElementById("secondText").title = "Click on me to see " + document.getElementById("secondLeader").innerHTML + "'s stats!"
-  document.getElementById("secondText").style.cursor = "pointer"
-  document.getElementById("secondText").onclick = function () { window.location.href = 'Stats.html?Player=' + document.getElementById("secondLeader").innerHTML; };
+document.getElementById("secondText").title = "Click on me to see " + document.getElementById("secondLeader").innerHTML + "'s stats!"
+document.getElementById("secondText").style.cursor = "pointer"
+document.getElementById("secondText").onclick = function () { window.location.href = 'Stats.html?Player=' + document.getElementById("secondLeader").innerHTML; };
 
-  document.getElementById("thirdText").title = "Click on me to see " + document.getElementById("thirdLeader").innerHTML + "'s stats!"
-  document.getElementById("thirdText").style.cursor = "pointer"
-  document.getElementById("thirdText").onclick = function () { window.location.href = 'Stats.html?Player=' + document.getElementById("thirdLeader").innerHTML; };
-
+document.getElementById("thirdText").title = "Click on me to see " + document.getElementById("thirdLeader").innerHTML + "'s stats!"
+document.getElementById("thirdText").style.cursor = "pointer"
+document.getElementById("thirdText").onclick = function () { window.location.href = 'Stats.html?Player=' + document.getElementById("thirdLeader").innerHTML; };
 }
+
+
 
 
 
@@ -521,14 +529,14 @@ function boldNumber(number) {
 
 
 function AddData(array, elementID) {
-  for (i = 0; i < array.length; i++) {
+  for (y = 0; y < array.length; y++) {
     element = document.createElement("p")
-    if (i == 0) {
-      element.innerHTML = "<strong>GM - " + array[i] + "</strong>"
+    if (y == 0) {
+      element.innerHTML = "<strong>GM - " + array[y] + "</strong>"
     } else {
-      element.innerHTML = array[i]
+      element.innerHTML = array[y]
     }
-    element.id = players.indexOf(array[i])
+    element.id = players.indexOf(array[y])
     element.onclick = function () { openStats(this); };
     element.style.cursor = "pointer"
     document.getElementById(elementID).appendChild(element)

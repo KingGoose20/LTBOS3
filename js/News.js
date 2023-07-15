@@ -11,15 +11,15 @@ NewsTemplate = {
 }
 
 Preseason = {
-    "ArticleName": [""],
-    "ArticleDescription": [""],
-    "ArticleDate": [""],
-    "ImageA": [""],
-    "ImageB": [""],
-    "ImageC": [""],
-    "ImageD": [""],
-    "ArticleLink": [""],
-    "ArticleType": [""]
+    "ArticleName":["Preseason Recap"],
+    "ArticleDescription":["LTBO CEO Angus Walker recaps the preseason, and what to expect to come throughout this season."],
+    "ArticleDate":["15/07"],
+    "ImageA":["Logo.png"],
+    "ImageB":[""],
+    "ImageC":[""],
+    "ImageD":[""],
+    "ArticleLink":["01.html"],
+    "ArticleType":["White"]
 }
 
 Week1 = {

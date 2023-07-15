@@ -72,7 +72,7 @@ if (SelectedTeam == "5M") {
 
 if (SelectedTeam == "LTBO") {
     RunLTBO()
-} else {
+} else if (SelectedTeam != null) {
     RunMain()
 }
 
@@ -200,15 +200,15 @@ function RunLTBO() {
 
     id = ["lPoints", "lFinishes", "lMidranges", "lThrees"]
     for (i = 0; i < 4; i++) {
-        if (WetWillies.PartB[2*i] > Musketeers.PartB[2*i] && WetWillies.PartB[2*i] > LooseGooses.PartB[2*i]) {
-            document.getElementById(id[i] + "S").innerHTML = WetWillies.PartB[2*i]
-            document.getElementById(id[i] + "N").innerHTML = WetWillies.PartB[2*i + 1]
-        } else if (Musketeers.PartB[2*i] > LooseGooses.PartB[2*i]) {
-            document.getElementById(id[i] + "S").innerHTML = Musketeers.PartB[2*i]
-            document.getElementById(id[i] + "N").innerHTML = Musketeers.PartB[2*i + 1]
+        if (WetWillies.PartB[2 * i] > Musketeers.PartB[2 * i] && WetWillies.PartB[2 * i] > LooseGooses.PartB[2 * i]) {
+            document.getElementById(id[i] + "S").innerHTML = WetWillies.PartB[2 * i]
+            document.getElementById(id[i] + "N").innerHTML = WetWillies.PartB[2 * i + 1]
+        } else if (Musketeers.PartB[2 * i] > LooseGooses.PartB[2 * i]) {
+            document.getElementById(id[i] + "S").innerHTML = Musketeers.PartB[2 * i]
+            document.getElementById(id[i] + "N").innerHTML = Musketeers.PartB[2 * i + 1]
         } else {
-            document.getElementById(id[i] + "S").innerHTML = LooseGooses.PartB[2*i]
-            document.getElementById(id[i] + "N").innerHTML = LooseGooses.PartB[2*i + 1]
+            document.getElementById(id[i] + "S").innerHTML = LooseGooses.PartB[2 * i]
+            document.getElementById(id[i] + "N").innerHTML = LooseGooses.PartB[2 * i + 1]
         }
     }
 
@@ -217,7 +217,7 @@ function RunLTBO() {
     document.getElementById("aMidranges").innerHTML = (LooseGooses.PartC[2].toFixed(2) * 100 + WetWillies.PartC[2].toFixed(2) * 100 + Musketeers.PartC[2].toFixed(2) * 100) / 100
     document.getElementById("aThrees").innerHTML = LooseGooses.PartC[3] + WetWillies.PartC[3] + Musketeers.PartC[3]
     document.getElementById("aGames").innerHTML = LooseGooses.PartC[4] + WetWillies.PartC[4] + Musketeers.PartC[4]
-    
+
     secondID = ["PPoints", "PFinishes", "PMidranges", "PThrees"]
     PPG = 0
     FPG = 0
@@ -230,10 +230,10 @@ function RunLTBO() {
         TPG += mainArray.TPG[i]
     }
 
-    document.getElementById("PPoints").innerHTML = Math.round((PPG/mainArray.PPG.length)*100)/100
-    document.getElementById("PFinishes").innerHTML = Math.round((FPG/mainArray.FPG.length)*100)/100
-    document.getElementById("PMidranges").innerHTML = Math.round((MPG/mainArray.MPG.length)*100)/100
-    document.getElementById("PThrees").innerHTML = Math.round((TPG/mainArray.TPG.length)*100)/100
+    document.getElementById("PPoints").innerHTML = Math.round((PPG / mainArray.PPG.length) * 100) / 100
+    document.getElementById("PFinishes").innerHTML = Math.round((FPG / mainArray.FPG.length) * 100) / 100
+    document.getElementById("PMidranges").innerHTML = Math.round((MPG / mainArray.MPG.length) * 100) / 100
+    document.getElementById("PThrees").innerHTML = Math.round((TPG / mainArray.TPG.length) * 100) / 100
 }
 
 
@@ -254,6 +254,7 @@ function openStats(item) {
 }
 
 function scaleImages() {
+    console.log("resized")
     if (document.getElementById("pTT").offsetWidth < window.innerWidth) {
         objects = document.getElementsByClassName("playerImages").length
         for (i = 0; i < objects; i++) {
@@ -271,11 +272,14 @@ function scaleImages() {
     }
 }
 
-window.addEventListener('DOMContentLoaded', (event) => {
-    scaleImages()
+if (SelectedTeam != null) {
+    window.addEventListener('DOMContentLoaded', (event) => {
+        scaleImages()
 
-});
+    });
 
-$(window).resize(function () {
-    scaleImages()
-});	
+    $(window).resize(function () {
+        scaleImages()
+    });
+}
+

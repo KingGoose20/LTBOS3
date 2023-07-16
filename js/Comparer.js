@@ -173,6 +173,14 @@ function RunMain(option) {
     table.deleteRow(i)
   }
   for (i = 0; i < dayArray.length; i++) {
+    templateOther = document.getElementsByTagName("template")[1];
+    for (x = 0; x < markers.Location.length; x++) {
+      if (markers.Location[x] == i) {
+        cloneOther = templateOther.content.cloneNode(true);
+        cloneOther.getElementById("main").innerHTML = markers.Text[x]
+        table.appendChild(cloneOther)
+      } 
+    }
     template = document.getElementsByTagName("template")[0];
     clone = template.content.cloneNode(true);
     if (numberA != null) {

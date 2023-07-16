@@ -340,7 +340,6 @@
         .dayByDayColours>td:nth-child(5n -1) {
             background-color: rgb(37, 0, 86);
         }
-
     </style>
 </head>
 
@@ -615,28 +614,31 @@
                         </tr>
                     </table>
                     <br><br><br>
-                    <table style="width: 90%; margin: auto;" class="heading-hide" id="dayByDayTable">
-                        <colgroup style="width: 11%"></colgroup>
-                        <colgroup style="width: 11%"></colgroup>
-                        <colgroup style="width: 12%"></colgroup>
-                        <colgroup style="width: 11%"></colgroup>
-                        <colgroup style="width: 10%"></colgroup>
-                        <colgroup style="width: 11%"></colgroup>
-                        <colgroup style="width: 11%"></colgroup>
-                        <colgroup style="width: 12%"></colgroup>
-                        <colgroup style="width: 11%"></colgroup>
-                        <tr class="dayByDayColours">
-                            <td>Points</td>
-                            <td>Finishes</td>
-                            <td>Midranges</td>
-                            <td>Threes</td>
-                            <td>Date</td>
-                            <td>Points</td>
-                            <td>Finishes</td>
-                            <td>Midranges</td>
-                            <td>Threes</td>
-                        </tr>
-                    </table>
+                    <div style="max-height: 400px; overflow-y: scroll;">
+                        <table style="width: 90%; margin: auto;" class="heading-hide" id="dayByDayTable">
+                            <colgroup style="width: 11%"></colgroup>
+                            <colgroup style="width: 11%"></colgroup>
+                            <colgroup style="width: 12%"></colgroup>
+                            <colgroup style="width: 11%"></colgroup>
+                            <colgroup style="width: 10%"></colgroup>
+                            <colgroup style="width: 11%"></colgroup>
+                            <colgroup style="width: 11%"></colgroup>
+                            <colgroup style="width: 12%"></colgroup>
+                            <colgroup style="width: 11%"></colgroup>
+                            <tr class="dayByDayColours">
+                                <td>Points</td>
+                                <td>Finishes</td>
+                                <td>Midranges</td>
+                                <td>Threes</td>
+                                <td>Date</td>
+                                <td>Points</td>
+                                <td>Finishes</td>
+                                <td>Midranges</td>
+                                <td>Threes</td>
+                            </tr>
+                        </table>
+                    </div>
+
 
                 </div>
             </div>
@@ -653,6 +655,15 @@
             <td id="7"></td>
             <td id="8"></td>
             <td id="9"></td>
+        </tr>
+    </template>
+    <template>
+        <tr id="" style="height: 30px">
+            <td colspan="9">
+                <h2 class="section-heading centered"
+                    style="margin: 0; color: rgb(210, 210, 210); font-size: 1.5em; line-height: 1.5em; letter-spacing: 0.5em;">
+                    <i id="main"></i></h2>
+            </td>
         </tr>
     </template>
     <div id="footer">

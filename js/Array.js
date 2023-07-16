@@ -19,7 +19,7 @@ mainArray = {
   "AccoladesEight": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "Champion T2", "", ""],
   "History": ["Drafted by Loose Gooses", "Drafted by Loose Gooses", "Retained by 5 Musketeers", "GM of Wet Willies", "Retained by Wet Willies", "Drafted by Wet Willies", "Drafted by 5 Musketeers", "Out due to injury. Signed by Wet Willies", "Retained by Loose Gooses", "GM of 5 Musketeers", "Drafted by Wet Willies", "Drafted by Wet Willies", "Drafted by 5 Musketeers", "Drafted by Loose Gooses", "GM of Loose Gooses", "Drafted by Wet Willies", "Drafted by 5 Musketeers"],
   "TeamImage": ["../Images/LG_Final.png", "../Images/LG_Final.png", "../Images/5M_Final.png", "../Images/WW_Final.png", "../Images/WW_Final.png", "../Images/WW_Final.png", "../Images/5M_Final.png", "../Images/WW_Final.png", "../Images/LG_Final.png", "../Images/5M_Final.png", "../Images/WW_Final.png", "../Images/WW_Final.png", "../Images/5M_Final.png", "../Images/LG_Final.png", "../Images/LG_Final.png", "../Images/WW_Final.png", "../Images/5M_Final.png"],
-  "PlayerImage": ["../Images/Players/Jasper.png", "../Images/Players/Conor.png", "../Images/Players/Alex.png", "../Images/Players/Rudy.png", "../Images/Players/Michael.png", "../Images/Players/Lukas.png", "../Images/Players/SamJ.png", "../Images/Players/Clarrie.png", "../Images/Players/Kimmy.png", "../Images/Players/SamM.png", "../Images/Players/Ryan.png", "../Images/Players/Will.png", "../Images/Players/Nick.png", "../Images/Players/Chris.png", "../Images/Players/Angus.png", "../Images/Players/Willie.png", "../Images/Players/Mitch.png"],
+  "PlayerImage": ["../Images/Players/Jasper.png", "../Images/Players/Conor.png", "../Images/Players/Alex.png", "../Images/Players/Rudy.png", "../Images/Players/Michael.png", "../Images/Players/Lukas.png", "../Images/Players/SamJ.png", "../Images/Players/Clarrie.png", "../Images/Players/Kimmy.png", "../Images/Players/SamM.png", "../Images/Players/Ryan.png", "../Images/Players/Will.png", "../Images/Players/Nicholas.png", "../Images/Players/Christopher.png", "../Images/Players/Angus.png", "../Images/Players/Willie.png", "../Images/Players/Mitch.png"],
 
 }
 
@@ -47,6 +47,12 @@ dayArray = [
     "Midrange": ["Did not Play", 0, "Did not Play", "Did not Play", 1, 0, 0, 0, 2, 0, 0, 0, 0, 0, 1, 0, 0],
     "ThreePointers": ["Did not Play", 0, "Did not Play", "Did not Play", 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0]
   },
+  
 
 
 ]
+
+markers = {
+  "Location": [0, 3],
+  "Text": ["Preseason", "Regular Season"]
+}

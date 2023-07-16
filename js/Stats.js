@@ -116,10 +116,18 @@ function RunMain() {
   /* Past Results Section  */
   table = document.getElementById("dayByDay")
   template = document.getElementsByTagName("template")[0];
+  templateOther = document.getElementsByTagName("template")[1];
   for (let i = (table.rows.length - 1); i > 0; i--) {
     table.deleteRow(i)
   }
   for (let i = 0; i < dayArray.length; i++) {
+    for (x = 0; x < markers.Location.length; x++) {
+      if (markers.Location[x] == i) {
+        cloneOther = templateOther.content.cloneNode(true);
+        cloneOther.getElementById("main").innerHTML = markers.Text[x]
+        table.appendChild(cloneOther)
+      } 
+    }
     clone = template.content.cloneNode(true);
     day = dayArray[i]
     clone.getElementById("date").innerHTML = String(day.Date)

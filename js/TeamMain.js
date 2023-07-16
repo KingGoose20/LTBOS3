@@ -52,6 +52,12 @@ Musketeers = {
     "TB": ["Samuel McConaghy", "Samuel McConaghy", "Nicholas Szogi"]
 }
 
+markers = {
+    "Location": [0, 3],
+    "Text": ["Preseason", "Regular Season"]
+  }
+  
+
 currentLocation = window.location
 myKeyValues = currentLocation.search
 urlParams = new URLSearchParams(myKeyValues)
@@ -145,7 +151,15 @@ function RunMain() {
 
     table = document.getElementById("dayByDay")
     template = document.getElementsByTagName("template")[0];
+    templateOther = document.getElementsByTagName("template")[1];
     for (let i = 0; i < variable.Date.length; i++) {
+        for (x = 0; x < markers.Location.length; x++) {
+            if (markers.Location[x] == i) {
+              cloneOther = templateOther.content.cloneNode(true);
+              cloneOther.getElementById("main").innerHTML = markers.Text[x]
+              table.appendChild(cloneOther)
+            } 
+          }
         clone = template.content.cloneNode(true);
         clone.getElementById("Date").innerHTML = String(variable.Date[i])
         clone.getElementById("Wins").innerHTML = String(variable.Wins[i])

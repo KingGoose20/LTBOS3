@@ -39,6 +39,7 @@ function header(location) {
                     <a href="replacerDocumentsAndIco/TeamHome.html?Team=WW" class="dropDown-link">Wet Willies Home</a>
                     <a href="replacerDocumentsAndIco/TeamHome.html?Team=5M" class="dropDown-link">5 Musketeers Home</a>
                     <a href="replacerDocumentsAndIco/InstagramHighlights.html" class="dropDown-link">Instagram</a>
+                    <a href="https://365asas-my.sharepoint.com/:f:/g/personal/011445_asas_qld_edu_au/Enw3biOiY2xAo3nd_oihdAEBjsB7F500EKl6UYgd5-ONqQ?e=1KAlm2" class="dropDown-link">Visual Database</a>
                 </div>
             </div>
             <li class="nav-item dropdownShow">
@@ -68,6 +69,9 @@ function header(location) {
             <li class="nav-item dropdownShow">
                 <a href="replacerDocumentsAndIco/InstagramHighlights.html" class="navigation-link w-nav-link">Instagram</a>
             </li>
+            <li class="nav-item dropdownShow">
+            <a href="https://365asas-my.sharepoint.com/:f:/g/personal/011445_asas_qld_edu_au/Enw3biOiY2xAo3nd_oihdAEBjsB7F500EKl6UYgd5-ONqQ?e=1KAlm2" class="navigation-link w-nav-link">Visual Database</a>
+        </li>
 
             </ul>
             <div class="hamburger">

@@ -23,15 +23,15 @@ Preseason = {
 }
 
 Week1 = {
-    "ArticleName": [""],
-    "ArticleDescription": [""],
-    "ArticleDate": [""],
-    "ImageA": [""],
+    "ArticleName": ["Introducing the LTBO Visual Database"],
+    "ArticleDescription": ["The LTBO introduces its Visual Database, an easy way to find images and videos of anyone and anything LTBO related."],
+    "ArticleDate": ["18/07"],
+    "ImageA": ["Logo.png"],
     "ImageB": [""],
     "ImageC": [""],
     "ImageD": [""],
-    "ArticleLink": [""],
-    "ArticleType": [""]
+    "ArticleLink": ["02.html"],
+    "ArticleType": ["Normal"]
 }
 
 Week2 = {

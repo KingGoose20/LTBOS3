@@ -3,20 +3,20 @@ WetWilliesPlayers = ["Rudy Hoschke", "Michael Iffland", "Lukas Johnston", "Ryan 
 MusketeersPlayers = ["Samuel McConaghy", "Alexander Galt", "Nicholas Szogi", "Sam James", "Mitch Yue"]
 
 Today = {
-  "Date": ["18 July"],
-  "Game Number":[1,2,3,4,5,6,7,8,9,10,11,12,13,14],
-  "Winner":["Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Wet Willies","5 Musketeers","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses"],
-  "Loser":["Wet Willies","5 Musketeers","Wet Willies","5 Musketeers","Loose Gooses","Wet Willies","5 Musketeers","Wet Willies","5 Musketeers","Wet Willies","5 Musketeers","Wet Willies","5 Musketeers","Wet Willies"],
-  "Scorer":["Angus Walker","Christopher Tomkinson","Christopher Tomkinson","Christopher Tomkinson","Ryan Pattemore","Samuel McConaghy","William Kim","Angus Walker","William Kim","Angus Walker","Angus Walker","Conor Farrington","Jasper Collier","Angus Walker"],
-  "Type":["Midrange","Midrange","Finish","Finish","Midrange","Midrange","Midrange","Finish","Three Pointer","Three Pointer","Midrange","Finish","Midrange","Finish"],
-  "WStreak":[1,2,3,4,1,1,1,2,3,4,5,6,7,8],
-  "LStreak":[1,1,2,2,1,1,1,2,2,3,3,4,4,5],
-  "SStreak":[1,1,2,3,1,1,1,1,1,1,2,1,1,1]
+  "Date": ["19 July"],
+  "Game Number":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+  "Winner":["Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses"],
+  "Loser":["Wet Willies","5 Musketeers","Wet Willies","5 Musketeers","Wet Willies","5 Musketeers","Wet Willies","5 Musketeers","Wet Willies","5 Musketeers","Wet Willies","5 Musketeers","Wet Willies","5 Musketeers","Wet Willies"],
+  "Scorer":["Christopher Tomkinson","Conor Farrington","Angus Walker","Jasper Collier","Conor Farrington","William Kim","William Kim","Angus Walker","William Kim","William Kim","Conor Farrington","Angus Walker","Angus Walker","Christopher Tomkinson","William Kim"],
+  "Type":["Finish","Finish","Finish","Midrange","Finish","Finish","Midrange","Finish","Midrange","Finish","Finish","Finish","Midrange","Three Pointer","Three Pointer"],
+  "WStreak":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15],
+  "LStreak":[1,1,2,2,3,3,4,4,5,5,6,6,7,7,8],
+  "SStreak":[1,1,1,1,1,1,2,1,1,2,1,1,2,1,1]
 }
 
-DidNotPlay = ["Rudy Hoschke", "Alexander Galt", "William Scott", "Mitch Yue", "Clarrie Jones"]
+DidNotPlay = ["Alexander Galt", "Mitch Yue", "Clarrie Jones"]
 /* Goes LG, WW, 5M */
-LadderPoints = [6, 2, 4]
+LadderPoints = [9, 3, 6]
 DaysPlayed = (LadderPoints[0] + LadderPoints[1] + LadderPoints[2]) / 6
 
 Override = false
@@ -24,7 +24,7 @@ OverrideOrder = ["LG", "5M", "WW"]
 overRideDate = ""
 overrideW = ""
 overrideL = ""
-overrideDayPoints = []
+overrideDayPoints = [3,1,2]
 
 
 
@@ -37,7 +37,7 @@ overrideDayPoints = []
 
 function ladder() {
   Leaders = [LooseGooses.PartB[1], WetWillies.PartB[1], Musketeers.PartB[1]]
-  LeadersPoints = [LooseGooses.PartB[0] / DaysPlayed, WetWillies.PartB[0] / DaysPlayed, Musketeers.PartB[0] / DaysPlayed]
+  LeadersPoints = [(LooseGooses.PartB[0] / DaysPlayed).toFixed(2), (WetWillies.PartB[0] / DaysPlayed).toFixed(2), (Musketeers.PartB[0] / DaysPlayed).toFixed(2)]
   if (Override == false) {
     LG = false
     WW = false
@@ -394,9 +394,9 @@ function results() {
   }
 
   if (overrideDayPoints.length != 0) {
-    document.getElementById("LGpoints").innerHTML = overrideDayPoints[0]
-    document.getElementById("WWpoints").innerHTML = overrideDayPoints[1]
-    document.getElementById("5Mpoints").innerHTML = overrideDayPoints[2]
+    document.getElementById("LGpoints").innerHTML = "<strong>" + overrideDayPoints[0] + "</strong> points"
+    document.getElementById("WWpoints").innerHTML = "<strong>" + overrideDayPoints[1] + "</strong> points"
+    document.getElementById("5Mpoints").innerHTML = "<strong>" + overrideDayPoints[2] + "</strong> points"
   }
   if (overrideW != "") {
     document.getElementById("winning").innerHTML = overrideW;

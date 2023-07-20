@@ -4,52 +4,52 @@ LooseGooses = {
     "Colours": ["#d74268", "#f5b153", "#d48619", "#d74268"],
     "Players": ["Angus Walker", "William Kim", "Christopher Tomkinson", "Jasper Collier", "Conor Farrington"],
     "Images": ["../Images/Players/Angus.png", "../Images/Players/Kimmy.png", "../Images/Players/Christopher.png", "../Images/Players/Jasper.png", "../Images/Players/Conor.png"],
-    "PartA":[35,4],
-    "PartB":[15,"Angus Walker",8,"Angus Walker",3,"Angus Walker",2,"Angus Walker"],
-    "PartC":[13.3,6.7,3.3,1.7,11.7,1.3],
-    "PartD":[19,1,95,16,3,84.2],       
-    "Date":["11-July","12-July","13-July","17-July","18-July","19-July"],
-    "Wins":[5,9,8,8,12,15],
-    "Losses":[6,8,2,3,1,0],
-    "Points":[2,2,3,3,3,3],
-    "TA":["William Kim","Angus Walker","Angus Walker","Angus Walker","Angus Walker","William Kim"],
-    "TB":["William Kim, Christopher Tomkinson, Conor Farrington","Angus Walker, Christopher Tomkinson","Angus Walker","Angus Walker","Christopher Tomkinson, William Kim","Angus Walker"]
+    "PartA":[38,8],
+    "PartB":[16,"Angus Walker",8,"Angus Walker",4,"Angus Walker",2,"Angus Walker"],
+    "PartC":[10.8,5.5,2.8,1.3,9.5,2],
+    "PartD":[21,4,84,17,4,81],         
+    "Date":["11-July","12-July","13-July","17-July","18-July","19-July","20-July"],
+    "Wins":[5,9,8,8,12,15,3],
+    "Losses":[6,8,2,3,1,0,4],
+    "Points":[2,2,3,3,3,3,2],
+    "TA":["William Kim","Angus Walker","Angus Walker","Angus Walker","Angus Walker","William Kim","Christopher Tomkinson, Angus Walker"],
+    "TB":["William Kim, Christopher Tomkinson, Conor Farrington","Angus Walker, Christopher Tomkinson","Angus Walker","Angus Walker","Christopher Tomkinson, William Kim","Angus Walker","William Kim"]
 }
 
 WetWillies = {
     "TeamsNames": ["Loose Gooses", "5 Musketeers", "LG", "5M", "Wet Willies"],
     "Quote": ["Screw Clarrie Jones, we like to eat little white boys."],
     "Colours": ["#e45e0b", "#8c3600", "#8c3600", "#ff690c"],
-    "Players": ["Rudy Hoschke", "Michael Iffland", "Lukas Johnston", "Ryan Pattemore", "Will Weekes", "(OUT) Clarrie Jones", "William Scott"],
-    "Images": ["../Images/Players/Rudy.png", "../Images/Players/Michael.png", "../Images/Players/Lukas.png", "../Images/Players/Ryan.png", "../Images/Players/Willie.png", "../Images/Players/Clarrie.png", "../Images/Players/Will.png"],
-    "PartA":[3,20],
-    "PartB":[3,"Ryan Pattemore",0,"N/A",3,"Ryan Pattemore",0,"N/A"],
-    "PartC":[1,0,1,0,1,6.7],
-    "PartD":[1,19,5,2,1,66.7],       
-    "Date":["11-July","12-July","13-July","17-July","18-July","19-July"],
-    "Wins":[0,2,4,2,1,0],
-    "Losses":[8,12,5,5,7,8],
-    "Points":[1,1,2,1,1,1],
-    "TA":["N/A","Lukas Johnston","Clarrie Jones, Michael Iffland","N/A","Ryan Pattemore","N/A"],
-    "TB":["N/A","Ryan Pattemore","Michael Iffland, William Scott","Ryan Pattemore","N/A","N/A"]
+    "Players": ["Rudy Hoschke", "Michael Iffland", "Lukas Johnston", "Ryan Pattemore", "Will Weekes", "(OUT) Clarrie Jones", "Mitch Yue"],
+    "Images": ["../Images/Players/Rudy.png", "../Images/Players/Michael.png", "../Images/Players/Lukas.png", "../Images/Players/Ryan.png", "../Images/Players/Willie.png", "../Images/Players/Clarrie.png", "../Images/Players/Mitch.png"],
+    "PartA":[9,23],
+    "PartB":[4,"Ryan Pattemore",3,"Rudy Hoschke",3,"Ryan Pattemore",0,"N/A"],
+    "PartC":[2.3,1.3,1,0,2.3,5.8],
+    "PartD":[4,21,16,5,2,71.4],           
+    "Date":["11-July","12-July","13-July","17-July","18-July","19-July","20-July"],
+    "Wins":[0,2,4,2,1,0,6],
+    "Losses":[8,12,5,5,7,8,3],
+    "Points":[1,1,2,1,1,1,3],
+    "TA":["N/A","Lukas Johnston","Clarrie Jones, Michael Iffland","N/A","Ryan Pattemore","N/A","Ryan Pattemore, Rudy Hoschke, Lukas Johnston"],
+    "TB":["N/A","Ryan Pattemore","Michael Iffland, William Scott","Ryan Pattemore","N/A","N/A","Rudy Hoschke"]
 }
 
 Musketeers = {
     "TeamsNames": ["Loose Gooses", "Wet Willies", "LG", "WW", "5 Musketeers"],
     "Quote": ["With Nick, we're the 6 Musketeers"],
     "Colours": ["#004045", "#004045", "#47aeb5", "#47aeb5"],
-    "Players": ["Samuel McConaghy", "Alexander Galt", "Nicholas Szogi", "Sam James", "Mitch Yue"],
-    "Images": ["../Images/Players/SamM.png", "../Images/Players/Alex.png", "../Images/Players/Nicholas.png", "../Images/Players/SamJ.png", "../Images/Players/Mitch.png"],
-    "PartA":[4,18],
-    "PartB":[4,"Samuel McConaghy",1,"Nicholas Szogi",2,"Samuel McConaghy",1,"Samuel McConaghy"],
-    "PartC":[1.7,0.3,0.7,0.3,1.3,6],
-    "PartD":[3,16,15.8,1,2,33.3],    
-    "Date":["11-July","12-July","13-July","17-July","18-July","19-July"],
-    "Wins":[12,15,1,3,1,0],
-    "Losses":[3,6,6,5,6,7],
-    "Points":[3,3,1,2,2,2],
-    "TA":["Alexander Galt","Alexander Galt","N/A","Samuel McConaghy","N/A","N/A"],
-    "TB":["Samuel McConaghy","Samuel McConaghy","Nicholas Szogi","N/A","Samuel McConaghy","N/A"]
+    "Players": ["Samuel McConaghy", "Alexander Galt", "Nicholas Szogi", "Sam James", "William Scott"],
+    "Images": ["../Images/Players/SamM.png", "../Images/Players/Alex.png", "../Images/Players/Nicholas.png", "../Images/Players/SamJ.png", "../Images/Players/Will.png"],
+    "PartA":[6,22],
+    "PartB":[6,"Samuel McConaghy",1,"Nicholas Szogi",4,"Samuel McConaghy",1,"Samuel McConaghy"],
+    "PartC":[1.8,0.3,1,0.3,1.5,5.5],
+    "PartD":[4,17,19,2,5,28.6],     
+    "Date":["11-July","12-July","13-July","17-July","18-July","19-July","20-July"],
+    "Wins":[12,15,1,3,1,0,2],
+    "Losses":[3,6,6,5,6,7,4],
+    "Points":[3,3,1,2,2,2,1],
+    "TA":["Alexander Galt","Alexander Galt","N/A","Samuel McConaghy","N/A","N/A","Samuel McConaghy"],
+    "TB":["Samuel McConaghy","Samuel McConaghy","Nicholas Szogi","N/A","Samuel McConaghy","N/A","Samuel McConaghy"]
 }
 
 markers = {
@@ -226,11 +226,11 @@ function RunLTBO() {
         }
     }
 
-    document.getElementById("aPoints").innerHTML = LooseGooses.PartC[0] + WetWillies.PartC[0] + Musketeers.PartC[0]
-    document.getElementById("aFinishes").innerHTML = LooseGooses.PartC[1] + WetWillies.PartC[1] + Musketeers.PartC[1]
-    document.getElementById("aMidranges").innerHTML = (LooseGooses.PartC[2].toFixed(2) * 100 + WetWillies.PartC[2].toFixed(2) * 100 + Musketeers.PartC[2].toFixed(2) * 100) / 100
-    document.getElementById("aThrees").innerHTML = LooseGooses.PartC[3] + WetWillies.PartC[3] + Musketeers.PartC[3]
-    document.getElementById("aGames").innerHTML = LooseGooses.PartC[4] + WetWillies.PartC[4] + Musketeers.PartC[4]
+    document.getElementById("aPoints").innerHTML = (LooseGooses.PartC[0] + WetWillies.PartC[0] + Musketeers.PartC[0]).toFixed(1)
+    document.getElementById("aFinishes").innerHTML = (LooseGooses.PartC[1] + WetWillies.PartC[1] + Musketeers.PartC[1]).toFixed(1)
+    document.getElementById("aMidranges").innerHTML = (LooseGooses.PartC[2] + WetWillies.PartC[2] + Musketeers.PartC[2]).toFixed(1)
+    document.getElementById("aThrees").innerHTML = (LooseGooses.PartC[3] + WetWillies.PartC[3] + Musketeers.PartC[3]).toFixed(1)
+    document.getElementById("aGames").innerHTML = (LooseGooses.PartC[4] + WetWillies.PartC[4] + Musketeers.PartC[4]).toFixed(1)
 
     secondID = ["PPoints", "PFinishes", "PMidranges", "PThrees"]
     PPG = 0

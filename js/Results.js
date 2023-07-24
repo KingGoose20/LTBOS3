@@ -3,28 +3,28 @@ WetWilliesPlayers = ["Rudy Hoschke", "Michael Iffland", "Lukas Johnston", "Ryan 
 MusketeersPlayers = ["Samuel McConaghy", "Alexander Galt", "Nicholas Szogi", "Sam James", "William Scott"]
 
 Today = {
-  "Date": ["20 July"],
+  "Date": ["24 July"],
   "Game Number":[1,2,3,4,5,6,7,8,9,10,11],
-  "Winner":["Wet Willies","Wet Willies","Loose Gooses","Loose Gooses","Wet Willies","5 Musketeers","5 Musketeers","Wet Willies","Wet Willies","Wet Willies","Loose Gooses"],
-  "Loser":["Loose Gooses","5 Musketeers","Wet Willies","5 Musketeers","Loose Gooses","Wet Willies","Loose Gooses","5 Musketeers","Loose Gooses","5 Musketeers","Wet Willies"],
-  "Scorer":["Ryan Pattemore","Lukas Johnston","Christopher Tomkinson","William Kim","Rudy Hoschke","Samuel McConaghy","Samuel McConaghy","Rudy Hoschke","Lukas Johnston","Rudy Hoschke","Angus Walker"],
-  "Type":["Finish","Midrange","Finish","Finish","Finish","Midrange","Midrange","Finish","Finish","Finish","Midrange"],
-  "WStreak":[1,2,1,2,1,1,2,1,2,3,1],
-  "LStreak":[1,1,1,2,1,1,2,1,3,2,1],
-  "SStreak":[1,1,1,1,1,1,2,1,1,1,1]
+  "Winner":["5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","Wet Willies","Loose Gooses","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers"],
+  "Loser":["Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","5 Musketeers","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses"],
+  "Scorer":["Sam James","Alexander Galt","Samuel McConaghy","Alexander Galt","Michael Iffland","William Kim","Samuel McConaghy","Sam James","Sam James","Alexander Galt","Alexander Galt"],
+  "Type":["Midrange","Finish","Midrange","Finish","Midrange","Midrange","Finish","Finish","Finish","Finish","Finish"],
+  "WStreak":[1,2,3,4,1,1,1,2,3,4,5],
+  "LStreak":[1,1,2,2,1,1,1,2,2,3,3],
+  "SStreak":[1,1,1,1,1,1,1,1,2,1,2]
 }
 
-DidNotPlay = ["Alexander Galt", "Mitch Yue", "Clarrie Jones", "Conor Farrington"]
+DidNotPlay = ["Clarrie Jones"]
 /* Goes LG, WW, 5M */
-LadderPoints = [11, 6, 7]
+LadderPoints = [13, 7, 10]
 DaysPlayed = (LadderPoints[0] + LadderPoints[1] + LadderPoints[2]) / 6
 
 Override = false
 OverrideOrder = ["LG", "5M", "WW"]
 overRideDate = ""
 overrideW = ""
-overrideL = ""
-overrideDayPoints = []
+overrideL = "Wet Willies"
+overrideDayPoints = [2,1,3]
 
 
 

@@ -241,7 +241,7 @@ function footer(location) {
     SelectedTeam = urlParams.get("Team")
 
     if (SelectedTeam == "LG") {
-        template.innerHTML = template.innerHTML.replace('<a href="replacerImages/Cool Sam.jpg"><img src="replacerImages/Logo.png" style="height: 20%; width:20%;"></a>', '<a href="replacerImages/Cool Sam.jpg"><img src="replacerImages/Logo.png" style="height: 20%; width:20%;"></a><img src="replacerImages/LG_Final.png" style="height: 30%; width:30%; margin-left: 60px;">')
+        template.innerHTML = template.innerHTML.replace('<a href="replacerImages/Cool Sam.jpg"><img src="replacerImages/Logo.png" style="height: 20%; width:20%;"></a>', '<a href="replacerImages/Cool Sam.jpg"><img src="replacerImages/Logo.png" style="height: 20%; width:20%;"></a><a href="replacerDocumentsAndIco/LG_Hacks.html"><img src="replacerImages/LG_Final.png" style="height: 30%; width:30%; margin-left: 60px;"></a>')
     }
     if (SelectedTeam == "WW") {
         template.innerHTML = template.innerHTML.replace('<a href="replacerImages/Cool Sam.jpg"><img src="replacerImages/Logo.png" style="height: 20%; width:20%;"></a>', '<a href="replacerImages/Cool Sam.jpg"><img src="replacerImages/Logo.png" style="height: 20%; width:20%;"></a><img src="replacerImages/WW_Final.png" style="height: 24%; width:24%; margin-left: 60px;">')

@@ -11,9 +11,6 @@ function header(location) {
         <nav class="navbar heading-links w-nav-menu">
             <ul class="nav-menu">
             <li class="nav-item">
-                <a href="replacerDocumentsAndIco/Draft.html" class="navigation-link w-nav-link">Draft</a>
-            </li>
-            <li class="nav-item">
                 <a href="replacerDocumentsAndIco/Ladder.html" class="navigation-link w-nav-link">Ladder</a>
             </li>
             <li class="nav-item">
@@ -55,8 +52,8 @@ function header(location) {
                 <a href="replacerDocumentsAndIco/Contact.html" class="navigation-link w-nav-link">Contact Us</a>
             </li>
             <li class="nav-item dropdownShow">
-            <a href="replacerDocumentsAndIco/LeagueHome?Team=LTBO" class="navigation-link w-nav-link">League Home</a>
-        </li>
+                <a href="replacerDocumentsAndIco/LeagueHome?Team=LTBO" class="navigation-link w-nav-link">League Home</a>
+            </li>
             <li class="nav-item dropdownShow">
                 <a href="replacerDocumentsAndIco/TeamHome.html?Team=LG" class="navigation-link w-nav-link">Loose Gooses Home</a>
             </li>

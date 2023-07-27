@@ -8,7 +8,7 @@ Today = {
   "Winner":["5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","Wet Willies","Wet Willies","Wet Willies","Loose Gooses","Loose Gooses","Loose Gooses"],
   "Loser":["Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","5 Musketeers","Loose Gooses","5 Musketeers","Wet Willies","5 Musketeers","Wet Willies"],
   "Scorer":["Alexander Galt","Samuel McConaghy","Alexander Galt","Nicholas Szogi","Samuel McConaghy","Alexander Galt","Alexander Galt","Nicholas Szogi","Ryan Pattemore","Rudy Hoschke","Ryan Pattemore","Angus Walker","Angus Walker","Jasper Collier"],
-  "Type":["Finish","Midrange","Finish","Midrange","Midrange","Finish","Midrange","Finish","Midrange","Finish","Midrange","Midrange","Finish","Midrange"],
+  "Type":["Finish","Midrange","Finish","Midrange","Midrange","Finish","Three Pointer","Finish","Midrange","Finish","Midrange","Midrange","Finish","Midrange"],
   "WStreak":[1,2,3,4,5,6,7,8,1,2,3,1,2,3],
   "LStreak":[1,1,2,2,3,3,4,4,1,5,2,1,3,2],
   "SStreak":[1,1,1,1,1,1,2,1,1,1,1,1,2,1]

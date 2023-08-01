@@ -1,5 +1,18 @@
+OldData = {
+  "PPG": [0.41, 0.6, 3.14, 2.81, 2.06, 1.14, 0.31, 1.59, 1.41, 2.53, 0.88, 0, 1.07, 1.06, 2.43, 0.12, 0.65],
+  "TP": [7, 9, 44, 45, 35, 16, 5, 27, 24, 38, 14, 0, 16, 18, 34, 2, 11],
+  "FPG": [0.12, 0.4, 3.07, 2.63, 0.59, 0.64, 0.19, 0.29, 0.41, 0.47, 0.13, 0.53, 0, 0.41, 1.43, 0.12, 0.24, 0.19],
+  "TF": [2, 6, 43, 42, 10, 9, 3, 5, 7, 7, 2, 8, 0, 7, 20, 2, 4, 3],
+  "MPG": [0.29, 0.2, 0.07, 0.19, 0.76, 0.5, 0.13, 0.12, 1, 1.67, 0.63, 0, 0.13, 0.65, 0.57, 0, 0.29],
+  "TM": [5, 3, 1, 3, 13, 7, 2, 2, 17, 25, 10, 0, 2, 11, 8, 0, 5],
+  "TPG": [0, 0, 0, 0, 0.35, 0, 0, 0.59, 0, 0.2, 0.06, 0, 0.2, 0, 0.21, 0, 0.06],
+  "TT": [0, 0, 0, 0, 6, 0, 0, 10, 0, 3, 1, 0, 3, 0, 3, 0, 1],
+}
+
 numberA = null
 numberB = null
+oldA = false
+oldB = false
 
 dataA = null
 dataB = null
@@ -123,16 +136,51 @@ selectDivTwo.addEventListener('change', function (e) {
   RunMain("B")
 });
 
-function RunMain(option) {
-  document.getElementById("avgPoints" + option).innerHTML = mainArray.PPG[number]
-  document.getElementById("avgFinishes" + option).innerHTML = mainArray.FPG[number]
-  document.getElementById("avgMidranges" + option).innerHTML = mainArray.MPG[number]
-  document.getElementById("avgThrees" + option).innerHTML = mainArray.TPG[number]
+function Clicked(option) {
+  if (option == "a") {
+    if(document.getElementById("CheckA").checked) {
+      oldA = true
+      number = numberA
+      RunMain("A")
+    } else {
+      oldA = false
+      number = numberA
+      RunMain("A")
+    }
+  }
+  if (option == "b") {
+    if(document.getElementById("CheckB").checked) {
+      oldB = true
+      number = numberB
+      RunMain("B")
+    } else {
+      oldB = false
+      number = numberB
+      RunMain("B")
+    }
+  }
+}
 
-  document.getElementById("ttlPoints" + option).innerHTML = mainArray.TP[number]
-  document.getElementById("ttlFinishes" + option).innerHTML = mainArray.TF[number]
-  document.getElementById("ttlMidranges" + option).innerHTML = mainArray.TM[number]
-  document.getElementById("ttlThrees" + option).innerHTML = mainArray.TT[number]
+function RunMain(option) {
+  if (number == null) {
+    exit()
+  }
+  array = mainArray
+  if (option == "A" && oldA) {
+    array = OldData
+  }
+  if (option == "B" && oldB) {
+    array = OldData
+  }
+  document.getElementById("avgPoints" + option).innerHTML = array.PPG[number]
+  document.getElementById("avgFinishes" + option).innerHTML = array.FPG[number]
+  document.getElementById("avgMidranges" + option).innerHTML = array.MPG[number]
+  document.getElementById("avgThrees" + option).innerHTML = array.TPG[number]
+
+  document.getElementById("ttlPoints" + option).innerHTML = array.TP[number]
+  document.getElementById("ttlFinishes" + option).innerHTML = array.TF[number]
+  document.getElementById("ttlMidranges" + option).innerHTML = array.TM[number]
+  document.getElementById("ttlThrees" + option).innerHTML = array.TT[number]
 
   document.getElementById("accolade1" + option).innerHTML = mainArray.AccoladesOne[number]
   document.getElementById("accolade2" + option).innerHTML = mainArray.AccoladesTwo[number]
@@ -146,10 +194,10 @@ function RunMain(option) {
   document.getElementById("history" + option).innerHTML = mainArray.History[number]
 
   if (option == "A") {
-    dataA = [mainArray.PPG[number], mainArray.FPG[number], mainArray.MPG[number], mainArray.TPG[number], mainArray.TP[number], mainArray.TF[number], mainArray.TM[number], mainArray.TT[number]]
+    dataA = [array.PPG[number], array.FPG[number], array.MPG[number], array.TPG[number], array.TP[number], array.TF[number], array.TM[number], array.TT[number]]
     numberA = number
   } else {
-    dataB = [mainArray.PPG[number], mainArray.FPG[number], mainArray.MPG[number], mainArray.TPG[number], mainArray.TP[number], mainArray.TF[number], mainArray.TM[number], mainArray.TT[number]]
+    dataB = [array.PPG[number], array.FPG[number], array.MPG[number], array.TPG[number], array.TP[number], array.TF[number], array.TM[number], array.TT[number]]
     numberB = number
   }
 
@@ -172,34 +220,39 @@ function RunMain(option) {
   for (let i = (table.rows.length - 1); i > 0; i--) {
     table.deleteRow(i)
   }
-  for (i = 0; i < dayArray.length; i++) {
-    templateOther = document.getElementsByTagName("template")[1];
-    for (x = 0; x < markers.Location.length; x++) {
-      if (markers.Location[x] == i) {
-        cloneOther = templateOther.content.cloneNode(true);
-        cloneOther.getElementById("main").innerHTML = markers.Text[x]
-        table.appendChild(cloneOther)
-      } 
-    }
-    template = document.getElementsByTagName("template")[0];
-    clone = template.content.cloneNode(true);
-    if (numberA != null) {
-      clone.getElementById("1").innerHTML = dayArray[i].Points[numberA]
-      clone.getElementById("2").innerHTML = dayArray[i].Finishes[numberA]
-      clone.getElementById("3").innerHTML = dayArray[i].Midrange[numberA]
-      clone.getElementById("4").innerHTML = dayArray[i].ThreePointers[numberA]
-    }
-    if (numberB != null) {
-      
-      clone.getElementById("6").innerHTML = dayArray[i].Points[numberB]
-      clone.getElementById("7").innerHTML = dayArray[i].Finishes[numberB]
-      clone.getElementById("8").innerHTML = dayArray[i].Midrange[numberB]
-      clone.getElementById("9").innerHTML = dayArray[i].ThreePointers[numberB]
-    }
-  clone.getElementById("5").innerHTML = dayArray[i].Date[0]
 
-    document.getElementById("dayByDayTable").appendChild(clone)
+  if (array == mainArray) {
+    for (i = 0; i < dayArray.length; i++) {
+      templateOther = document.getElementsByTagName("template")[1];
+      for (x = 0; x < markers.Location.length; x++) {
+        if (markers.Location[x] == i) {
+          cloneOther = templateOther.content.cloneNode(true);
+          cloneOther.getElementById("main").innerHTML = markers.Text[x]
+          table.appendChild(cloneOther)
+        }
+      }
+      template = document.getElementsByTagName("template")[0];
+      clone = template.content.cloneNode(true);
+      if (numberA != null) {
+        clone.getElementById("1").innerHTML = dayArray[i].Points[numberA]
+        clone.getElementById("2").innerHTML = dayArray[i].Finishes[numberA]
+        clone.getElementById("3").innerHTML = dayArray[i].Midrange[numberA]
+        clone.getElementById("4").innerHTML = dayArray[i].ThreePointers[numberA]
+      }
+      if (numberB != null) {
+
+        clone.getElementById("6").innerHTML = dayArray[i].Points[numberB]
+        clone.getElementById("7").innerHTML = dayArray[i].Finishes[numberB]
+        clone.getElementById("8").innerHTML = dayArray[i].Midrange[numberB]
+        clone.getElementById("9").innerHTML = dayArray[i].ThreePointers[numberB]
+      }
+      clone.getElementById("5").innerHTML = dayArray[i].Date[0]
+
+      document.getElementById("dayByDayTable").appendChild(clone)
+    }
   }
+
+
 
 }
 

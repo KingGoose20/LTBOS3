@@ -1,6 +1,6 @@
 LooseGooses = ["Angus Walker", "William Kim", "Christopher Tomkinson", "Jasper Collier", "Conor Farrington"]
-WetWillies = ["Rudy Hoschke", "Michael Iffland","Lukas Johnston", "Ryan Pattemore", "Willie Weekes", "Clarrie Jones", "William Scott"]
-Musketeers = ["Samuel McConaghy", "Alexander Galt", "Nicholas Szogi", "Sam James", "Mitch Yue"]
+WetWillies = ["Rudy Hoschke", "Michael Iffland","Nicholas Szogi", "Ryan Pattemore", "Willie Weekes", "Clarrie Jones", "Mitch Yue"]
+Musketeers = ["Samuel McConaghy", "Alexander Galt", "Lukas Johnston", "Sam James", "William Scott"]
 
 aTeam = ""
 bTeam = ""

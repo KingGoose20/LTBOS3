@@ -1,14 +1,14 @@
 mainArray = {
   "Name": ["Jasper Collier", "Conor Farrington", "Alexander Galt", "Rudy Hoschke", "Michael Iffland", "Lukas Johnston", "Sam James", "Clarrie Jones", "William Kim", "Samuel McConaghy", "Ryan Pattemore", "William Scott", "Nicholas Szogi", "Christopher Tomkinson", "Angus Walker", "Willie Weekes", "Mitch Yue"],
   "Team": ["Loose Gooses", "Loose Gooses", "5 Musketeers", "Wet Willies", "Wet Willies", "5 Musketeers", "5 Musketeers", "Wet Willies", "Loose Gooses", "5 Musketeers", "Wet Willies", "5 Musketeers", "Wet Willies", "Loose Gooses", "Loose Gooses", "Wet Willies", "Wet Willies"],
-  "PPG":[0.33,1.13,4,1,0.86,0.43,0.44,0.67,2.13,2.78,0.67,0,0.78,1.11,3,0.11,0.25],
-  "TP":[3,9,12,5,6,3,4,2,17,25,6,0,7,10,27,1,1],
-  "FPG":[0,1.13,3.33,1,0.14,0.29,0.33,0,0.88,0.22,0.11,0,0.67,0.67,1.56,0,0.25],
-  "TF":[0,9,10,5,1,2,3,0,7,2,1,0,6,6,14,0,1],
-  "MPG":[0.33,0,0,0,0.43,0.14,0.11,0,0.75,1.67,0.56,0,0.11,0.22,0.78,0.11,0],
-  "TM":[3,0,0,0,3,1,1,0,6,15,5,0,1,2,7,1,0],
-  "TPG":[0,0,0.33,0,0.14,0,0,0.33,0.25,0.44,0,0,0,0.11,0.33,0,0],
-  "TT":[0,0,1,0,1,0,0,1,2,4,0,0,0,1,3,0,0],  
+  "PPG": [0.33, 1.13, 4, 1, 0.86, 0.43, 0.44, 0.67, 2.13, 2.78, 0.67, 0, 0.78, 1.11, 3, 0.11, 0.25],
+  "TP": [3, 9, 12, 5, 6, 3, 4, 2, 17, 25, 6, 0, 7, 10, 27, 1, 1],
+  "FPG": [0, 1.13, 3.33, 1, 0.14, 0.29, 0.33, 0, 0.88, 0.22, 0.11, 0, 0.67, 0.67, 1.56, 0, 0.25],
+  "TF": [0, 9, 10, 5, 1, 2, 3, 0, 7, 2, 1, 0, 6, 6, 14, 0, 1],
+  "MPG": [0.33, 0, 0, 0, 0.43, 0.14, 0.11, 0, 0.75, 1.67, 0.56, 0, 0.11, 0.22, 0.78, 0.11, 0],
+  "TM": [3, 0, 0, 0, 3, 1, 1, 0, 6, 15, 5, 0, 1, 2, 7, 1, 0],
+  "TPG": [0, 0, 0.33, 0, 0.14, 0, 0, 0.33, 0.25, 0.44, 0, 0, 0, 0.11, 0.33, 0, 0],
+  "TT": [0, 0, 1, 0, 1, 0, 0, 1, 2, 4, 0, 0, 0, 1, 3, 0, 0],
   "AccoladesOne": ["", "", "All-Defence Team T1", "All-Offence Team T1", "Playmaker T1", "MVP Runner Up T1", "Miles Morales", "LTBO Manager", "MVP T1", "GM", "Perimeter T1", "LTBO Photographer", "The Biggest Bird", "MIP T1", "LTBO CEO", "Teammate T1", "All-2nd-Defence Team T2"],
   "AccoladesTwo": ["", "", "Champion T1", "All-Defence Team T1", "Thirdman T1", "All-Offence Team T1", "Champion T2", "Champion T1", "All-Offence Team T1", "All-Offence Team T1", "Champion T1", "", "Champion T1", "MIP T2", "GM", "Champion T1", "Champion T2"],
   "AccoladesThree": ["", "", "All-Offence Team T2", "Champion T1", "All-Offence Team T2", "All-2nd-Offence Team T2", "", "Finals MVP T1", "All-Defence Team T1", "All-Defence Team T1", "", "", "MVP Runner Up T2", "MVP T2", "All-Offence Team T1", "Teammate T2", ""],
@@ -113,13 +113,20 @@ dayArray = [
   },
 
   {
-    "Date":["1-August"],
-    "Points":[0,1,"Did not Play","Did not Play",2,"Did not Play",0,0,"Did not Play",9,0,"Did not Play",3,0,2,0,1],
-    "Finishes":[0,1,"Did not Play","Did not Play",0,"Did not Play",0,0,"Did not Play",0,0,"Did not Play",3,0,2,0,1],
-    "Midrange":[0,0,"Did not Play","Did not Play",2,"Did not Play",0,0,"Did not Play",3,0,"Did not Play",0,0,0,0,0],
-    "ThreePointers":[0,0,"Did not Play","Did not Play",0,"Did not Play",0,0,"Did not Play",3,0,"Did not Play",0,0,0,0,0]
-    },
-    
+    "Date": ["1-August"],
+    "Points": [0, 1, "Did not Play", "Did not Play", 2, "Did not Play", 0, 0, "Did not Play", 9, 0, "Did not Play", 3, 0, 2, 0, 1],
+    "Finishes": [0, 1, "Did not Play", "Did not Play", 0, "Did not Play", 0, 0, "Did not Play", 0, 0, "Did not Play", 3, 0, 2, 0, 1],
+    "Midrange": [0, 0, "Did not Play", "Did not Play", 2, "Did not Play", 0, 0, "Did not Play", 3, 0, "Did not Play", 0, 0, 0, 0, 0],
+    "ThreePointers": [0, 0, "Did not Play", "Did not Play", 0, "Did not Play", 0, 0, "Did not Play", 3, 0, "Did not Play", 0, 0, 0, 0, 0]
+  },
+  {
+    "Date": ["2-August"],
+    "Points": [0, 1, 3, "Did not Play", 3, "Did not Play", 2, 6, "Did not Play", 6, 1, 1, 1, 2, 1, 0, 2],
+    "Finishes": [0, 1, 3, "Did not Play", 2, "Did not Play", 1, 0, "Did not Play", 3, 0, 0, 1, 1, 1, 0, 2],
+    "Midrange": [0, 0, 0, "Did not Play", 1, "Did not Play", 1, 0, "Did not Play", 3, 1, 1, 0, 1, 0, 0, 0],
+    "ThreePointers": [0, 0, 0, "Did not Play", 0, "Did not Play", 0, 3, "Did not Play", 0, 0, 0, 0, 0, 0, 0, 0]
+  },
+
 ]
 
 markers = {

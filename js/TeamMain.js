@@ -4,16 +4,16 @@ LooseGooses = {
     "Colours": ["#d74268", "#f5b153", "#d48619", "#d74268"],
     "Players": ["Angus Walker", "William Kim", "Christopher Tomkinson", "Jasper Collier", "Conor Farrington"],
     "Images": ["../Images/Players/Angus.png", "../Images/Players/Kimmy.png", "../Images/Players/Christopher.png", "../Images/Players/Jasper.png", "../Images/Players/Conor.png"],
-    "PartA":[60,32],
+    "PartA":[64,43],
     "PartB":[27,"Angus Walker",14,"Angus Walker",7,"Angus Walker",3,"Angus Walker"],
-    "PartC":[7.3,4,2,0.7,6.7,3.6],
-    "PartD":[31,12,72.1,29,20,59.2],                 
-    "Date":["11-July","12-July","13-July","17-July","18-July","19-July","20-July","24-July","26-July","27-July","31-July","1-August"],
-    "Wins":[5,9,8,8,12,15,3,1,6,3,9,3],
-    "Losses":[6,8,2,3,1,0,4,5,5,5,3,6],
-    "Points":[2,2,3,3,3,3,2,2,2,2,3,1],
-    "TA":["William Kim","Angus Walker","Angus Walker","Angus Walker","Angus Walker","William Kim","Christopher Tomkinson, Angus Walker","William Kim","Angus Walker","Angus Walker, Jasper Collier","Angus Walker","Angus Walker"],
-    "TB":["William Kim, Christopher Tomkinson, Conor Farrington","Angus Walker, Christopher Tomkinson","Angus Walker","Angus Walker","Christopher Tomkinson, William Kim","Angus Walker","William Kim","N/A","Christopher Tomkinson, Conor Farrington","Angus Walker","William Kim","Conor Farrington, Angus Walker"]
+    "PartC":[7.3,4,2,0.7,7.1,4.8],
+    "PartD":[35,15,70,29,28,50.9],                   
+    "Date":["11-July","12-July","13-July","17-July","18-July","19-July","20-July","24-July","26-July","27-July","31-July","1-August","2-August"],
+    "Wins":[5,9,8,8,12,15,3,1,6,3,9,3,4],
+    "Losses":[6,8,2,3,1,0,4,5,5,5,3,6,11],
+    "Points":[2,2,3,3,3,3,2,2,2,2,3,1,1],
+    "TA":["William Kim","Angus Walker","Angus Walker","Angus Walker","Angus Walker","William Kim","Christopher Tomkinson, Angus Walker","William Kim","Angus Walker","Angus Walker, Jasper Collier","Angus Walker","Angus Walker","N/A"],
+    "TB":["William Kim, Christopher Tomkinson, Conor Farrington","Angus Walker, Christopher Tomkinson","Angus Walker","Angus Walker","Christopher Tomkinson, William Kim","Angus Walker","William Kim","N/A","Christopher Tomkinson, Conor Farrington","Angus Walker","William Kim","Conor Farrington, Angus Walker","Christopher Tomkinson"]
 }
 WetWillies = {
     "TeamsNames": ["Loose Gooses", "5 Musketeers", "LG", "5M", "Wet Willies"],
@@ -21,16 +21,16 @@ WetWillies = {
     "Colours": ["#e45e0b", "#8c3600", "#8c3600", "#ff690c"],
     "Players": ["Rudy Hoschke", "Michael Iffland", "Nicholas Szogi", "Ryan Pattemore", "Will Weekes", "Clarrie Jones", "Mitch Yue"],
     "Images": ["../Images/Players/Rudy.png", "../Images/Players/Michael.png", "../Images/Players/Nicholas.png", "../Images/Players/Ryan.png", "../Images/Players/Willie.png", "../Images/Players/Clarrie.png", "../Images/Players/Mitch.png"],
-    "PartA":[26,51],
+    "PartA":[36,59],
     "PartB":[7,"Nicholas Szogi",6,"Nicholas Szogi",5,"Ryan Pattemore",1,"Michael Iffland"],
-    "PartC":[3,1.4,1.1,0.2,2.9,5.7],
-    "PartD":[12,31,27.9,14,20,41.2],                        
-    "Date":["11-July","12-July","13-July","17-July","18-July","19-July","20-July","24-July","26-July","27-July","31-July","1-August"],
-    "Wins":[0,2,4,2,1,0,6,1,3,3,4,6],
-    "Losses":[8,12,5,5,7,8,3,5,7,6,6,4],
-    "Points":[1,1,2,1,1,1,3,1,1,1,2,3],
-    "TA":["N/A","Lukas Johnston","Clarrie Jones, Michael Iffland","N/A","Ryan Pattemore","N/A","Ryan Pattemore, Rudy Hoschke, Lukas Johnston","N/A","Lukas Johnston, Rudy Hoschke","Rudy Hoschke","Michael Iffland, Clarrie Jones","Michael Iffland"],
-    "TB":["N/A","Ryan Pattemore","Michael Iffland, William Scott","Ryan Pattemore","N/A","N/A","Rudy Hoschke","Michael Iffland","Will Weekes","Ryan Pattemore","Michael Iffland","Nicholas Szogi"]
+    "PartC":[3,1.4,1.1,0.2,4,6.6],
+    "PartD":[15,35,30,21,24,46.7],                           
+    "Date":["11-July","12-July","13-July","17-July","18-July","19-July","20-July","24-July","26-July","27-July","31-July","1-August","2-August"],
+    "Wins":[0,2,4,2,1,0,6,1,3,3,4,6,10],
+    "Losses":[8,12,5,5,7,8,3,5,7,6,6,4,8],
+    "Points":[1,1,2,1,1,1,3,1,1,1,2,3,2],
+    "TA":["N/A","Lukas Johnston","Clarrie Jones, Michael Iffland","N/A","Ryan Pattemore","N/A","Ryan Pattemore, Rudy Hoschke, Lukas Johnston","N/A","Lukas Johnston, Rudy Hoschke","Rudy Hoschke","Michael Iffland, Clarrie Jones","Michael Iffland","Mitch Yue"],
+    "TB":["N/A","Ryan Pattemore","Michael Iffland, William Scott","Ryan Pattemore","N/A","N/A","Rudy Hoschke","Michael Iffland","Will Weekes","Ryan Pattemore","Michael Iffland","Nicholas Szogi","Clarrie Jones"]
 }
 
 Musketeers = {
@@ -39,16 +39,16 @@ Musketeers = {
     "Colours": ["#004045", "#004045", "#47aeb5", "#47aeb5"],
     "Players": ["Samuel McConaghy", "Alexander Galt", "Lukas Johnston", "Sam James", "William Scott"],
     "Images": ["../Images/Players/SamM.png", "../Images/Players/Alex.png", "../Images/Players/Lukas.png", "../Images/Players/SamJ.png", "../Images/Players/Will.png"],
-    "PartA":[40,43],
+    "PartA":[52,50],
     "PartB":[25,"Samuel McConaghy",10,"Alexander Galt",15,"Samuel McConaghy",4,"Samuel McConaghy"],
-    "PartC":[5,2,1.9,0.6,4.4,4.8],
-    "PartD":[20,29,40.8,20,14,58.8],          
-    "Date":["11-July","12-July","13-July","17-July","18-July","19-July","20-July","24-July","26-July","27-July","31-July","1-August"],
-    "Wins":[12,15,1,3,1,0,2,9,8,8,3,6],
-    "Losses":[3,6,6,5,6,7,4,1,5,3,7,5],
-    "Points":[3,3,1,2,2,2,1,3,3,3,1,2],
-    "TA":["Alexander Galt","Alexander Galt","N/A","Samuel McConaghy","N/A","N/A","Samuel McConaghy","Alexander Galt","Alexander Galt","Samuel McConaghy, Nicholas Szogi, Alexander Galt","Samuel McConaghy","Samuel McConaghy"],
-    "TB":["Samuel McConaghy","Samuel McConaghy","Nicholas Szogi","N/A","Samuel McConaghy","N/A","Samuel McConaghy","Sam James","Samuel McConaghy","Alexander Galt","Samuel McConaghy, Nicholas Szogi","Samuel McConaghy"]
+    "PartC":[5,2,1.9,0.6,5.8,5.6],
+    "PartD":[28,29,49.1,24,21,53.3],             
+    "Date":["11-July","12-July","13-July","17-July","18-July","19-July","20-July","24-July","26-July","27-July","31-July","1-August","2-August"],
+    "Wins":[12,15,1,3,1,0,2,9,8,8,3,6,12],
+    "Losses":[3,6,6,5,6,7,4,1,5,3,7,5,7],
+    "Points":[3,3,1,2,2,2,1,3,3,3,1,2,3],
+    "TA":["Alexander Galt","Alexander Galt","N/A","Samuel McConaghy","N/A","N/A","Samuel McConaghy","Alexander Galt","Alexander Galt","Samuel McConaghy, Nicholas Szogi, Alexander Galt","Samuel McConaghy","Samuel McConaghy","Alexander Galt"],
+    "TB":["Samuel McConaghy","Samuel McConaghy","Nicholas Szogi","N/A","Samuel McConaghy","N/A","Samuel McConaghy","Sam James","Samuel McConaghy","Alexander Galt","Samuel McConaghy, Nicholas Szogi","Samuel McConaghy","Samuel McConaghy"]
 }
 
 markers = {

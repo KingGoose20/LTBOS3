@@ -138,7 +138,7 @@ selectDivTwo.addEventListener('change', function (e) {
 
 function Clicked(option) {
   if (option == "a") {
-    if(document.getElementById("CheckA").checked) {
+    if (document.getElementById("CheckA").checked) {
       oldA = true
       number = numberA
       RunMain("A")
@@ -149,7 +149,7 @@ function Clicked(option) {
     }
   }
   if (option == "b") {
-    if(document.getElementById("CheckB").checked) {
+    if (document.getElementById("CheckB").checked) {
       oldB = true
       number = numberB
       RunMain("B")
@@ -234,17 +234,34 @@ function RunMain(option) {
       template = document.getElementsByTagName("template")[0];
       clone = template.content.cloneNode(true);
       if (numberA != null) {
-        clone.getElementById("1").innerHTML = dayArray[i].Points[numberA]
-        clone.getElementById("2").innerHTML = dayArray[i].Finishes[numberA]
-        clone.getElementById("3").innerHTML = dayArray[i].Midrange[numberA]
-        clone.getElementById("4").innerHTML = dayArray[i].ThreePointers[numberA]
+        if (dayArray[i].Points[numberA] == "Did not Play") {
+          clone.getElementById("1").style.display = "none"
+          clone.getElementById("2").style.display = "none"
+          clone.getElementById("3").innerHTML = dayArray[i].Midrange[numberA]
+          clone.getElementById("3").colSpan = "4"
+          clone.getElementById("4").style.display = "none"
+        } else {
+          clone.getElementById("1").innerHTML = dayArray[i].Points[numberA]
+          clone.getElementById("2").innerHTML = dayArray[i].Finishes[numberA]
+          clone.getElementById("3").innerHTML = dayArray[i].Midrange[numberA]
+          clone.getElementById("4").innerHTML = dayArray[i].ThreePointers[numberA]
+        }
+
       }
       if (numberB != null) {
 
-        clone.getElementById("6").innerHTML = dayArray[i].Points[numberB]
-        clone.getElementById("7").innerHTML = dayArray[i].Finishes[numberB]
-        clone.getElementById("8").innerHTML = dayArray[i].Midrange[numberB]
-        clone.getElementById("9").innerHTML = dayArray[i].ThreePointers[numberB]
+        if (dayArray[i].Points[numberB] == "Did not Play") {
+          clone.getElementById("6").style.display = "none"
+          clone.getElementById("7").style.display = "none"
+          clone.getElementById("8").innerHTML = dayArray[i].Midrange[numberB]
+          clone.getElementById("8").colSpan = "4"
+          clone.getElementById("9").style.display = "none"
+        } else {
+          clone.getElementById("6").innerHTML = dayArray[i].Points[numberB]
+          clone.getElementById("7").innerHTML = dayArray[i].Finishes[numberB]
+          clone.getElementById("8").innerHTML = dayArray[i].Midrange[numberB]
+          clone.getElementById("9").innerHTML = dayArray[i].ThreePointers[numberB]
+        }
       }
       clone.getElementById("5").innerHTML = dayArray[i].Date[0]
 

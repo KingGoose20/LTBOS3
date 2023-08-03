@@ -1,7 +1,3 @@
-LooseGooses = LooseGooses.Players
-WetWillies = WetWillies.Players
-Musketeers = Musketeers.Players
-
 aTeam = ""
 bTeam = ""
 cTeam = ""
@@ -72,24 +68,24 @@ function start() {
 function assignPlayers(team) {
     select = document.getElementById("Scorer")
     if (team == "Loose Gooses") {
-        for (i = 0; i<LooseGooses.length; i++){
+        for (i = 0; i<LooseGooses.Players.length; i++){
             var opt = document.createElement('option');
             opt.value = i;
-            opt.innerHTML = LooseGooses[i];
+            opt.innerHTML = LooseGooses.Players[i];
             select.appendChild(opt);
         }
     } else if (team == "5 Musketeers") {
-        for (i = 0; i<Musketeers.length; i++){
+        for (i = 0; i<Musketeers.Players.length; i++){
             var opt = document.createElement('option');
-            opt.value = i + LooseGooses.length;
-            opt.innerHTML = Musketeers[i];
+            opt.value = i + LooseGooses.Players.length;
+            opt.innerHTML = Musketeers.Players[i];
             select.appendChild(opt);
         }
     } else {
-        for (i = 0; i<WetWillies.length; i++){
+        for (i = 0; i<WetWillies.Players.length; i++){
             var opt = document.createElement('option');
-            opt.value = i + (LooseGooses.length + Musketeers.length) ;
-            opt.innerHTML = WetWillies[i];
+            opt.value = i + (LooseGooses.Players.length + Musketeers.Players.length) ;
+            opt.innerHTML = WetWillies.Players[i];
             select.appendChild(opt);
         }
     }
@@ -103,11 +99,11 @@ function logDetails() {
     row = table.insertRow(-1);
     winner = ""
     loser = ""
-    if (Scorer.options[Scorer.selectedIndex].value < LooseGooses.length) {
+    if (Scorer.options[Scorer.selectedIndex].value < LooseGooses.Players.length) {
         winner = "Loose Gooses"
         LGstreak = range(LGstreak, 1, 1, 100)
         wStreak = LGstreak
-    } else if (Scorer.options[Scorer.selectedIndex].value < (LooseGooses.length + Musketeers.length)) {
+    } else if (Scorer.options[Scorer.selectedIndex].value < (LooseGooses.Players.length + Musketeers.Players.length)) {
         winner = "5 Musketeers"
         Mstreak = range(Mstreak, 1, 1, 100)
         wStreak = Mstreak

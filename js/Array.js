@@ -1,11 +1,11 @@
 mainArray = {
   "Name": ["Jasper Collier", "Conor Farrington", "Alexander Galt", "Rudy Hoschke", "Michael Iffland", "Lukas Johnston", "Sam James", "Clarrie Jones", "William Kim", "Samuel McConaghy", "Ryan Pattemore", "William Scott", "Nicholas Szogi", "Christopher Tomkinson", "Angus Walker", "Willie Weekes", "Mitch Yue"],
   "Team": ["Loose Gooses", "Loose Gooses", "5 Musketeers", "Wet Willies", "Wet Willies", "5 Musketeers", "5 Musketeers", "Wet Willies", "Loose Gooses", "5 Musketeers", "Wet Willies", "5 Musketeers", "Wet Willies", "Loose Gooses", "Loose Gooses", "Wet Willies", "Wet Willies"],
-  "PPG":[0.25,1.09,3.17,0.75,1,0.5,0.5,1.33,1.7,3.58,0.58,0.17,0.75,1.17,2.83,0.08,0.57],
+  "PPG":[0.25,1.09,3.17,0.75,1,0.5,0.5,1.33,1.7,3.58,0.58,0.17,0.82,1.17,2.83,0.08,0.57],
   "TP":[3,12,19,6,10,5,6,8,17,43,7,1,9,14,34,1,4],
-  "FPG":[0,1.09,2.83,0.75,0.4,0.4,0.33,0,0.7,0.58,0.08,0,0.67,0.75,1.42,0,0.57],
+  "FPG":[0,1.09,2.83,0.75,0.4,0.4,0.33,0,0.7,0.58,0.08,0,0.73,0.75,1.42,0,0.57],
   "TF":[0,12,17,6,4,4,4,0,7,7,1,0,8,9,17,0,4],
-  "MPG":[0.25,0,0,0,0.4,0.1,0.17,0,0.6,2.17,0.5,0.17,0.08,0.25,0.58,0.08,0],
+  "MPG":[0.25,0,0,0,0.4,0.1,0.17,0,0.6,2.17,0.5,0.17,0.09,0.25,0.58,0.08,0],
   "TM":[3,0,0,0,4,1,2,0,6,26,6,1,1,3,7,1,0],
   "TPG":[0,0,0.17,0,0.1,0,0,0.67,0.2,0.42,0,0,0,0.08,0.42,0,0],
   "TT":[0,0,1,0,1,0,0,4,2,5,0,0,0,1,5,0,0],  
@@ -136,11 +136,12 @@ dayArray = [
 
   {
     "Date":["8-August"],
-    "Points":[0,0,4,1,0,2,0,0,"Did not Play",12,0,"Did not Play",0,1,0,0,0],
-    "Finishes":[0,0,4,1,0,2,0,0,"Did not Play",2,0,"Did not Play",0,1,0,0,0],
-    "Midrange":[0,0,0,0,0,0,0,0,"Did not Play",8,0,"Did not Play",0,0,0,0,0],
-    "ThreePointers":[0,0,0,0,0,0,0,0,"Did not Play",1,0,"Did not Play",0,0,0,0,0]
+    "Points":[0,0,4,1,0,2,0,0,"Did not Play",12,0,"Did not Play","Did not Play",1,0,0,0],
+    "Finishes":[0,0,4,1,0,2,0,0,"Did not Play",2,0,"Did not Play","Did not Play",1,0,0,0],
+    "Midrange":[0,0,0,0,0,0,0,0,"Did not Play",8,0,"Did not Play","Did not Play",0,0,0,0],
+    "ThreePointers":[0,0,0,0,0,0,0,0,"Did not Play",1,0,"Did not Play","Did not Play",0,0,0,0]
     },
+    
     
 
 

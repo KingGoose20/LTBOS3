@@ -1,14 +1,14 @@
 mainArray = {
   "Name": ["Jasper Collier", "Conor Farrington", "Alexander Galt", "Rudy Hoschke", "Michael Iffland", "Lukas Johnston", "Sam James", "Clarrie Jones", "William Kim", "Samuel McConaghy", "Ryan Pattemore", "William Scott", "Nicholas Szogi", "Christopher Tomkinson", "Angus Walker", "Willie Weekes", "Mitch Yue"],
   "Team": ["Loose Gooses", "Loose Gooses", "5 Musketeers", "Wet Willies", "Wet Willies", "5 Musketeers", "5 Musketeers", "Wet Willies", "Loose Gooses", "5 Musketeers", "Wet Willies", "5 Musketeers", "Wet Willies", "Loose Gooses", "Loose Gooses", "Wet Willies", "Wet Willies"],
-  "PPG":[0.27,1.2,3,0.71,1.11,0.33,0.55,1.6,1.7,2.82,0.64,0.17,0.82,1.18,3.09,0.09,0.67],
-  "TP":[3,12,15,5,10,3,6,8,17,31,7,1,9,13,34,1,4],
-  "FPG":[0,1.2,2.6,0.71,0.44,0.22,0.36,0,0.7,0.45,0.09,0,0.73,0.73,1.55,0,0.67],
-  "TF":[0,12,13,5,4,2,4,0,7,5,1,0,8,8,17,0,4],
-  "MPG":[0.27,0,0,0,0.44,0.11,0.18,0,0.6,1.64,0.55,0.17,0.09,0.27,0.64,0.09,0],
-  "TM":[3,0,0,0,4,1,2,0,6,18,6,1,1,3,7,1,0],
-  "TPG":[0,0,0.2,0,0.11,0,0,0.8,0.2,0.36,0,0,0,0.09,0.45,0,0],
-  "TT":[0,0,1,0,1,0,0,4,2,4,0,0,0,1,5,0,0],   
+  "PPG": [0.25, 1.09, 3.17, 0.75, 1, 0.5, 0.5, 1.33, 1.55, 3.58, 0.58, 0.14, 0.75, 1.17, 2.83, 0.08, 0.57],
+  "TP": [3, 12, 19, 6, 10, 5, 6, 8, 17, 43, 7, 1, 9, 14, 34, 1, 4],
+  "FPG": [0, 1.09, 2.83, 0.75, 0.4, 0.4, 0.33, 0, 0.64, 0.58, 0.08, 0, 0.67, 0.75, 1.42, 0, 0.57],
+  "TF": [0, 12, 17, 6, 4, 4, 4, 0, 7, 7, 1, 0, 8, 9, 17, 0, 4],
+  "MPG": [0.25, 0, 0, 0, 0.4, 0.1, 0.17, 0, 0.55, 2.17, 0.5, 0.14, 0.08, 0.25, 0.58, 0.08, 0],
+  "TM": [3, 0, 0, 0, 4, 1, 2, 0, 6, 26, 6, 1, 1, 3, 7, 1, 0],
+  "TPG": [0, 0, 0.17, 0, 0.1, 0, 0, 0.67, 0.18, 0.42, 0, 0, 0, 0.08, 0.42, 0, 0],
+  "TT": [0, 0, 1, 0, 1, 0, 0, 4, 2, 5, 0, 0, 0, 1, 5, 0, 0],
   "AccoladesOne": ["", "", "All-Defence Team T1", "All-Offence Team T1", "Playmaker T1", "MVP Runner Up T1", "Miles Morales", "LTBO Manager", "MVP T1", "GM", "Perimeter T1", "LTBO Photographer", "The Biggest Bird", "MIP T1", "LTBO CEO", "Teammate T1", "All-2nd-Defence Team T2"],
   "AccoladesTwo": ["", "", "Champion T1", "All-Defence Team T1", "Thirdman T1", "All-Offence Team T1", "Champion T2", "Champion T1", "All-Offence Team T1", "All-Offence Team T1", "Champion T1", "", "Champion T1", "MIP T2", "GM", "Champion T1", "Champion T2"],
   "AccoladesThree": ["", "", "All-Offence Team T2", "Champion T1", "All-Offence Team T2", "All-2nd-Offence Team T2", "", "Finals MVP T1", "All-Defence Team T1", "All-Defence Team T1", "", "", "MVP Runner Up T2", "MVP T2", "All-Offence Team T1", "Teammate T2", ""],
@@ -127,13 +127,22 @@ dayArray = [
     "ThreePointers": [0, 0, 0, "Did not Play", 0, "Did not Play", 0, 3, "Did not Play", 0, 0, 0, 0, 0, 0, 0, 0]
   },
   {
-    "Date":["3-August"],
-    "Points":[0,2,"Did not Play","Did not Play",1,"Did not Play",0,0,"Did not Play",0,0,"Did not Play",1,1,6,0,1],
-    "Finishes":[0,2,"Did not Play","Did not Play",1,"Did not Play",0,0,"Did not Play",0,0,"Did not Play",1,1,2,0,1],
-    "Midrange":[0,0,"Did not Play","Did not Play",0,"Did not Play",0,0,"Did not Play",0,0,"Did not Play",0,0,0,0,0],
-    "ThreePointers":[0,0,"Did not Play","Did not Play",0,"Did not Play",0,0,"Did not Play",0,0,"Did not Play",0,0,2,0,0]
-    },
-    
+    "Date": ["3-August"],
+    "Points": [0, 2, "Did not Play", "Did not Play", 1, "Did not Play", 0, 0, "Did not Play", 0, 0, "Did not Play", 1, 1, 6, 0, 1],
+    "Finishes": [0, 2, "Did not Play", "Did not Play", 1, "Did not Play", 0, 0, "Did not Play", 0, 0, "Did not Play", 1, 1, 2, 0, 1],
+    "Midrange": [0, 0, "Did not Play", "Did not Play", 0, "Did not Play", 0, 0, "Did not Play", 0, 0, "Did not Play", 0, 0, 0, 0, 0],
+    "ThreePointers": [0, 0, "Did not Play", "Did not Play", 0, "Did not Play", 0, 0, "Did not Play", 0, 0, "Did not Play", 0, 0, 2, 0, 0]
+  },
+
+  {
+    "Date": ["8-August"],
+    "Points": [0, 0, 4, 1, 0, 2, 0, 0, 0, 12, 0, 0, 0, 1, 0, 0, 0],
+    "Finishes": [0, 0, 4, 1, 0, 2, 0, 0, 0, 2, 0, 0, 0, 1, 0, 0, 0],
+    "Midrange": [0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 0, 0, 0, 0, 0, 0],
+    "ThreePointers": [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+  },
+
+
 ]
 
 markers = {

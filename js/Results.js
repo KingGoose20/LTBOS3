@@ -1,13 +1,13 @@
 Today = {
-  "Date": ["3 August"],
-  "Game Number": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-  "Winner": ["Loose Gooses", "Loose Gooses", "Loose Gooses", "Loose Gooses", "Loose Gooses", "Loose Gooses", "Loose Gooses", "Wet Willies", "Wet Willies", "Wet Willies"],
-  "Loser": ["5 Musketeers", "Wet Willies", "5 Musketeers", "Wet Willies", "5 Musketeers", "Wet Willies", "5 Musketeers", "Loose Gooses", "5 Musketeers", "Loose Gooses"],
-  "Scorer": ["Conor Farrington", "Angus Walker", "Conor Farrington", "Angus Walker", "Angus Walker", "Christopher Tomkinson", "Angus Walker", "Mitch Yue", "Nicholas Szogi", "Michael Iffland"],
-  "Type": ["Finish", "Three Pointer", "Finish", "Finish", "Finish", "Finish", "Three Pointer", "Finish", "Finish", "Finish"],
-  "WStreak": [1, 2, 3, 4, 5, 6, 7, 1, 2, 3],
-  "LStreak": [1, 1, 2, 2, 3, 3, 4, 1, 5, 2],
-  "SStreak": [1, 1, 1, 1, 2, 1, 1, 1, 1, 1]
+  "Date": ["8 August"],
+  "Game Number":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],
+  "Winner":["5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","Loose Gooses","Wet Willies","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers"],
+  "Loser":["Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","5 Musketeers","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies"],
+  "Scorer":["Samuel McConaghy","Alexander Galt","Samuel McConaghy","Samuel McConaghy","Samuel McConaghy","Samuel McConaghy","Samuel McConaghy","Lukas Johnston","Alexander Galt","Samuel McConaghy","Samuel McConaghy","Samuel McConaghy","Christopher Tomkinson","Rudy Hoschke","Alexander Galt","Samuel McConaghy","Samuel McConaghy","Lukas Johnston","Alexander Galt"],
+  "Type":["Midrange","Finish","Midrange","Midrange","Midrange","Midrange","Finish","Finish","Finish","Midrange","Finish","Three Pointer","Finish","Finish","Finish","Midrange","Midrange","Finish","Finish"],
+  "WStreak":[1,2,3,4,5,6,7,8,9,10,11,12,1,1,1,2,3,4,5],
+  "LStreak":[1,1,2,2,3,3,4,4,5,5,6,6,1,1,1,2,2,3,3],
+  "SStreak":[1,1,1,2,3,4,5,1,1,1,2,3,1,1,1,1,2,3,1]
 }
 
 Override = false

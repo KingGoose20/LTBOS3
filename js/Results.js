@@ -1,23 +1,14 @@
-LooseGoosesPlayers = ["Angus Walker", "William Kim", "Christopher Tomkinson", "Jasper Collier", "Conor Farrington"]
-WetWilliesPlayers = ["Rudy Hoschke", "Michael Iffland", "Lukas Johnston", "Ryan Pattemore", "Will Weekes", "Clarrie Jones", "Mitch Yue"]
-MusketeersPlayers = ["Samuel McConaghy", "Alexander Galt", "Nicholas Szogi", "Sam James", "William Scott"]
-
 Today = {
   "Date": ["3 August"],
-  "Game Number":[1,2,3,4,5,6,7,8,9,10],
-  "Winner":["Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Wet Willies","Wet Willies","Wet Willies"],
-  "Loser":["5 Musketeers","Wet Willies","5 Musketeers","Wet Willies","5 Musketeers","Wet Willies","5 Musketeers","Loose Gooses","5 Musketeers","Loose Gooses"],
-  "Scorer":["Conor Farrington","Angus Walker","Conor Farrington","Angus Walker","Angus Walker","Christopher Tomkinson","Angus Walker","Mitch Yue","Nicholas Szogi","Michael Iffland"],
-  "Type":["Finish","Three Pointer","Finish","Finish","Finish","Finish","Three Pointer","Finish","Finish","Finish"],
-  "WStreak":[1,2,3,4,5,6,7,1,2,3],
-  "LStreak":[1,1,2,2,3,3,4,1,5,2],
-  "SStreak":[1,1,1,1,2,1,1,1,1,1]
+  "Game Number": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+  "Winner": ["Loose Gooses", "Loose Gooses", "Loose Gooses", "Loose Gooses", "Loose Gooses", "Loose Gooses", "Loose Gooses", "Wet Willies", "Wet Willies", "Wet Willies"],
+  "Loser": ["5 Musketeers", "Wet Willies", "5 Musketeers", "Wet Willies", "5 Musketeers", "Wet Willies", "5 Musketeers", "Loose Gooses", "5 Musketeers", "Loose Gooses"],
+  "Scorer": ["Conor Farrington", "Angus Walker", "Conor Farrington", "Angus Walker", "Angus Walker", "Christopher Tomkinson", "Angus Walker", "Mitch Yue", "Nicholas Szogi", "Michael Iffland"],
+  "Type": ["Finish", "Three Pointer", "Finish", "Finish", "Finish", "Finish", "Three Pointer", "Finish", "Finish", "Finish"],
+  "WStreak": [1, 2, 3, 4, 5, 6, 7, 1, 2, 3],
+  "LStreak": [1, 1, 2, 2, 3, 3, 4, 1, 5, 2],
+  "SStreak": [1, 1, 1, 1, 2, 1, 1, 1, 1, 1]
 }
-
-DidNotPlay = ["Rudy Hoschke", "Lukas Johnston", "William Kim", "Alexander Galt", "William Scott"]
-/* Goes LG, WW, 5M */
-LadderPoints = [25, 18, 23]
-DaysPlayed = (LadderPoints[0] + LadderPoints[1] + LadderPoints[2]) / 6
 
 Override = false
 OverrideOrder = ["5M", "LG", "WW"]
@@ -31,11 +22,22 @@ overrideDayPoints = []
 
 
 
-
-
-
-
 function ladder() {
+  /* Goes LG, WW, 5M */
+  LadderPoints = [LooseGooses.PartA[2], WetWillies.PartA[2], Musketeers.PartA[2]]
+  DaysPlayed = (LadderPoints[0] + LadderPoints[1] + LadderPoints[2]) / 6
+  LooseGoosesPlayers = []
+  WetWilliesPlayers = []
+  MusketeersPlayers = []
+  for (i = 0; i < LooseGooses.Players.length; i++) {
+    LooseGoosesPlayers.push(LooseGooses.Players[i])
+  }
+  for (i = 0; i < WetWillies.Players.length; i++) {
+    WetWilliesPlayers.push(WetWillies.Players[i])
+  }
+  for (i = 0; i < Musketeers.Players.length; i++) {
+    MusketeersPlayers.push(Musketeers.Players[i])
+  }
   Leaders = [LooseGooses.PartB[1], WetWillies.PartB[1], Musketeers.PartB[1]]
   LeadersPoints = [(LooseGooses.PartB[0] / DaysPlayed).toFixed(2), (WetWillies.PartB[0] / DaysPlayed).toFixed(2), (Musketeers.PartB[0] / DaysPlayed).toFixed(2)]
   if (Override == false) {
@@ -310,18 +312,18 @@ function ladder() {
       }
     }
   }
-  
+
   document.getElementById("firstText").title = "Click on me to see " + document.getElementById("firstLeader").innerHTML + "'s stats!"
-document.getElementById("firstText").style.cursor = "pointer"
-document.getElementById("firstText").onclick = function () { window.location.href = 'Stats.html?Player=' + document.getElementById("firstLeader").innerHTML; };
+  document.getElementById("firstText").style.cursor = "pointer"
+  document.getElementById("firstText").onclick = function () { window.location.href = 'Stats.html?Player=' + document.getElementById("firstLeader").innerHTML; };
 
-document.getElementById("secondText").title = "Click on me to see " + document.getElementById("secondLeader").innerHTML + "'s stats!"
-document.getElementById("secondText").style.cursor = "pointer"
-document.getElementById("secondText").onclick = function () { window.location.href = 'Stats.html?Player=' + document.getElementById("secondLeader").innerHTML; };
+  document.getElementById("secondText").title = "Click on me to see " + document.getElementById("secondLeader").innerHTML + "'s stats!"
+  document.getElementById("secondText").style.cursor = "pointer"
+  document.getElementById("secondText").onclick = function () { window.location.href = 'Stats.html?Player=' + document.getElementById("secondLeader").innerHTML; };
 
-document.getElementById("thirdText").title = "Click on me to see " + document.getElementById("thirdLeader").innerHTML + "'s stats!"
-document.getElementById("thirdText").style.cursor = "pointer"
-document.getElementById("thirdText").onclick = function () { window.location.href = 'Stats.html?Player=' + document.getElementById("thirdLeader").innerHTML; };
+  document.getElementById("thirdText").title = "Click on me to see " + document.getElementById("thirdLeader").innerHTML + "'s stats!"
+  document.getElementById("thirdText").style.cursor = "pointer"
+  document.getElementById("thirdText").onclick = function () { window.location.href = 'Stats.html?Player=' + document.getElementById("thirdLeader").innerHTML; };
 }
 
 
@@ -337,6 +339,12 @@ players = ["Jasper Collier", "Conor Farrington", "Alexander Galt", "Rudy Hoschke
 
 
 function results() {
+  DidNotPlay = []
+  for (i = 0; i < mainArray.Name.length; i++) {
+    if (dayArray[dayArray.length - 1].Points[i] == "Did not Play") {
+      DidNotPlay.push(mainArray.Name[i])
+    }
+  }
   LGwins = 0
   WWwins = 0
   Mwins = 0
@@ -549,12 +557,6 @@ function openStats(item) {
 }
 
 function openStatsLadder(item) {
-  if (Today.Scorer[item.id] == "Nicholas Szogi") {
-    ourHref = 'Stats.html?Player=' + "Nicholas Szogi"
-  } else if (Today.Scorer[item.id] == "Christopher Tomkinson") {
-    ourHref = 'Stats.html?Player=' + "Christopher Tomkinson"
-  } else {
-    ourHref = 'Stats.html?Player=' + Today.Scorer[item.id]
-  }
+  ourHref = 'Stats.html?Player=' + Today.Scorer[item.id]
   window.location.href = ourHref
 }

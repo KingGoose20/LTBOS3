@@ -1,14 +1,14 @@
 mainArray = {
   "Name": ["Jasper Collier", "Conor Farrington", "Alexander Galt", "Rudy Hoschke", "Michael Iffland", "Lukas Johnston", "Sam James", "Clarrie Jones", "William Kim", "Samuel McConaghy", "Ryan Pattemore", "William Scott", "Nicholas Szogi", "Christopher Tomkinson", "Angus Walker", "Willie Weekes", "Mitch Yue"],
-  "Team": ["Loose Gooses", "Loose Gooses", "5 Musketeers", "Wet Willies", "Wet Willies", "5 Musketeers", "5 Musketeers", "Wet Willies", "Loose Gooses", "5 Musketeers", "Wet Willies", "5 Musketeers", "Wet Willies", "Loose Gooses", "Loose Gooses", "Wet Willies", "Wet Willies"],
-  "PPG":[0.25,1.09,3.17,0.75,1,0.5,0.5,1.33,1.7,3.58,0.58,0.17,0.82,1.17,2.83,0.08,0.57],
-  "TP":[3,12,19,6,10,5,6,8,17,43,7,1,9,14,34,1,4],
-  "FPG":[0,1.09,2.83,0.75,0.4,0.4,0.33,0,0.7,0.58,0.08,0,0.73,0.75,1.42,0,0.57],
-  "TF":[0,12,17,6,4,4,4,0,7,7,1,0,8,9,17,0,4],
-  "MPG":[0.25,0,0,0,0.4,0.1,0.17,0,0.6,2.17,0.5,0.17,0.09,0.25,0.58,0.08,0],
-  "TM":[3,0,0,0,4,1,2,0,6,26,6,1,1,3,7,1,0],
-  "TPG":[0,0,0.17,0,0.1,0,0,0.67,0.2,0.42,0,0,0,0.08,0.42,0,0],
-  "TT":[0,0,1,0,1,0,0,4,2,5,0,0,0,1,5,0,0],  
+  "Team": ["Loose Gooses", "Loose Gooses", "5 Musketeers", "Wet Willies", "Wet Willies", "5 Musketeers", "5 Musketeers", "Wet Willies", "Loose Gooses", "5 Musketeers", "Wet Willies", "5 Musketeers", "Wet Willies", "Loose Gooses", "Loose Gooses", "5 Musketeers", "Wet Willies"],
+  "PPG": [0.23, 1, 3.43, 0.67, 1.09, 0.55, 0.46, 1.14, 1.64, 3.46, 0.54, 0.17, 0.75, 1.08, 2.85, 0.08, 0.5],
+  "TP": [3, 12, 24, 6, 12, 6, 6, 8, 18, 45, 7, 1, 9, 14, 37, 1, 4],
+  "FPG": [0, 1, 3.14, 0.67, 0.55, 0.45, 0.31, 0, 0.64, 0.54, 0.08, 0, 0.67, 0.69, 1.31, 0, 0.5],
+  "TF": [0, 12, 22, 6, 6, 5, 4, 0, 7, 7, 1, 0, 8, 9, 17, 0, 4],
+  "MPG": [0.23, 0, 0, 0, 0.36, 0.09, 0.15, 0, 0.64, 2.15, 0.46, 0.17, 0.08, 0.23, 0.62, 0.08, 0],
+  "TM": [3, 0, 0, 0, 4, 1, 2, 0, 7, 28, 6, 1, 1, 3, 8, 1, 0],
+  "TPG": [0, 0, 0.14, 0, 0.09, 0, 0, 0.57, 0.18, 0.38, 0, 0, 0, 0.08, 0.46, 0, 0],
+  "TT": [0, 0, 1, 0, 1, 0, 0, 4, 2, 5, 0, 0, 0, 1, 6, 0, 0],
   "AccoladesOne": ["", "", "All-Defence Team T1", "All-Offence Team T1", "Playmaker T1", "MVP Runner Up T1", "Miles Morales", "LTBO Manager", "MVP T1", "GM", "Perimeter T1", "LTBO Photographer", "The Biggest Bird", "MIP T1", "LTBO CEO", "Teammate T1", "All-2nd-Defence Team T2"],
   "AccoladesTwo": ["", "", "Champion T1", "All-Defence Team T1", "Thirdman T1", "All-Offence Team T1", "Champion T2", "Champion T1", "All-Offence Team T1", "All-Offence Team T1", "Champion T1", "", "Champion T1", "MIP T2", "GM", "Champion T1", "Champion T2"],
   "AccoladesThree": ["", "", "All-Offence Team T2", "Champion T1", "All-Offence Team T2", "All-2nd-Offence Team T2", "", "Finals MVP T1", "All-Defence Team T1", "All-Defence Team T1", "", "", "MVP Runner Up T2", "MVP T2", "All-Offence Team T1", "Teammate T2", ""],
@@ -17,8 +17,8 @@ mainArray = {
   "AccoladesSix": ["", "", "", "Scoring Champ T2", "", "", "", "All-2nd-Defence Team T2", "Champion T2", "", "", "", "All-2nd-Defence Team T2", "Champion T2", "All-Offence Team T2", "", ""],
   "AccoladesSeven": ["", "", "", "GM", "", "", "", "Champion T2", "Finals MVP T2", "", "", "", "", "", "All-Defence Team T2", "", ""],
   "AccoladesEight": ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "Champion T2", "", ""],
-  "History": ["Drafted by Loose Gooses", "Drafted by Loose Gooses", "Retained by 5 Musketeers", "GM of Wet Willies", "Retained by Wet Willies", "Drafted by Wet Willies. Traded to 5 Musketeers", "Drafted by 5 Musketeers", "Out due to injury. Signed by Wet Willies", "Retained by Loose Gooses", "GM of 5 Musketeers", "Drafted by Wet Willies", "Drafted by Wet Willies. Traded to 5 Musketeers", "Drafted by 5 Musketeers. Traded to Wet Willies", "Drafted by Loose Gooses", "GM of Loose Gooses", "Drafted by Wet Willies", "Drafted by 5 Musketeers. Traded to Wet Willies"],
-  "TeamImage": ["../Images/LG_Final.png", "../Images/LG_Final.png", "../Images/5M_Final.png", "../Images/WW_Final.png", "../Images/WW_Final.png", "../Images/5M_Final.png", "../Images/5M_Final.png", "../Images/WW_Final.png", "../Images/LG_Final.png", "../Images/5M_Final.png", "../Images/WW_Final.png", "../Images/5M_Final.png", "../Images/WW_Final.png", "../Images/LG_Final.png", "../Images/LG_Final.png", "../Images/WW_Final.png", "../Images/WW_Final.png"],
+  "History": ["Drafted by Loose Gooses", "Drafted by Loose Gooses", "Retained by 5 Musketeers", "GM of Wet Willies", "Retained by Wet Willies", "Drafted by Wet Willies. Traded to 5 Musketeers", "Drafted by 5 Musketeers", "Out due to injury. Signed by Wet Willies", "Retained by Loose Gooses", "GM of 5 Musketeers", "Drafted by Wet Willies", "Drafted by Wet Willies. Traded to 5 Musketeers", "Drafted by 5 Musketeers. Traded to Wet Willies", "Drafted by Loose Gooses", "GM of Loose Gooses", "Drafted by Wet Willies. Dropped by Wet Willies. Signed by 5 Musketeers", "Drafted by 5 Musketeers. Traded to Wet Willies"],
+  "TeamImage": ["../Images/LG_Final.png", "../Images/LG_Final.png", "../Images/5M_Final.png", "../Images/WW_Final.png", "../Images/WW_Final.png", "../Images/5M_Final.png", "../Images/5M_Final.png", "../Images/WW_Final.png", "../Images/LG_Final.png", "../Images/5M_Final.png", "../Images/WW_Final.png", "../Images/5M_Final.png", "../Images/WW_Final.png", "../Images/LG_Final.png", "../Images/LG_Final.png", "../Images/5M_Final.png", "../Images/WW_Final.png"],
   "PlayerImage": ["../Images/Players/Jasper.png", "../Images/Players/Conor.png", "../Images/Players/Alex.png", "../Images/Players/Rudy.png", "../Images/Players/Michael.png", "../Images/Players/Lukas.png", "../Images/Players/SamJ.png", "../Images/Players/Clarrie.png", "../Images/Players/Kimmy.png", "../Images/Players/SamM.png", "../Images/Players/Ryan.png", "../Images/Players/Will.png", "../Images/Players/Nicholas.png", "../Images/Players/Christopher.png", "../Images/Players/Angus.png", "../Images/Players/Willie.png", "../Images/Players/Mitch.png"],
 
 }
@@ -135,14 +135,21 @@ dayArray = [
   },
 
   {
-    "Date":["8-August"],
-    "Points":[0,0,4,1,0,2,0,0,"Did not Play",12,0,"Did not Play","Did not Play",1,0,0,0],
-    "Finishes":[0,0,4,1,0,2,0,0,"Did not Play",2,0,"Did not Play","Did not Play",1,0,0,0],
-    "Midrange":[0,0,0,0,0,0,0,0,"Did not Play",8,0,"Did not Play","Did not Play",0,0,0,0],
-    "ThreePointers":[0,0,0,0,0,0,0,0,"Did not Play",1,0,"Did not Play","Did not Play",0,0,0,0]
-    },
-    
-    
+    "Date": ["8-August"],
+    "Points": [0, 0, 4, 1, 0, 2, 0, 0, "Did not Play", 12, 0, "Did not Play", "Did not Play", 1, 0, 0, 0],
+    "Finishes": [0, 0, 4, 1, 0, 2, 0, 0, "Did not Play", 2, 0, "Did not Play", "Did not Play", 1, 0, 0, 0],
+    "Midrange": [0, 0, 0, 0, 0, 0, 0, 0, "Did not Play", 8, 0, "Did not Play", "Did not Play", 0, 0, 0, 0],
+    "ThreePointers": [0, 0, 0, 0, 0, 0, 0, 0, "Did not Play", 1, 0, "Did not Play", "Did not Play", 0, 0, 0, 0]
+  },
+
+  {
+    "Date": ["9-August"],
+    "Points": [0, 0, 5, 0, 2, 1, 0, 0, 1, 2, 0, "Did not Play", 0, 0, 3, 0, 0],
+    "Finishes": [0, 0, 5, 0, 2, 1, 0, 0, 0, 0, 0, "Did not Play", 0, 0, 0, 0, 0],
+    "Midrange": [0, 0, 0, 0, 0, 0, 0, 0, 1, 2, 0, "Did not Play", 0, 0, 1, 0, 0],
+    "ThreePointers": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, "Did not Play", 0, 0, 1, 0, 0]
+  },
+
 
 
 ]

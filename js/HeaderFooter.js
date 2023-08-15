@@ -35,7 +35,7 @@ function header(location) {
                     <a href="replacerDocumentsAndIco/TeamHome.html?Team=LG" class="dropDown-link">Loose Gooses Home</a>
                     <a href="replacerDocumentsAndIco/TeamHome.html?Team=WW" class="dropDown-link">Wet Willies Home</a>
                     <a href="replacerDocumentsAndIco/TeamHome.html?Team=5M" class="dropDown-link">5 Musketeers Home</a>
-                    <a href="replacerDocumentsAndIco/InstagramHighlights.html" class="dropDown-link">Instagram</a>
+                    <a href="replacerDocumentsAndIco/OfficialGame.html" class="dropDown-link">Official Game</a>
                     <a href="https://365asas-my.sharepoint.com/:f:/g/personal/011445_asas_qld_edu_au/Enw3biOiY2xAo3nd_oihdAEBjsB7F500EKl6UYgd5-ONqQ?e=1KAlm2" class="dropDown-link" target="_blank">Visual Database</a>
                 </div>
             </div>
@@ -64,7 +64,7 @@ function header(location) {
                 <a href="replacerDocumentsAndIco/TeamHome.html?Team=5M" class="navigation-link w-nav-link">5 Musketeers Home</a>
             </li>
             <li class="nav-item dropdownShow">
-                <a href="replacerDocumentsAndIco/InstagramHighlights.html" class="navigation-link w-nav-link">Instagram</a>
+                <a href="replacerDocumentsAndIco/OfficialGame.html" class="navigation-link w-nav-link">Official Game</a>
             </li>
             <li class="nav-item dropdownShow">
             <a href="https://365asas-my.sharepoint.com/:f:/g/personal/011445_asas_qld_edu_au/Enw3biOiY2xAo3nd_oihdAEBjsB7F500EKl6UYgd5-ONqQ?e=1KAlm2" class="navigation-link w-nav-link" target="_blank">Visual Database</a>
@@ -165,9 +165,9 @@ function header(location) {
             template.innerHTML = template.innerHTML.replace('class="navigation-link w-nav-link">5 Musketeers Home</a>', 'class="navigation-link w-nav-link w--current">5 Musketeers Home</a>')
             template.innerHTML = template.innerHTML.replace('<span class="navigation-link w-nav-link">More</span>', '<span class="navigation-link w-nav-link w--current">More</span>')
             break;
-        case "Instagram Highlights":
-            template.innerHTML = template.innerHTML.replace('">Instagram', ' w-nav-link w--current">Instagram')
-            template.innerHTML = template.innerHTML.replace('class="navigation-link w-nav-link">Instagram</a>', 'class="navigation-link w-nav-link w--current">Instagram</a>')
+        case "Official Game":
+            template.innerHTML = template.innerHTML.replace('">Official Game', ' w-nav-link w--current">Official Game')
+            template.innerHTML = template.innerHTML.replace('class="navigation-link w-nav-link">Official Game</a>', 'class="navigation-link w-nav-link w--current">Official Game</a>')
             template.innerHTML = template.innerHTML.replace('<span class="navigation-link w-nav-link">More</span>', '<span class="navigation-link w-nav-link w--current">More</span>')
             break;
         case "App":
@@ -205,7 +205,7 @@ function footer(location) {
                     <h5>About the Lunch Time Basketball Organisation</h5>
                     <p>This website contains all official content relating to the LTBO (Lunch Time Basketball Organisation).</p>
                     <br><br>
-                    <a href="replacerDocumentsAndIco/InstagramHighlights.html" style="text-decoration: none;"><p>Official Instagram - <span class="fa fa-instagram" style="position: relative; top: 2px; font-size: 20px;"></span></p></a>
+                    <a href="https://www.instagram.com/LTBO_official/" style="text-decoration: none;"><p>Official Instagram - <span class="fa fa-instagram" style="position: relative; top: 2px; font-size: 20px;"></span></p></a>
                 </div>
                 <div class="spc w-col w-col-6">
                     <h5>useful links</h5>

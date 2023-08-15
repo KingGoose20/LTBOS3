@@ -1,13 +1,13 @@
 Today = {
-  "Date": ["14 August"],
-  "Game Number":[1,2,3,4,5,6,7,8,9,10,11,12,13],
-  "Winner":["5 Musketeers","Loose Gooses","Wet Willies","Wet Willies","Loose Gooses","5 Musketeers","5 Musketeers","5 Musketeers","Wet Willies","Wet Willies","5 Musketeers","5 Musketeers","5 Musketeers"],
-  "Loser":["Wet Willies","5 Musketeers","Loose Gooses","5 Musketeers","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","5 Musketeers","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies"],
-  "Scorer":["Samuel McConaghy","William Kim","Michael Iffland","Nicholas Szogi","Angus Walker","Alexander Galt","Samuel McConaghy","Samuel McConaghy","Clarrie Jones","Clarrie Jones","Alexander Galt","Alexander Galt","Alexander Galt"],
-  "Type":["Midrange","Midrange","Finish","Three Pointer","Finish","Finish","Finish","Midrange","Finish","Three Pointer","Finish","Finish","Finish"],
-  "WStreak":[1,1,1,2,1,1,2,3,1,2,1,2,3],
-  "LStreak":[1,1,1,2,1,1,2,2,1,3,1,4,2],
-  "SStreak":[1,1,1,1,1,1,1,2,1,2,1,2,3]
+  "Date": ["15 August"],
+  "Game Number":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30],
+  "Winner":["Loose Gooses","Wet Willies","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","Loose Gooses","Wet Willies","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","Loose Gooses","Wet Willies","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","Loose Gooses","Wet Willies","5 Musketeers","Loose Gooses","Wet Willies"],
+  "Loser":["5 Musketeers","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","5 Musketeers","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","5 Musketeers","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","5 Musketeers","Loose Gooses","Wet Willies","5 Musketeers","Loose Gooses"],
+  "Scorer":["William Kim","Ryan Pattemore","Sam James","Sam James","Lukas Johnston","Sam James","Lukas Johnston","William Kim","Clarrie Jones","Samuel McConaghy","Samuel McConaghy","Lukas Johnston","Samuel McConaghy","Lukas Johnston","Samuel McConaghy","Samuel McConaghy","Samuel McConaghy","Lukas Johnston","Christopher Tomkinson","Mitch Yue","Will Weekes","Sam James","Samuel McConaghy","Samuel McConaghy","Samuel McConaghy","Christopher Tomkinson","Ryan Pattemore","Samuel McConaghy","Christopher Tomkinson","Michael Iffland"],
+  "Type":["Midrange","Finish","Finish","Midrange","Midrange","Finish","Finish","Finish","Midrange","Finish","Finish","Finish","Finish","Finish","Finish","Finish","Midrange","Midrange","Finish","Three Pointer","Midrange","Three Pointer","Finish","Midrange","Midrange","Midrange","Midrange","Midrange","Midrange","Finish"],
+  "WStreak":[1,1,1,2,3,4,5,1,1,1,2,3,4,5,6,7,8,9,1,1,1,2,3,4,5,1,1,1,1,1],
+  "LStreak":[1,1,1,2,2,3,3,1,1,1,2,2,3,3,4,4,5,5,1,1,1,2,2,3,3,1,1,1,1,1],
+  "SStreak":[1,1,1,2,1,1,1,1,1,1,2,1,1,1,1,2,3,1,1,1,1,1,1,2,3,1,1,1,1,1]
 }
 
 Override = false

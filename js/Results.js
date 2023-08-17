@@ -1,18 +1,18 @@
 Today = {
-  "Date": ["15 August"],
-  "Game Number":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30],
-  "Winner":["Loose Gooses","Wet Willies","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","Loose Gooses","Wet Willies","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","Loose Gooses","Wet Willies","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","Loose Gooses","Wet Willies","5 Musketeers","Loose Gooses","Wet Willies"],
-  "Loser":["5 Musketeers","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","5 Musketeers","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","5 Musketeers","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","5 Musketeers","Loose Gooses","Wet Willies","5 Musketeers","Loose Gooses"],
-  "Scorer":["William Kim","Ryan Pattemore","Sam James","Sam James","Lukas Johnston","Sam James","Lukas Johnston","William Kim","Clarrie Jones","Samuel McConaghy","Samuel McConaghy","Lukas Johnston","Samuel McConaghy","Lukas Johnston","Samuel McConaghy","Samuel McConaghy","Samuel McConaghy","Lukas Johnston","Christopher Tomkinson","Mitch Yue","Will Weekes","Sam James","Samuel McConaghy","Samuel McConaghy","Samuel McConaghy","Christopher Tomkinson","Ryan Pattemore","Samuel McConaghy","Christopher Tomkinson","Michael Iffland"],
-  "Type":["Midrange","Finish","Finish","Midrange","Midrange","Finish","Finish","Finish","Midrange","Finish","Finish","Finish","Finish","Finish","Finish","Finish","Midrange","Midrange","Finish","Three Pointer","Midrange","Three Pointer","Finish","Midrange","Midrange","Midrange","Midrange","Midrange","Midrange","Finish"],
-  "WStreak":[1,1,1,2,3,4,5,1,1,1,2,3,4,5,6,7,8,9,1,1,1,2,3,4,5,1,1,1,1,1],
-  "LStreak":[1,1,1,2,2,3,3,1,1,1,2,2,3,3,4,4,5,5,1,1,1,2,2,3,3,1,1,1,1,1],
-  "SStreak":[1,1,1,2,1,1,1,1,1,1,2,1,1,1,1,2,3,1,1,1,1,1,1,2,3,1,1,1,1,1]
+  "Date": ["17 August"],
+  "Game Number":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
+  "Winner":["Loose Gooses","Loose Gooses","Loose Gooses","Wet Willies","5 Musketeers","5 Musketeers","Wet Willies","Wet Willies","Wet Willies","Loose Gooses","5 Musketeers","5 Musketeers","5 Musketeers","Wet Willies","Wet Willies","Wet Willies"],
+  "Loser":["5 Musketeers","Wet Willies","5 Musketeers","Loose Gooses","Wet Willies","Loose Gooses","5 Musketeers","Loose Gooses","5 Musketeers","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","5 Musketeers","Loose Gooses","5 Musketeers"],
+  "Scorer":["William Kim","William Kim","Angus Walker","Michael Iffland","Lukas Johnston","Alexander Galt","Michael Iffland","Rudy Hoschke","Rudy Hoschke","Christopher Tomkinson","Lukas Johnston","Alexander Galt","Samuel McConaghy","Rudy Hoschke","Rudy Hoschke","Clarrie Jones"],
+  "Type":["Finish","Midrange","Three Pointer","Midrange","Finish","Finish","Midrange","Finish","Finish","Finish","Finish","Finish","Finish","Finish","Finish","Three Pointer"],
+  "WStreak":[1,2,3,1,1,2,1,2,3,1,1,2,3,1,2,3],
+  "LStreak":[1,1,2,1,1,2,1,3,2,1,1,2,2,1,3,2],
+  "SStreak":[1,2,1,1,1,1,1,1,2,1,1,1,1,1,2,1]
 }
 
 Override = false
 OverrideOrder = ["LG", "5M", "WW"]
-overRideDate = ""
+overRideDate = "Regular Season"
 overrideW = ""
 overrideL = ""
 overrideDayPoints = []
@@ -68,6 +68,7 @@ function ladder() {
         document.getElementById("firstScoring").innerHTML = (LeadersPoints[1] + " point")
       } else {
         document.getElementById("firstScoring").innerHTML = (LeadersPoints[1] + " points")
+        console.log(LeadersPoints[1] + " points")
       }
       leader = LadderPoints[1]
       WW = true
@@ -82,6 +83,7 @@ function ladder() {
         document.getElementById("firstScoring").innerHTML = (LeadersPoints[2] + " point")
       } else {
         document.getElementById("firstScoring").innerHTML = (LeadersPoints[2] + " points")
+        console.log(DaysPlayed)
       }
       leader = LadderPoints[2]
       MM = true

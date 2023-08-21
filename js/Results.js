@@ -1,18 +1,19 @@
 Today = {
-  "Date": ["17 August"],
-  "Game Number":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16],
-  "Winner":["Loose Gooses","Loose Gooses","Loose Gooses","Wet Willies","5 Musketeers","5 Musketeers","Wet Willies","Wet Willies","Wet Willies","Loose Gooses","5 Musketeers","5 Musketeers","5 Musketeers","Wet Willies","Wet Willies","Wet Willies"],
-  "Loser":["5 Musketeers","Wet Willies","5 Musketeers","Loose Gooses","Wet Willies","Loose Gooses","5 Musketeers","Loose Gooses","5 Musketeers","Wet Willies","Loose Gooses","Wet Willies","Loose Gooses","5 Musketeers","Loose Gooses","5 Musketeers"],
-  "Scorer":["William Kim","William Kim","Angus Walker","Michael Iffland","Lukas Johnston","Alexander Galt","Michael Iffland","Rudy Hoschke","Rudy Hoschke","Christopher Tomkinson","Lukas Johnston","Alexander Galt","Samuel McConaghy","Rudy Hoschke","Rudy Hoschke","Clarrie Jones"],
-  "Type":["Finish","Midrange","Three Pointer","Midrange","Finish","Finish","Midrange","Finish","Finish","Finish","Finish","Finish","Finish","Finish","Finish","Three Pointer"],
-  "WStreak":[1,2,3,1,1,2,1,2,3,1,1,2,3,1,2,3],
-  "LStreak":[1,1,2,1,1,2,1,3,2,1,1,2,2,1,3,2],
-  "SStreak":[1,2,1,1,1,1,1,1,2,1,1,1,1,1,2,1]
+  "Date": ["21 August"],
+  "GameNumber":[1,1,1,2,2,3,3,3,4,4,5,5,6,6,7,7,7,8,8],
+  "Winner":["Wet Willies","Loose Gooses","Wet Willies","5 Musketeers","5 Musketeers","Loose Gooses","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses"],
+  "Loser":["Loose Gooses","Wet Willies","Loose Gooses","Wet Willies","Wet Willies","5 Musketeers","Loose Gooses","Loose Gooses","Wet Willies","Wet Willies","Loose Gooses","Loose Gooses","Wet Willies","Wet Willies","Loose Gooses","5 Musketeers","5 Musketeers","Wet Willies","Wet Willies"],
+  "Score":["1-0","1-1","2-1","1-0","2-0","1-0","1-1","2-1","1-0","2-0","1-0","2-0","1-0","2-0","1-0","1-1","2-1","1-0","2-0"],
+  "Scorer":["Rudy Hoschke","William Kim","Rudy Hoschke","Samuel McConaghy","Alexander Galt","Angus Walker","Samuel McConaghy","Samuel McConaghy","Alexander Galt","Alexander Galt","Sam James","Lukas Johnston","Alexander Galt","Alexander Galt","Samuel McConaghy","William Kim","Angus Walker","Angus Walker","William Kim"],
+  "Type":["Finish","Finish","Finish","Midrange","Finish","Finish","Midrange","Midrange","Finish","Finish","Midrange","Finish","Finish","Midrange","Midrange","Finish","Finish","Finish","Midrange"],
+  "WStreak":["-","-","1","-","1","-","-","2","-","3","-","4","-","5","-","-","1","-","2"],
+  "LStreak":["-","-","1","-","1","-","-","2","-","2","-","3","-","3","-","-","1","-","4"],
+  "SStreak":[1,1,1,1,1,1,1,2,1,2,1,1,1,2,1,1,1,2,1]
 }
 
 Override = false
 OverrideOrder = ["LG", "5M", "WW"]
-overRideDate = "Regular Season"
+overRideDate = ""
 overrideW = ""
 overrideL = ""
 overrideDayPoints = []
@@ -432,15 +433,17 @@ function results() {
     var cell6 = row.insertCell(5);
     var cell7 = row.insertCell(6);
     var cell8 = row.insertCell(7);
+    var cell9 = row.insertCell(8);
 
-    cell1.innerHTML = i + 1;
+    cell1.innerHTML = Today.GameNumber[i]
     cell2.innerHTML = Today.Winner[i];
     cell3.innerHTML = Today.Loser[i];
-    cell4.innerHTML = Today.Scorer[i];
-    cell5.innerHTML = Today.Type[i];
-    cell6.innerHTML = Today.WStreak[i];
-    cell7.innerHTML = Today.LStreak[i];
-    cell8.innerHTML = Today.SStreak[i];
+    cell4.innerHTML = Today.Score[i];
+    cell5.innerHTML = Today.Scorer[i];
+    cell6.innerHTML = Today.Type[i];
+    cell7.innerHTML = Today.WStreak[i];
+    cell8.innerHTML = Today.LStreak[i];
+    cell9.innerHTML = Today.SStreak[i];
   }
 
   for (x = 0; x < players.length; x++) {

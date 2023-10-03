@@ -11,13 +11,13 @@ function header(location) {
         <nav class="navbar heading-links w-nav-menu">
             <ul class="nav-menu">
             <li class="nav-item">
+                <a href="replacerDocumentsAndIco/GF.html" class="navigation-link w-nav-link theFinals">The Final</a>
+            </li>
+            <li class="nav-item">
                 <a href="replacerDocumentsAndIco/Ladder.html" class="navigation-link w-nav-link">Ladder</a>
             </li>
             <li class="nav-item">
                 <a href="replacerDocumentsAndIco/Results.html" class="navigation-link w-nav-link">Results</a>
-            </li>
-            <li class="nav-item">
-                <a href="replacerDocumentsAndIco/News.html" class="navigation-link w-nav-link">News</a>
             </li>
             <div class="dropdown nav-item dropdownHide">
                 <span class="navigation-link w-nav-link">Stats</span>
@@ -211,7 +211,6 @@ function footer(location) {
                     <h5>useful links</h5>
                     <a href="replacerDocumentsAndIco/Ladder.html" class="footer-link">Ladder</a>
                     <a href="replacerDocumentsAndIco/Results.html" class="footer-link">Results</a>
-                    <a href="replacerDocumentsAndIco/News.html" class="footer-link">News</a>
                     <a href="replacerDocumentsAndIco/Stats.html" class="footer-link">Stats</a>
                     <a href="replacerDocumentsAndIco/Rules.html" class="footer-link">Rules + More</a>
                 </div>

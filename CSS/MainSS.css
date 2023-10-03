@@ -3069,6 +3069,11 @@ html {
   filter: brightness(100%);
 }
 
+.finalImage {
+  background-image: url("../Images/FinalImage.jpg");
+  filter: brightness(100%);
+}
+
 .stats {
   background-image: url("../Images/Stats.jpg");
   filter: brightness(100%);
@@ -3760,11 +3765,11 @@ input:checked+.slider:before {
 
 .theFinals {
   color: #dab128;
-  background-image: linear-gradient(100deg,
+  background-image: linear-gradient(130deg,
       darkgoldenrod 0%,
-      darkgoldenrod 29%,
-      darkgoldenrod 67%,
-      darkgoldenrod 100%);
+      #cf980d 29%,
+      #7a5a09 67%,
+      #d59d11 100%);
   font-size: 1em;
   font-family: "Brush King";
   animation: textclip 2s reverse infinite;
@@ -3946,3 +3951,4 @@ html {
   margin-bottom: 0px;
 
 }
+

@@ -14,10 +14,9 @@
   </script>
   <script src="../js/HeaderFooter.js"></script>
 
-
   <link href="https://images.emojiterra.com/google/noto-emoji/v2.034/512px/1f3c0.png" rel="shortcut icon">
   <meta charset="utf-8" />
-  <title>TGF | LTBO</title>
+  <title>The GF | LTBO</title>
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <link href="../CSS/MainSS.css" rel="stylesheet" type="text/css" />
   <script src="../js/Webfont.js" type="text/javascript">
@@ -30,11 +29,10 @@
     });
   </script>
 
-  <style>
-    td {
-      font-size: 30px;
-    }
+</head>
 
+<body>
+  <style>
     .fade-in {
       opacity: 0;
       transform: translateY(8vh);
@@ -49,32 +47,35 @@
       visibility: visible;
     }
 
-    .image-container {
-      border: 5px solid #555;
+    .Image {
+      width: 80%;
+      position: relative
     }
 
-    .grandF {
-      color: lightgrey;
-      letter-spacing: 30px;
-      font-size: 40px;
-      line-height: 50px;
-    }
-
-    @media screen and (max-width: 500px) {
-      .grandF {
-        position: relative;
-        left: 8px;
+    @keyframes Shrink {
+      from {
+        display: inline-block;
+        transform: rotate3d(0, 0, 0, 0deg);
+        width: 80%;
       }
 
-      li {
-        position: relative;
-        left: -20px;
+      to {
+        display: inline-block;
+        transform: rotate3d(0, 1, 0.5, 360deg);
+        width: 40%;
+      }
+    }
+
+    @keyframes TeamList {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
       }
     }
   </style>
-</head>
-
-<body>
   <script src="../js/jquery.min.js"></script>
   <script>
     $(window).scroll(function () {
@@ -84,158 +85,103 @@
         var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
         var top_of_screen = $(window).scrollTop();
 
-        if (((bottom_of_screen - 150) > top_of_element) && (top_of_screen < bottom_of_element) && !$(this).hasClass('is-visible')) {
+        if (((bottom_of_screen - 250) > top_of_element) && (top_of_screen < bottom_of_element) && !$(this).hasClass('is-visible')) {
           $(this).addClass('is-visible');
         }
       });
     });
   </script>
   <div data-collapse="medium" data-animation="default" data-duration="400" class="navigation-bar w-nav" id="header">
-    <div class="Whole">
-      <div class="w-container">
-        <a href="../index.html" class="heading w--current" style="padding:8px;">
-          <h1 class="title animate-character"><img src="../Images/Logo.png" style="width:0.75em"><span
-              class="heading-hide"> Lunch Time
-              Basketballers</span><span class="inverseheading-hide"> LTBO</span></h1>
-        </a>
-        <nav class="navbar heading-links w-nav-menu">
-          <ul class="nav-menu">
-            <li class="nav-item">
-              <a href="../DocumentsAndIco/GF.html" class="navigation-link w-nav-link" style="color: darkgoldenrod">Grand
-                Finale</a>
-            </li>
-            <li class="nav-item">
-              <a href="../DocumentsAndIco/Ladder.html" class="navigation-link w-nav-link">Ladder</a>
-            </li>
-            <li class="nav-item">
-              <a href="../DocumentsAndIco/Results.html" class="navigation-link w-nav-link">Results</a>
-            </li>
-            <li class="nav-item">
-              <a href="../DocumentsAndIco/News.html" class="navigation-link w-nav-link">News</a>
-            </li>
-            <li class="nav-item">
-              <a href="DocumentsAndIco/Stats.html" class="navigation-link w-nav-link">Stats</a>
-            </li>
-            <li class="nav-item">
-              <a href="../DocumentsAndIco/Rules.html" class="navigation-link w-nav-link">Rules + More</a>
-            </li>
-          </ul>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-        </nav>
-      </div>
-    </div>
+    <script>header("docs")</script>
   </div>
-  </div>
-  <div class="hero-section centered container gf" style="background-size: cover;">
+  <br>
+  <br>
+  <br>
+  <div class="hero-section centered container finalImage" style="background-size: cover;">
     <br>
     <div data-ix="new-interaction" class="w-container">
-      <h1 class="hero-heading mainHeading animate-heading fade-inHeading">The Grand Finale</h1>
-      <div class="button fade-inHeading"><i>Friday the 24th of March</i></div>
-    </div>
-  </div>
-  <div class="section">
-    <div class="w-container">
-      <div class="LearnMore">
-        <div class="section-title-group">
-          <h2 class="section-heading centered" id="">Completed</h2>
-          <h3 class="fade-in">After seven weeks of basketball</h3>
-          <br><br>
-          <h3 class="fade-in">Three teams have worked their way to the</h3>
-          <br><br><br>
-          <h3 style="" class="fade-in grandF">GRAND FINALE</h3>
-          <br><br><br>
-          <h3 class="fade-in">With just four wins seperating first and third place, everything comes down to this
-            moment.</h3>
-          <br><br>
-          <h3 class="fade-in">Which team has what it takes to win the LTB tournament?</h3>
-          <br><br><br><br><br><br>
-          <p style="font-size:20px">The Grand Finale of the Inaugural Lunch Time Basketball Organisation Tournament will
-            take place on Friday, the 24th of March. It will start at approximately 8:30am, and will run until 10:15am.
-            The timetable is as so:</p><br>
-          <ul style="font-size: 18px; line-height: 27px;">
-            <li><strong>00:00am-8:20am:</strong> Prepare yourself for the grand finale</li>
-            <li><strong>8:20am-8:30am:</strong> Player introductions, final warmup</li>
-            <li><strong>8:30am:</strong> The finale starts, with the Wet Willies (1st) facing off against the Loose
-              Gooses (3rd)</li>
-            <li><strong>8:30am-9:00am:</strong> Part 1 of the Grand Finale</li>
-            <li><strong>9:00am-9:05am:</strong> 5 Minute break</li>
-            <li><strong>9:05am-9:35am:</strong> Part 2 of the Grand Finale</li>
-            <li><strong>9:35am-9:40am:</strong> 5 Minute break</li>
-            <li><strong>9:40am-10:15am:</strong> Part 3 of the Grand Finale (more on this below)</li>
-            <li><strong>10:15am-11:30am:</strong> Hungry Jacks for food</li>
-            <li><strong>11:30am-12:00pm:</strong> Return to school, award presentation and speeches</li>
-          </ul>
-          <br>
-          <p style="font-size:20px; text-align: left;">The first two parts of the Grand Finale last for approximately 30
-            minutes, ending once a game is finished over the 30 minute mark (we do not stop a game half way through).
-            The break gives players time to rest, talk over what they need to do, and for the score keepers to process
-            and share the results. As the whole Grand Finale will have 90 minutes of playing time, players are
-            encouraged to use the rest breaks to avoid exhaustion. However, the third part is slightly different. We
-            will play the average number of games in each part (e.g., if 12 games were played in part 1, and 10 in part
-            2, we play 11 games), rounding up if required.<br><br>
-            If at the end of all the games, the difference between first and second is less than 1.5 points (1 point,
-            0.5 points, or 0 points), the two teams will play a first-to-7 <strong>(not a best-of-7)</strong> to
-            determine the tournament winner. <strong>(The same applies for second/third to make the final
-              game)</strong><br><br>
-            Once the tournament is over, the group will head down to Hungry Jack’s for some post-tournament food. Please
-            make sure you have a spare change of clothes for this.<br><br>
-            After Hungry Jack’s, the team will return to the courts, where each player will be recognised for any
-            accomplishments that they have made, and anyone who would like to make a speech can do so. This will end the
-            tournament for Term 1.<br><br>
-          </p>
-          <br><br><br>
-          <p style="font-size: 20px; text-align: left;"><strong>The rules are slighly different from the regular finals.
-              <a href="Grand Finale Rules.docx" target="_blank">Please click here for a full list.</a></strong></p>
-          <br><br><br><br><br>
-          <p style="font-size: 20px;">Best of luck to each team on the Grand Finale. As we've seen from finals week,
-            there's no favourite team. The Loose Gooses started the finals in first, the 5 Musketeers won the first
-            final, and the Wet Willies won the second. Every point counts.</p>
-        </div>
+      <h1 class="hero-heading mainHeading fade-inHeading"
+        style="font-size: 6em; color: #dab128; font-family: 'Brush King'; position: relative; top: -80px">The Grand
+        Final</h1>
+      <br>
+      <div>
+        <a href="#bottom" class="button fade-inHeading">Taking place between the 9th and the 11th of October.</a>
       </div>
     </div>
   </div>
-  <div class="section accent">
-    <div class="w-container">
-      <div class="section-title-group">
-        <h2 class="section-heading centered">Go and explore!</h2>
-        <div class="section-subheading center">Use the links above or below to get to each page</div>
-      </div>
-      <div class="footer">
-        <div class="w-container">
-          <div class="w-row">
-            <div class="spc w-col w-col-6">
-              <h5>About the Lunch Time Basketball Organisation</h5>
-              <p>This website is a free source of knowledge to learn more about the lunch time basketball.</p>
-            </div>
-            <div class="spc w-col w-col-6">
-              <h5>useful links</h5>
-              <a href="../DocumentsAndIco/Ladder.html" class="footer-link">Ladder</a>
-              <a href="../DocumentsAndIco/Results.html" class="footer-link">Results</a>
-              <a href="../DocumentsAndIco/News.html" class="footer-link">News</a>
-              <a href="../DocumentsAndIco/Stats.html" class="footer-link">Stats</a>
-              <a href="../DocumentsAndIco/Rules.html" class="footer-link">Rules</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="section" style="padding: 100px 60px; height:auto;">
+    <h2 class="section-heading centered" style="line-height: 1.1em;">With the <span style="color: #47aeb5">two</span> <span style="color: #d74268">top</span> teams seperated by just 1 ladder point, and the <span style="color: #e45e0b">third-place</span> team slowly on the come up, the last week of <span style="color: #8b00dc">Season 3 LTBO Basketball</span> has a lot to offer.</h2>
   </div>
-  <div class="footer center">
-    <div class="w-container">
-      <div class="footer-text">© 2023 The Lunchtime Basketball Organisation</a>
-        <br>
-        <br>
-        <img src="../Images/Logo.png" style="height: 20%; width:20%">
-      </div>
+  <div class="section accent" style="padding: 100px 60px; height:auto; min-height: 500px;">
+    <div>
+      <h2 class="section-heading centered" style="font-size: 5em; text-align: left;">Schedule</h2>
+      <br>
+      <h2 class="section-heading centered" style="font-size: 2em; text-align: left; margin-bottom: 0px;">3rd-5th of October</h2>
+      <p style="text-align: left; margin-top: 0px;">Preparation Week.<br>Each team and player has complete control over how they spend
+        this week. Whether they want to play, get up shots, or take time off, they are free to do whatever they need in
+        order to prepare for the Grand Finale.</p>
+      <br>
+      <h2 class="section-heading centered" style="font-size: 2em; text-align: left; margin-bottom: 0px;">9th of October</h2>
+      <p style="text-align: left; margin-top: 0px;">The Final Ladder Positioning Decider.<br>Games will play like usual, but will be best-of-5's
+        (first to 3). Each team's win will reward them one ladder point to decide the final positions. If there is a
+        tie, the tie breaker order is:<br>- Head-to-head from the day<br>- Higher for/against from the day<br>- Higher
+        win-streak from the day<br>- Team that performed better on the day</p>
+      <br>
+      <h2 class="section-heading centered" style="font-size: 2em; text-align: left; margin-bottom: 0px;">10th of October</h2>
+      <p style="text-align: left; margin-top: 0px;">The Play-In Game.<br>The second-place team will play the third-place team to decide
+        who will make the championship game. Starting 10 minutes after break starts, and finishing between 5-10 minutes
+        before break ends, the game will go over the entire break. The second-place team will start up 2-0, a reward for
+        placing better during the season. When there is 10 minutes left in the break, the 'goal score' will be the
+        winning team's score, plus 4. This will be the goal for each team, and the first team to hit this goal will win
+        the play-in. If the score is not reached, and the game is forced to finish, the team in the lead will win. If
+        the game is tied, the second-place team will take the win.<br>Each team will have two timeouts over the break,
+        each lasting 1 minute. They can take the timeout whenever there is a stop in the game, or when their team has
+        the ball. The team GM must be the one to call it. If they call a timeout when they do not have one, they other
+        team will regain possession of the ball, and this will be considered a technical foul (typical technical/unsportsmanlike foul rules apply). </p>
+      <br>
+      <h2 class="section-heading centered" style="font-size: 2em; text-align: left; margin-bottom: 0px;">11th of October</h2>
+      <p style="text-align: left; margin-top: 0px;">The Championship Game.<br>After a long season of LTBO Basketball, we've reached the
+        championship game. The winner of the play-in game will play the first-place team. The structure of the day will
+        be the same as the play-in game, except both teams will start at 0-0. When there is 10 minutes left in the
+        break, the 'goal score' will be the winning team's score, plus 4. This will be the goal for each team, and the
+        first team to hit this goal will win the play-in. If the score is not reached, and the game is forced to finish,
+        the team in the lead will win. If there is 5 minutes left in the break, and the score is tied, it will be next
+        team to score will win.<br>Each team will have two timeouts over the break,
+        each lasting 1 minute. They can take the timeout whenever there is a stop in the game, or when their team has
+        the ball. The team GM must be the one to call it. If they call a timeout when they do not have one, they other
+        team will regain possession of the ball, and this will be considered a technical foul (typical technical/unsportsmanlike foul rules apply). </p>
     </div>
+
   </div>
+  <div class="section" style="padding: 200px 100px; height:auto;">
+    <h2 class="section-heading centered" id="countDown" style="font-size: 12em;">-- -- -- --</h2>
+  </div>
+  <div id="footer">
+    <script>footer("docs")</script>
+  </div>
+  <script src="../js/heading.js"></script>
+  <script src="../js/Scroll.js"></script>
+  <script src="../js/TeamMain.js"></script>
+  <script src="../js/Results.js"></script>
   <script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("March 24, 2023 08:30:00").getTime();
+    /* Set the date we're counting down to */
+    var countDownDate = new Date("October 9, 2023 13:20:00").getTime();
+    var pastText = "done"
+
+    var selectedNumber = 0
+
+    function init() {
+      now = new Date().getTime();
+      distance = countDownDate - now;
+        if (distance <= 0) {
+          document.getElementById("countDown").innerHTML = pastText;
+          selectedNumber += 1
+      }
+
+
+    }
+
+    init()
 
     // Update the count down every 1 second
     var x = setInterval(function () {
@@ -243,30 +189,45 @@
       // Get today's date and time
       var now = new Date().getTime();
 
+      var distance = 100
+      var days = 10
+      var hours = 10
+      var minutes = 10
+      var seconds = 10
+
       // Find the distance between now and the count down date
-      var distance = countDownDate - now;
+      function main() {
+        now = new Date().getTime();
+        distance = countDownDate - now;
 
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Time calculations for days, hours, minutes and seconds
+        days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      // Output the result in an element with id="demo"
-      document.getElementById("countDown").innerHTML = hours + "h "
-        + minutes + "m " + seconds + "s ";
+      }
+
+      main()
+
+      // Output the result in an element with id=""
+
+      function checkNotZero(variable, letter) {
+        if (variable > 0) {
+          return (variable + letter)
+        } else {
+          return ("")
+        }
+      }
+      document.getElementById("countDown").innerHTML = checkNotZero(days, "d ") + checkNotZero(hours, "h ")
+        + checkNotZero(minutes, "m ") + checkNotZero(seconds, "s ");
 
       // If the count down is over, write some text 
       if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("countDown").innerHTML = "EXPIRED";
+        document.getElementById("countDown").innerHTML = pastText;
       }
     }, 1000);
   </script>
-
-  <script src="../js/heading.js"></script>
-  <script src="../js/Scroll.js"></script>
 </body>
-
 
 </html>

@@ -1,14 +1,14 @@
 Today = {
-  "Date": ["23 August"],
-  "GameNumber":[1,1,2,2,3,3,4,4,5,5,5,6,6,6,7,7,8,8],
-  "Winner":["5 Musketeers","5 Musketeers","5 Musketeers","5 Musketeers","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","5 Musketeers","Loose Gooses","Loose Gooses","Loose Gooses","Wet Willies","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Wet Willies"],
-  "Loser":["Loose Gooses","Loose Gooses","Wet Willies","Wet Willies","5 Musketeers","5 Musketeers","Wet Willies","Wet Willies","Loose Gooses","5 Musketeers","5 Musketeers","Wet Willies","Loose Gooses","Wet Willies","5 Musketeers","5 Musketeers","Wet Willies","Loose Gooses"],
-  "Score":["1-0","2-0","1-0","2-0","1-0","2-0","1-0","2-0","1-0","1-1","2-1","1-0","1-1","2-1","1-0","2-0","1-0","2-1"],
-  "Scorer":["Samuel McConaghy","Alexander Galt","Alexander Galt","Alexander Galt","Angus Walker","Conor Farrington","Conor Farrington","Angus Walker","Samuel McConaghy","William Kim","Christopher Tomkinson","Angus Walker","Michael Iffland","William Kim","Angus Walker","William Kim","William Kim","Nicholas Szogi"],
-  "Type":["Midrange","Finish","Finish","Finish","Midrange","Finish","Finish","Finish","Finish","Finish","Finish","Finish","Finish","Midrange","Finish","Finish","Midrange","Three Pointer"],
-  "WStreak":["-","1","-","2","-","1","-","2","-","-","3","-","-","4","-","5","-","1"],
-  "LStreak":["-","1","-","1","-","1","-","2","-","-","2","-","-","3","-","3","-","1"],
-  "SStreak":[1,1,2,3,1,1,2,1,1,1,1,1,1,1,1,1,2,1]
+  "Date": ["9 October"],
+  "Game Number":[1,1,1,1,2,2,2,3,3,3,4,4,4,4,4,5,5,5],
+  "Winner":["Wet Willies","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","5 Musketeers","5 Musketeers","Loose Gooses","Loose Gooses","Wet Willies","Loose Gooses","Loose Gooses"],
+  "Loser":["Loose Gooses","Wet Willies","Wet Willies","Wet Willies","5 Musketeers","5 Musketeers","5 Musketeers","Wet Willies","Wet Willies","Wet Willies","5 Musketeers","Loose Gooses","Loose Gooses","5 Musketeers","5 Musketeers","Loose Gooses","Wet Willies","Wet Willies"],
+  "Score":["1-0","1-1","2-1","3-1","1-0","2-0","3-0","1-0","2-0","3-0","1-0","1-1","2-1","2-2","3-2","1-0","1-1","3-1"],
+  "Scorer":["Michael Iffland","William Kim","William Kim","William Kim","Angus Walker","Christopher Tomkinson","Angus Walker","William Kim","Angus Walker","Christopher Tomkinson","William Kim","Samuel McConaghy","Lukas Johnston","Angus Walker","Conor Farrington","Clarrie Jones","Christopher Tomkinson","William Kim"],
+  "Type":["Midrange","Finish","Finish","Midrange","Finish","Finish","Finish","Finish","Finish","Midrange","Finish","Midrange","Finish","Finish","Finish","Finish","Finish","Three Pointer"],
+  "WStreak":["-","-","-","1","-","-","2","-","-","3","-","-","-","-","4","-","-","5"],
+  "LStreak":["-","-","-","1","-","-","1","-","-","2","-","-","-","-","2","-","-","3"],
+  "SStreak":[1,1,2,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 }
 
 Override = false

@@ -16,7 +16,7 @@ OverrideOrder = ["LG", "5M", "WW"]
 overRideDate = ""
 overrideW = ""
 overrideL = ""
-overrideDayPoints = [6,2,4]
+overrideDayPoints = [5,0,0]
 
 
 

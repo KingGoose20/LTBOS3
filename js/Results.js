@@ -1,6 +1,6 @@
 Today = {
   "Date": ["9 October"],
-  "Game Number":[1,1,1,1,2,2,2,3,3,3,4,4,4,4,4,5,5,5],
+  "GameNumber":[1,1,1,1,2,2,2,3,3,3,4,4,4,4,4,5,5,5],
   "Winner":["Wet Willies","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","Loose Gooses","5 Musketeers","5 Musketeers","Loose Gooses","Loose Gooses","Wet Willies","Loose Gooses","Loose Gooses"],
   "Loser":["Loose Gooses","Wet Willies","Wet Willies","Wet Willies","5 Musketeers","5 Musketeers","5 Musketeers","Wet Willies","Wet Willies","Wet Willies","5 Musketeers","Loose Gooses","Loose Gooses","5 Musketeers","5 Musketeers","Loose Gooses","Wet Willies","Wet Willies"],
   "Score":["1-0","1-1","2-1","3-1","1-0","2-0","3-0","1-0","2-0","3-0","1-0","1-1","2-1","2-2","3-2","1-0","1-1","3-1"],
@@ -342,6 +342,7 @@ players = ["Jasper Collier", "Conor Farrington", "Alexander Galt", "Rudy Hoschke
 
 
 function results() {
+  console.log("ran")
   DidNotPlay = []
   for (i = 0; i < mainArray.Name.length; i++) {
     if (dayArray[dayArray.length - 1].Points[i] == "Did not Play") {

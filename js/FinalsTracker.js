@@ -19,8 +19,11 @@ needed = 0
 function start() {
     if (document.getElementById("type").value == "fw") {
         needed = 2
-    } else {
+    } else if (document.getElementById("type").value == "gf") {
         needed = 3
+    } else if (document.getElementById("type").value == "finalGame") {
+        needed = 100
+        aScore = 2
     }
     aElement = document.getElementById("aTeam")
     bElement = document.getElementById("bTeam")

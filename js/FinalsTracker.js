@@ -23,7 +23,6 @@ function start() {
         needed = 3
     } else if (document.getElementById("type").value == "finalGame") {
         needed = 100
-        aScore = 2
     }
     aElement = document.getElementById("aTeam")
     bElement = document.getElementById("bTeam")

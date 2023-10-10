@@ -213,12 +213,13 @@ dayArray = [
   },
 
   {
-    "Date": ["10-October"],
-    "Points": ["Did not Play", "Did not Play", "Did not Play", 4, 3, 4, "Did not Play", 1, "Did not Play", 3, 0, 0, 1, "Did not Play", "Did not Play", 0, "Did not Play"],
-    "Finishes": ["Did not Play", "Did not Play", "Did not Play", 3, 1, 2, "Did not Play", 0, "Did not Play", 0, 0, 0, 1, "Did not Play", "Did not Play", 0, "Did not Play"],
-    "Midrange": ["Did not Play", "Did not Play", "Did not Play", 1, 2, 2, "Did not Play", 1, "Did not Play", 1, 0, 0, 0, "Did not Play", "Did not Play", 0, "Did not Play"],
-    "ThreePointers": ["Did not Play", "Did not Play", "Did not Play", 0, 0, 0, "Did not Play", 0, "Did not Play", 1, 0, 0, 0, "Did not Play", "Did not Play", 0, "Did not Play"]
-  },
+    "Date":["10-October"],
+    "Points":["Did not Play","Did not Play",7,4,3,4,"Did not Play",1,"Did not Play",3,0,0,1,"Did not Play","Did not Play",0,"Did not Play"],
+    "Finishes":["Did not Play","Did not Play",7,3,1,2,"Did not Play",0,"Did not Play",0,0,0,1,"Did not Play","Did not Play",0,"Did not Play"],
+    "Midrange":["Did not Play","Did not Play",0,1,2,2,"Did not Play",1,"Did not Play",1,0,0,0,"Did not Play","Did not Play",0,"Did not Play"],
+    "ThreePointers":["Did not Play","Did not Play",0,0,0,0,"Did not Play",0,"Did not Play",1,0,0,0,"Did not Play","Did not Play",0,"Did not Play"]
+    },
+    
 
   
 
